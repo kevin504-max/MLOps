@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/CMakeFiles/bootloader
+/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/CMakeFiles/bootloader.rule
+/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/CMakeFiles/bootloader-complete.rule
+/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

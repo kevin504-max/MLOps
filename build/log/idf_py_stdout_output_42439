@@ -1,0 +1,19 @@
+[1/11] Performing build step for 'bootloader'
+[1/1] cd /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/bootloader/esp-idf/esptool_py && /home/kevin_lucas/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/kevin_lucas/esp/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/bootloader/bootloader.bin
+Bootloader binary size 0x6560 bytes. 0xaa0 bytes (9%) free.
+[2/11] No install step for 'bootloader'
+[3/11] Completed 'bootloader'
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/11] Building C object esp-idf/dht/CMakeFiles/__idf_dht.dir/dht.c.obj
+[6/11] Linking C static library esp-idf/dht/libdht.a
+[7/11] Linking C static library esp-idf/main/libmain.a
+[8/11] Generating ld/sections.ld
+[9/11] Linking CXX executable seu_projeto.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/seu_projeto.bin
+[11/11] cd /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/esp-idf/esptool_py && /home/kevin_lucas/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/kevin_lucas/esp/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/partition_table/partition-table.bin /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/seu_projeto.bin
+seu_projeto.bin binary size 0x2c710 bytes. Smallest app partition is 0x100000 bytes. 0xd38f0 bytes (83%) free.
