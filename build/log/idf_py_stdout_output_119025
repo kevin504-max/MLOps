@@ -1,0 +1,127 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 23:08:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 00100000[0m
+[0;32mI (79) boot:  3 spiffs           Unknown data     01 82 00110000 00070000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b864h ( 47204) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0001b88c vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001b8b0 vaddr=3ffb0000 size=024a4h (  9380) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=0001dd5c vaddr=40080000 size=022bch (  8892) load[0m
+[0;32mI (128) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=209b0h (133552) map[0m
+[0;32mI (177) esp_image: segment 5: paddr=000409d8 vaddr=400822bc size=0b150h ( 45392) load[0m
+[0;32mI (202) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (202) boot: Disabling RNG early entropy source...[0m
+[0;32mI (212) cpu_start: Multicore app[0m
+[0;32mI (221) cpu_start: Pro cpu start user code[0m
+[0;32mI (221) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (221) app_init: Application information:[0m
+[0;32mI (221) app_init: Project name:     seu_projeto[0m
+[0;32mI (225) app_init: App version:      5d4e647-dirty[0m
+[0;32mI (229) app_init: Compile time:     Apr  1 2025 23:08:24[0m
+[0;32mI (234) app_init: ELF file SHA256:  f15d4d733...[0m
+[0;32mI (239) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (243) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (247) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (251) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (255) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (261) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (266) heap_init: At 3FFB2D98 len 0002D268 (180 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (282) heap_init: At 4008D40C len 00012BF4 (74 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (291) spi_flash: flash io: dio[0m
+[0;33mW (294) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (307) main_task: Started on CPU0[0m
+[0;32mI (317) main_task: Calling app_main()[0m
+[0;32mI (317) DHT22_CSV: Initializing SPIFFS[0m
+[0;32mI (347) DHT22_CSV: Partition size: total: 414401 bytes, used: 3263 bytes[0m
+[1;31mE (367) DHT22_CSV: SPIFFS mount check failed[0m
+[0;32mI (367) DHT22_CSV: Initializing CSV file[0m
+[0;33mW (377) DHT22_CSV: CSV file already exists, overwriting[0m
+[0;32mI (397) DHT22_CSV: CSV file initialized successfully[0m
+[0;32mI (427) DHT22_CSV: Humidity: 67.0%, Temperature: 26.6C[0m
+[0;32mI (427) DHT22_CSV: Application started successfully[0m
+[0;32mI (427) main_task: Returned from app_main()[0m
+[0;32mI (2457) DHT22_CSV: Humidity: 67.1%, Temperature: 26.6C[0m
+[0;32mI (4487) DHT22_CSV: Humidity: 67.1%, Temperature: 26.5C[0m
+[0;32mI (6517) DHT22_CSV: Humidity: 67.1%, Temperature: 26.5C[0m
+[0;32mI (8547) DHT22_CSV: Humidity: 67.2%, Temperature: 26.6C[0m
+[0;32mI (10577) DHT22_CSV: Humidity: 67.2%, Temperature: 26.6C[0m
+[0;32mI (12607) DHT22_CSV: Humidity: 67.3%, Temperature: 26.5C[0m
+[0;32mI (14637) DHT22_CSV: Humidity: 67.3%, Temperature: 26.6C[0m
+[0;32mI (16667) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (18697) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (20727) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (22757) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (24787) DHT22_CSV: Humidity: 67.3%, Temperature: 26.5C[0m
+[0;32mI (26817) DHT22_CSV: Humidity: 67.3%, Temperature: 26.5C[0m
+[0;32mI (28847) DHT22_CSV: Humidity: 67.3%, Temperature: 26.5C[0m
+[0;32mI (30877) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (32907) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (34937) DHT22_CSV: Humidity: 67.3%, Temperature: 26.5C[0m
+[0;32mI (36967) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (38997) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (41027) DHT22_CSV: Humidity: 67.3%, Temperature: 26.5C[0m
+[0;32mI (43057) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (45087) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (47117) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (49147) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (51177) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (53207) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (55237) DHT22_CSV: Humidity: 67.6%, Temperature: 26.5C[0m
+[0;32mI (57267) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (59297) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (61327) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (63357) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (65387) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (67417) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (69447) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (71477) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (73507) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (75537) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (77567) DHT22_CSV: Humidity: 67.3%, Temperature: 26.5C[0m
+[0;32mI (79597) DHT22_CSV: Humidity: 67.3%, Temperature: 26.5C[0m
+[0;32mI (81627) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (83657) DHT22_CSV: Humidity: 67.3%, Temperature: 26.5C[0m
+[0;32mI (85687) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (87717) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (89747) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (91777) DHT22_CSV: Humidity: 67.6%, Temperature: 26.5C[0m
+[0;32mI (93807) DHT22_CSV: Humidity: 67.6%, Temperature: 26.5C[0m
+[0;32mI (95837) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (97867) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (99897) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (101927) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (103957) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (105987) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (108017) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (110047) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (112077) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (114107) DHT22_CSV: Humidity: 67.5%, Temperature: 26.5C[0m
+[0;32mI (116137) DHT22_CSV: Humidity: 67.4%, Temperature: 26.5C[0m
+[0;32mI (118167) DHT22_CSV: Humidity: 67.3%, Temperature: 26.5C[0m
+[0;32mI (120197) DHT22_CSV: Humidity: 67.3%, Temperature: 26.5C[0m
+[0;32mI (122227) DHT22_CSV: Humidity: 67.2%, Tempera

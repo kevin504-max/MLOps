@@ -557,3 +557,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/esp-idf/main/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/esp-idf/esp_idf_lib_helpers/cmake_install.cmake")
+endif()
+

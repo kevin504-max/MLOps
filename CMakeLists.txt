@@ -1,6 +1,7 @@
 # CMakeLists.txt na raiz do seu projeto
 
 set(EXTRA_COMPONENT_DIRS components/esp-idf-lib)
+set(PARTITION_TABLE partitions.csv)
 
 # Inclui os diretórios componentes, onde o ESP-IDF procurará pelos componentes.
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
