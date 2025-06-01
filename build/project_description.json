@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "seu_projeto",
-    "project_version":    "5d4e647-dirty",
+    "project_version":    "ee457f9-dirty",
     "project_path":       "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps",
     "idf_path":           "/home/kevin_lucas/esp/v5.4/esp-idf",
     "build_dir":          "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build",
@@ -1220,12 +1220,12 @@
             "dir": "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main",
             "type": "LIBRARY",
             "lib": "__idf_main",
-            "reqs": [ "dht", "spiffs" ],
-            "priv_reqs": [],
+            "reqs": [ "dht", "esp_adc" ],
+            "priv_reqs": [ "spiffs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c" ],
+            "sources": [ "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/components/dht/dht_sensor.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/components/mq7/mq7_sensor.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/components/mq4/mq4_sensor.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {
@@ -2871,8 +2871,8 @@
             "prefix": "idf",
             "dir": "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main",
             "lib": "__idf_main",
-            "reqs": [ "dht", "spiffs" ],
-            "priv_reqs": [],
+            "reqs": [ "dht", "esp_adc" ],
+            "priv_reqs": [ "spiffs" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "." ]
