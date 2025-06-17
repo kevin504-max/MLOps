@@ -1,3 +1,12 @@
+/**
+ * @file dht_sensor.c
+ * @brief Driver for reading temperature and humidity from a DHT sensor (e.g., DHT22).
+ *
+ * This module initializes the GPIO pin for the DHT sensor and creates a FreeRTOS task
+ * to periodically read temperature and humidity data. It sends the readings to
+ * the main system via an external callback function.
+ */
+
 #include "dht_sensor.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -7,13 +16,23 @@
 
 #define DHT_LOG_TAG "DHT_SENSOR"
 
-// Função externa para enviar dados ao sistema principal
+// External function to update sensor data in the main system
 extern void update_dht_data(float temperature, float humidity);
 
-// Pino e tipo de sensor configuráveis por macros (pode vir do menuconfig futuramente)
+// GPIO pin connected to the DHT sensor data line
 #define DHT_GPIO_PIN GPIO_NUM_4
+
+// Type of the DHT sensor (DHT11, DHT22, etc.)
 #define DHT_SENSOR_TYPE DHT_TYPE_DHT22
 
+/**
+ * @brief Task that reads data from the DHT sensor every 10 seconds.
+ * 
+ * Reads temperature and humidity, logs the results, and calls
+ * the external update function.
+ * 
+ * @param pvParameters Unused task parameter.
+ */
 static void dht_read_task(void *pvParameters) {
     float temperature = 0.0f;
     float humidity = 0.0f;
@@ -30,10 +49,15 @@ static void dht_read_task(void *pvParameters) {
             ESP_LOGE(DHT_LOG_TAG, "Failed to read data from DHT sensor");
         }
 
-        vTaskDelay(pdMS_TO_TICKS(2000));  // Aguarda 2 segundos entre leituras
+        vTaskDelay(pdMS_TO_TICKS(10000));  // Delay 10 seconds between reads
     }
 }
 
+/**
+ * @brief Initializes the GPIO pin for the DHT sensor.
+ * 
+ * Configures the pin as input/output with pull-up enabled.
+ */
 void dht_sensor_init(void) {
     gpio_config_t io_conf = {
         .pin_bit_mask = (1ULL << DHT_GPIO_PIN),
@@ -47,6 +71,9 @@ void dht_sensor_init(void) {
     gpio_set_pull_mode(DHT_GPIO_PIN, GPIO_PULLUP_ONLY);
 }
 
+/**
+ * @brief Starts the FreeRTOS task that reads the DHT sensor.
+ */
 void dht_start_read_task(void) {
     xTaskCreate(dht_read_task, "dht_read_task", 4096, NULL, 5, NULL);
 }
