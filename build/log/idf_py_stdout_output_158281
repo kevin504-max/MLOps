@@ -1,0 +1,116 @@
+[0/1] Re-running CMake...
+-- Component directory /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/components/esp-idf-lib/components does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/components/esp-idf-lib/devtools does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/components/esp-idf-lib/docs does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/components/esp-idf-lib/examples does not contain a CMakeLists.txt file. No component will be added
+-- Component directory /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/components/esp-idf-lib does not contain a CMakeLists.txt file. No component will be added
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "seu_projeto" version: 214240b-dirty
+-- Adding linker script /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script /home/kevin_lucas/esp/v5.4/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx dht driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_idf_lib_helpers esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /home/kevin_lucas/esp/v5.4/esp-idf/components/app_trace /home/kevin_lucas/esp/v5.4/esp-idf/components/app_update /home/kevin_lucas/esp/v5.4/esp-idf/components/bootloader /home/kevin_lucas/esp/v5.4/esp-idf/components/bootloader_support /home/kevin_lucas/esp/v5.4/esp-idf/components/bt /home/kevin_lucas/esp/v5.4/esp-idf/components/cmock /home/kevin_lucas/esp/v5.4/esp-idf/components/console /home/kevin_lucas/esp/v5.4/esp-idf/components/cxx /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/components/dht /home/kevin_lucas/esp/v5.4/esp-idf/components/driver /home/kevin_lucas/esp/v5.4/esp-idf/components/efuse /home/kevin_lucas/esp/v5.4/esp-idf/components/esp-tls /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_adc /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_app_format /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_bootloader_format /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_coex /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_common /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_ana_cmpr /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_cam /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_dac /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_gpio /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_gptimer /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_i2c /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_i2s /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_isp /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_jpeg /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_ledc /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_mcpwm /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_parlio /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_pcnt /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_ppa /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_rmt /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_sdio /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_sdm /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_sdmmc /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_sdspi /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_spi /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_touch_sens /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_tsens /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_uart /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_driver_usb_serial_jtag /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_eth /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_event /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_gdbstub /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_hid /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_client /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_https_ota /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_https_server /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_hw_support /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/components/esp_idf_lib_helpers /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_lcd /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_local_ctrl /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_mm /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_netif /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_netif_stack /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_partition /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_phy /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_pm /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_psram /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_ringbuf /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_rom /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_security /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_timer /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_vfs_console /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_wifi /home/kevin_lucas/esp/v5.4/esp-idf/components/espcoredump /home/kevin_lucas/esp/v5.4/esp-idf/components/esptool_py /home/kevin_lucas/esp/v5.4/esp-idf/components/fatfs /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos /home/kevin_lucas/esp/v5.4/esp-idf/components/hal /home/kevin_lucas/esp/v5.4/esp-idf/components/heap /home/kevin_lucas/esp/v5.4/esp-idf/components/http_parser /home/kevin_lucas/esp/v5.4/esp-idf/components/idf_test /home/kevin_lucas/esp/v5.4/esp-idf/components/ieee802154 /home/kevin_lucas/esp/v5.4/esp-idf/components/json /home/kevin_lucas/esp/v5.4/esp-idf/components/log /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main /home/kevin_lucas/esp/v5.4/esp-idf/components/mbedtls /home/kevin_lucas/esp/v5.4/esp-idf/components/mqtt /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib /home/kevin_lucas/esp/v5.4/esp-idf/components/nvs_flash /home/kevin_lucas/esp/v5.4/esp-idf/components/nvs_sec_provider /home/kevin_lucas/esp/v5.4/esp-idf/components/openthread /home/kevin_lucas/esp/v5.4/esp-idf/components/partition_table /home/kevin_lucas/esp/v5.4/esp-idf/components/perfmon /home/kevin_lucas/esp/v5.4/esp-idf/components/protobuf-c /home/kevin_lucas/esp/v5.4/esp-idf/components/protocomm /home/kevin_lucas/esp/v5.4/esp-idf/components/pthread /home/kevin_lucas/esp/v5.4/esp-idf/components/rt /home/kevin_lucas/esp/v5.4/esp-idf/components/sdmmc /home/kevin_lucas/esp/v5.4/esp-idf/components/soc /home/kevin_lucas/esp/v5.4/esp-idf/components/spi_flash /home/kevin_lucas/esp/v5.4/esp-idf/components/spiffs /home/kevin_lucas/esp/v5.4/esp-idf/components/tcp_transport /home/kevin_lucas/esp/v5.4/esp-idf/components/ulp /home/kevin_lucas/esp/v5.4/esp-idf/components/unity /home/kevin_lucas/esp/v5.4/esp-idf/components/usb /home/kevin_lucas/esp/v5.4/esp-idf/components/vfs /home/kevin_lucas/esp/v5.4/esp-idf/components/wear_levelling /home/kevin_lucas/esp/v5.4/esp-idf/components/wifi_provisioning /home/kevin_lucas/esp/v5.4/esp-idf/components/wpa_supplicant /home/kevin_lucas/esp/v5.4/esp-idf/components/xtensa
+-- Configuring done (4.3s)
+-- Generating done (0.4s)
+-- Build files have been written to: /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build
+[1/13] Performing build step for 'bootloader'
+[1/1] cd /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/bootloader/esp-idf/esptool_py && /home/kevin_lucas/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/kevin_lucas/esp/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/bootloader/bootloader.bin
+Bootloader binary size 0x6560 bytes. 0xaa0 bytes (9%) free.
+[2/13] No install step for 'bootloader'
+[3/13] Completed 'bootloader'
+[4/13] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[5/13] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[6/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/core/storage/csv_logger/csv_logger.c.obj
+[7/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[8/13] Linking C static library esp-idf/main/libmain.a
+[9/13] Generating ld/sections.ld
+[10/13] Linking CXX executable seu_projeto.elf
+[11/13] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/seu_projeto.bin
+[12/13] cd /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/esp-idf/esptool_py && /home/kevin_lucas/.espressif/python_env/idf5.4_py3.12_env/bin/python /home/kevin_lucas/esp/v5.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/partition_table/partition-table.bin /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/seu_projeto.bin
+seu_projeto.bin binary size 0xc84f0 bytes. Smallest app partition is 0x100000 bytes. 0x37b10 bytes (22%) free.
+[12/13] cd /home/kevin_lucas/esp/v5.4/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/kevin_lucas/esp/v5.4/esp-idf -D "SERIAL_TOOL=/home/kevin_lucas/.espressif/python_env/idf5.4_py3.12_env/bin/python;;/home/kevin_lucas/esp/v5.4/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build -P /home/kevin_lucas/esp/v5.4/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 32MB 0x1000 bootloader/bootloader.bin 0x10000 seu_projeto.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.8.1
+Serial port /dev/ttyUSB0
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: f4:65:0b:46:cc:40
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+WARNING: Flasher stub doesn't fully support flash size larger than 16MB, in case of failure use --no-stub.
+WARNING: Set --flash_size 32MB is larger than the available flash size of 4MB.
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000d8fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000d000 to 0x0000efff...
+SHA digest in image updated
+Compressed 25952 bytes to 16368...
+Writing at 0x00001000... (100 %)
+Wrote 25952 bytes (16368 compressed) at 0x00001000 in 0.8 seconds (effective 266.4 kbit/s)...
+Hash of data verified.
+Compressed 820464 bytes to 517916...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cb26... (6 %)
+Writing at 0x00025724... (9 %)
+Writing at 0x00030c35... (12 %)
+Writing at 0x000364fd... (15 %)
+Writing at 0x0003c57b... (18 %)
+Writing at 0x00042388... (21 %)
+Writing at 0x00048024... (25 %)
+Writing at 0x0004d996... (28 %)
+Writing at 0x0005356b... (31 %)
+Writing at 0x00059208... (34 %)
+Writing at 0x0005f1bf... (37 %)
+Writing at 0x00064f43... (40 %)
+Writing at 0x0006b350... (43 %)
+Writing at 0x0007046e... (46 %)
+Writing at 0x000757b7... (50 %)
+Writing at 0x0007af61... (53 %)
+Writing at 0x00080764... (56 %)
+Writing at 0x00085ab1... (59 %)
+Writing at 0x0008b105... (62 %)
+Writing at 0x0009101a... (65 %)
+Writing at 0x000967af... (68 %)
+Writing at 0x0009c564... (71 %)
+Writing at 0x000a1f5e... (75 %)
+Writing at 0x000a7983... (78 %)
+Writing at 0x000add17... (81 %)
+Writing at 0x000b7f22... (84 %)
+Writing at 0x000bdb74... (87 %)
+Writing at 0x000c3c40... (90 %)
+Writing at 0x000c9801... (93 %)
+Writing at 0x000cfb8d... (96 %)
+Writing at 0x000d4e0f... (100 %)
+Wrote 820464 bytes (517916 compressed) at 0x00010000 in 13.0 seconds (effective 504.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 117...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (117 compressed) at 0x00008000 in 0.1 seconds (effective 459.0 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.1 seconds (effective 1031.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
