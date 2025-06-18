@@ -29,20 +29,21 @@
 #include "esp_netif.h"
 #include "esp_sntp.h"
 
-// =========================== APP MAIN ===========================
-
 void app_main() {
     nvs_flash_init();
     wifi_connect();
     initialize_sntp();
-    wait_for_time_sync();
+    if (!wait_for_time_sync()) {
+        ESP_LOGE(TAG, "System time not synchronized, aborting startup.");
+        return;
+    }
 
     shared_sensor_data_init();
+    init_spiffs();
 
     create_csv_filename();
-
-    init_spiffs();
     init_csv_file();
+    start_csv_writer_task();
 
     adc_oneshot_unit_init_cfg_t init_config = {
         .unit_id = ADC_UNIT_1,
@@ -59,8 +60,6 @@ void app_main() {
     dht_start_read_task();
     mq4_start_read_task();
     mq7_start_read_task();
-
-    start_csv_writer_task();
 
     ESP_LOGI(TAG, "Application started successfully");
 }
