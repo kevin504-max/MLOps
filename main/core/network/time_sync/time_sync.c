@@ -35,7 +35,7 @@ void initialize_sntp(void) {
  * (by checking if the year is later than 2020). It waits up to 10 attempts,
  * with a 2-second delay between each attempt. Logs the result after finishing.
  */
-void wait_for_time_sync(void) {
+bool wait_for_time_sync(void) {
     time_t now;
     struct tm timeinfo;
     int retry = 0;
@@ -54,9 +54,12 @@ void wait_for_time_sync(void) {
         localtime_r(&now, &timeinfo);
     }
 
-    if (retry < retry_count) {
+    bool wifi_connected = (retry < retry_count);
+    if (wifi_connected) {
         ESP_LOGI(TAG, "Time synchronized: %s", asctime(&timeinfo));
     } else {
         ESP_LOGE(TAG, "Failed to synchronize time");
     }
+
+    return wifi_connected;
 }

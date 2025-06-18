@@ -9,6 +9,8 @@
 #ifndef TIME_SYNC_H
 #define TIME_SYNC_H
 
+#include <stdbool.h>
+
 /**
  * @brief Initializes the SNTP client.
  *
@@ -22,6 +24,6 @@ void initialize_sntp(void);
  * Polls the system time and blocks until it is correctly set
  * or the retry limit is reached.
  */
-void wait_for_time_sync(void);
+bool wait_for_time_sync(void);
 
 #endif // TIME_SYNC_H
