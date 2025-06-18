@@ -32,7 +32,7 @@ void create_csv_filename(void) {
     time(&now);
     localtime_r(&now, &timeinfo);
 
-    strftime(csv_file_path, sizeof(csv_file_path), "/spiffs/data_%y_%m_%d-%H_%M.csv", &timeinfo);
+    strftime(csv_file_path, sizeof(csv_file_path), "/spiffs/data_%Y_%m_%d_%H_%M_%S.csv", &timeinfo);
     ESP_LOGI(TAG, "CSV file path: %s", csv_file_path);
 }
 
