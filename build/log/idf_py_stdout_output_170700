@@ -1,0 +1,880 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 23:08:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 00100000[0m
+[0;32mI (79) boot:  3 spiffs           Unknown data     01 82 00110000 00070000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ba08h (113160) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=0002ba30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=0002ba54 vaddr=3ffb0000 size=03fb8h ( 16312) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=0002fa14 vaddr=40080000 size=00604h (  1540) load[0m
+[0;32mI (148) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=91acch (596684) map[0m
+[0;32mI (358) esp_image: segment 5: paddr=000c1af4 vaddr=40080604 size=1715ch ( 94556) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (417) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) app_init: Application information:[0m
+[0;32mI (425) app_init: Project name:     seu_projeto[0m
+[0;32mI (430) app_init: App version:      cf4a7ca-dirty[0m
+[0;32mI (434) app_init: Compile time:     Jun 17 2025 21:14:40[0m
+[0;32mI (439) app_init: ELF file SHA256:  ada5837fb...[0m
+[0;32mI (443) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (448) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (451) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (455) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (460) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (466) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (471) heap_init: At 3FFB8808 len 000277F8 (157 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (487) heap_init: At 40097760 len 000088A0 (34 KiB): IRAM[0m
+[0;32mI (494) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: dio[0m
+[0;33mW (499) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (512) main_task: Started on CPU0[0m
+[0;32mI (522) main_task: Calling app_main()[0m
+[0;32mI (552) wifi:wifi driver task: 3ffc0670, prio:23, stack:6656, core=0[0m
+[0;32mI (562) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (562) wifi:wifi certification version: v7.0[0m
+[0;32mI (562) wifi:config NVS flash: enabled[0m
+[0;32mI (562) wifi:config nano formatting: disabled[0m
+[0;32mI (562) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (572) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (572) wifi:Init management short buffer num: 32[0m
+[0;32mI (582) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (582) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (592) wifi:Init static rx buffer num: 10[0m
+[0;32mI (592) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (592) wifi_init: rx ba win: 6[0m
+[0;32mI (602) wifi_init: accept mbox: 6[0m
+[0;32mI (602) wifi_init: tcpip mbox: 32[0m
+[0;32mI (602) wifi_init: udp mbox: 6[0m
+[0;32mI (602) wifi_init: tcp mbox: 6[0m
+[0;32mI (612) wifi_init: tcp tx win: 5760[0m
+[0;32mI (612) wifi_init: tcp rx win: 5760[0m
+[0;32mI (612) wifi_init: tcp mss: 1440[0m
+[0;32mI (622) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (622) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (632) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (632) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (722) wifi:mode : sta (f4:65:0b:46:cc:40)[0m
+[0;32mI (722) wifi:enable tsf[0m
+[0;32mI (732) WIFI: Wi-Fi initialization done.[0m
+[0;32mI (732) TIME_SYNC: Initializing SNTP[0m
+[0;32mI (732) WIFI: Wi-Fi started, connecting...[0m
+[0;32mI (732) TIME_SYNC: Waiting for system time to be set... (1/10)[0m
+[0;32mI (742) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (742) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (782) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (802) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (922) wifi:connected with CATIVEIRO, aid = 8, channel 11, BW20, bssid = e8:45:8b:36:88:10[0m
+[0;32mI (922) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (922) wifi:pm start, type: 1[0m
+
+[0;32mI (922) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (932) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (942) WIFI: Connected to AP[0m
+[0;32mI (1452) wifi:<ba-add>idx:0 (ifx:0, e8:45:8b:36:88:10), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2742) TIME_SYNC: Waiting for system time to be set... (2/10)[0m
+[0;32mI (2752) esp_netif_handlers: sta ip: 192.168.15.57, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (2752) WIFI: Got IP:192.168.15.57[0m
+[0;32mI (3552) wifi:<ba-add>idx:1 (ifx:0, e8:45:8b:36:88:10), tid:7, ssn:9, winSize:64[0m
+[0;32mI (4742) TIME_SYNC: Waiting for system time to be set... (3/10)[0m
+[0;32mI (6742) TIME_SYNC: Time synchronized: Tue Jun 17 21:24:39 2025[0m
+
+[0;32mI (6742) SPIFFS: Initializing SPIFFS[0m
+[0;32mI (6772) SPIFFS: Partition size: total: 414401 bytes, used: 117217 bytes[0m
+[1;31mE (6792) SPIFFS: SPIFFS mount check failed[0m
+[0;32mI (6792) CSV_LOGGER: CSV file path: /spiffs/data_2025_06_17_21_24_39.csv[0m
+[0;32mI (6792) CSV_LOGGER: Initializing CSV file: /spiffs/data_2025_06_17_21_24_39.csv[0m
+[0;32mI (6862) CSV_LOGGER: CSV file initialized successfully[0m
+[0;32mI (6892) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6892) MQ4_SENSOR: MQ4 ADC channel configured successfully[0m
+[0;32mI (6922) MQ7_SENSOR: MQ7 ADC channel configured successfully[0m
+[1;31mE (6942) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (6942) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;32mI (6982) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (6982) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (6982) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (6982) MAIN_LOG: Application started successfully[0m
+[0;32mI (6982) SUPERVISOR: Supervisor started. Waiting 1 minutes before shutdown...[0m
+[0;32mI (6992) main_task: Returned from app_main()[0m
+[0;32mI (16962) DHT_SENSOR: Temperature: 21.9°C, Humidity: 59.7%[0m
+[0;32mI (16982) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (16992) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (16992) CSV_WRITER: Sensor data recorded: T=21.90°C, H=59.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (26982) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (26982) DHT_SENSOR: Temperature: 21.9°C, Humidity: 59.7%[0m
+[0;32mI (26992) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (27002) CSV_WRITER: Sensor data recorded: T=21.90°C, H=59.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (36982) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (36992) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (37002) DHT_SENSOR: Temperature: 21.9°C, Humidity: 59.9%[0m
+[0;32mI (37012) CSV_WRITER: Sensor data recorded: T=21.90°C, H=59.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (46982) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (46992) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (47022) DHT_SENSOR: Temperature: 21.9°C, Humidity: 59.9%[0m
+[0;32mI (47112) CSV_WRITER: Sensor data recorded: T=21.90°C, H=59.90%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (56982) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (56992) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (57042) DHT_SENSOR: Temperature: 21.9°C, Humidity: 59.8%[0m
+[0;32mI (57122) CSV_WRITER: Sensor data recorded: T=21.90°C, H=59.80%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (66982) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (66992) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (67002) SUPERVISOR: Merging CSV files...[0m
+[0;32mI (67062) DHT_SENSOR: Temperature: 21.9°C, Humidity: 59.8%[0m
+[0;32mI (67072) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_22.csv[0m
+[0;32mI (67302) CSV_WRITER: Sensor data recorded: T=21.90°C, H=59.80%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (67432) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_42.csv[0m
+[0;32mI (67672) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_01.csv[0m
+[0;32mI (67852) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_44.csv[0m
+[0;32mI (67862) CSV_MERGER: Merging file: /spiffs/data_69_12_31-21_00.csv[0m
+[0;32mI (68002) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_25.csv[0m
+[0;32mI (68222) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_49.csv[0m
+[0;32mI (68462) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_20_56_S.csv[0m
+[0;32mI (68472) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_27.csv[0m
+[0;32mI (68742) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_02.csv[0m
+[0;32mI (69292) CSV_MERGER: Merging file: /spiffs/data_1969_12_31_21_00_S.csv[0m
+[0;32mI (69432) CSV_MERGER: Merging file: /spiffs/data_25_06_17-22_45.csv[0m
+[0;32mI (70992) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_07.csv[0m
+[0;32mI (71022) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_01_S.csv[0m
+[0;32mI (71102) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_02_34.csv[0m
+[0;32mI (71102) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_29.csv[0m
+[0;32mI (71372) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_08.csv[0m
+[0;32mI (71562) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_14.csv[0m
+[0;32mI (72752) CSV_MERGER: Merging file: /spiffs/data_25_06_18-02_09.csv[0m
+[0;32mI (72952) CSV_MERGER: Merging file: /spiffs/data_25_06_18-02_11.csv[0m
+[0;32mI (73192) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_21.csv[0m
+[0;32mI (73312) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_37.csv[0m
+[0;32mI (74192) CSV_MERGER: Merging file: /spiffs/data_70_01_01-00_00.csv[0m
+[0;32mI (74312) CSV_MERGER: Merging file: /spiffs/data_25_06_17-21_12.csv[0m
+[0;32mI (74492) CSV_MERGER: Merging file: /spiffs/data_25_06_17-21_13.csv[0m
+[0;32mI (74522) CSV_MERGER: Merging file: /spiffs/data_25_06_17-22_44.csv[0m
+[0;32mI (74522) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_07.csv[0m
+[0;32mI (74632) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_24_10.csv[0m
+[0;32mI (74632) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_33.csv[0m
+[0;32mI (75352) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_24_39.csv[0m
+[0;32mI (75362) CSV_MERGER: Merging file: /spiffs/data_25_06_17-22_55.csv[0m
+[0;32mI (76232) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_22.csv[0m
+[0;32mI (76722) CSV_MERGER: Merged 32 files into /spiffs/merged.csv[0m
+[0;32mI (76722) SUPERVISOR: Restarting device...[0m
+[0;32mI (76982) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (76992) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (77082) DHT_SENSOR: Temperature: 21.9°C, Humidity: 59.8%[0m
+[0;32mI (77322) CSV_WRITER: Sensor data recorded: T=21.90°C, H=59.80%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (78722) wifi:state: run -> init (0x0)[0m
+[0;32mI (78732) wifi:pm stop, total sleep time: 72733589 us / 77804750 us[0m
+
+[0;32mI (78732) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (78732) wifi:<ba-del>idx:1, tid:7[0m
+[0;32mI (78732) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (78742) WIFI: Disconnected, retrying...[0m
+[0;32mI (78782) wifi:flush txq[0m
+[0;32mI (78782) wifi:stop sw txq[0m
+[0;32mI (78782) wifi:lmac stop hw txq[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 23:08:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 00100000[0m
+[0;32mI (79) boot:  3 spiffs           Unknown data     01 82 00110000 00070000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ba08h (113160) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=0002ba30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=0002ba54 vaddr=3ffb0000 size=03fb8h ( 16312) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=0002fa14 vaddr=40080000 size=00604h (  1540) load[0m
+[0;32mI (147) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=91acch (596684) map[0m
+[0;32mI (358) esp_image: segment 5: paddr=000c1af4 vaddr=40080604 size=1715ch ( 94556) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (417) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) app_init: Application information:[0m
+[0;32mI (425) app_init: Project name:     seu_projeto[0m
+[0;32mI (429) app_init: App version:      cf4a7ca-dirty[0m
+[0;32mI (434) app_init: Compile time:     Jun 17 2025 21:14:40[0m
+[0;32mI (439) app_init: ELF file SHA256:  ada5837fb...[0m
+[0;32mI (443) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (447) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (451) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (455) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (459) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (466) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFB8808 len 000277F8 (157 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (487) heap_init: At 40097760 len 000088A0 (34 KiB): IRAM[0m
+[0;32mI (493) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: dio[0m
+[0;33mW (498) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (512) main_task: Started on CPU0[0m
+[0;32mI (522) main_task: Calling app_main()[0m
+[0;32mI (552) wifi:wifi driver task: 3ffc0670, prio:23, stack:6656, core=0[0m
+[0;32mI (562) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (562) wifi:wifi certification version: v7.0[0m
+[0;32mI (562) wifi:config NVS flash: enabled[0m
+[0;32mI (562) wifi:config nano formatting: disabled[0m
+[0;32mI (562) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (572) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (572) wifi:Init management short buffer num: 32[0m
+[0;32mI (582) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (582) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (592) wifi:Init static rx buffer num: 10[0m
+[0;32mI (592) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (592) wifi_init: rx ba win: 6[0m
+[0;32mI (602) wifi_init: accept mbox: 6[0m
+[0;32mI (602) wifi_init: tcpip mbox: 32[0m
+[0;32mI (602) wifi_init: udp mbox: 6[0m
+[0;32mI (602) wifi_init: tcp mbox: 6[0m
+[0;32mI (612) wifi_init: tcp tx win: 5760[0m
+[0;32mI (612) wifi_init: tcp rx win: 5760[0m
+[0;32mI (612) wifi_init: tcp mss: 1440[0m
+[0;32mI (622) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (622) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (632) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (632) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (722) wifi:mode : sta (f4:65:0b:46:cc:40)[0m
+[0;32mI (722) wifi:enable tsf[0m
+[0;32mI (732) WIFI: Wi-Fi initialization done.[0m
+[0;32mI (732) TIME_SYNC: Initializing SNTP[0m
+[0;32mI (732) WIFI: Wi-Fi started, connecting...[0m
+[0;32mI (732) TIME_SYNC: Time synchronized: Tue Jun 17 21:25:52 2025[0m
+
+[0;32mI (742) SPIFFS: Initializing SPIFFS[0m
+[0;32mI (742) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (752) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (782) SPIFFS: Partition size: total: 414401 bytes, used: 204063 bytes[0m
+[1;31mE (802) SPIFFS: SPIFFS mount check failed[0m
+[0;32mI (812) CSV_LOGGER: CSV file path: /spiffs/data_2025_06_17_21_25_52.csv[0m
+[0;32mI (812) CSV_LOGGER: Initializing CSV file: /spiffs/data_2025_06_17_21_25_52.csv[0m
+[0;32mI (812) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (852) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (992) wifi:connected with CATIVEIRO, aid = 8, channel 11, BW20, bssid = e8:45:8b:36:88:10[0m
+[0;32mI (992) wifi:security: WPA2-PSK, phy: bgn, rssi: -49[0m
+[0;32mI (1002) wifi:pm start, type: 1[0m
+
+[0;32mI (1002) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1012) CSV_LOGGER: CSV file initialized successfully[0m
+[0;32mI (1012) WIFI: Connected to AP[0m
+[0;32mI (1022) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (1022) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1032) MQ4_SENSOR: MQ4 ADC channel configured successfully[0m
+[0;32mI (1042) MQ7_SENSOR: MQ7 ADC channel configured successfully[0m
+[0;32mI (1072) DHT_SENSOR: Temperature: 21.9°C, Humidity: 59.7%[0m
+[0;32mI (1072) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (1072) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (1072) MAIN_LOG: Application started successfully[0m
+[0;32mI (1082) SUPERVISOR: Supervisor started. Waiting 1 minutes before shutdown...[0m
+[0;32mI (1082) main_task: Returned from app_main()[0m
+[0;32mI (1092) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1302) wifi:<ba-add>idx:0 (ifx:0, e8:45:8b:36:88:10), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2342) esp_netif_handlers: sta ip: 192.168.15.57, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (2342) WIFI: Got IP:192.168.15.57[0m
+[0;32mI (2542) wifi:<ba-add>idx:1 (ifx:0, e8:45:8b:36:88:10), tid:7, ssn:6, winSize:64[0m
+[0;32mI (11032) CSV_WRITER: Sensor data recorded: T=21.90°C, H=59.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (11092) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (11092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (11092) DHT_SENSOR: Temperature: 21.9°C, Humidity: 59.7%[0m
+[0;32mI (21092) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (21092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (21112) DHT_SENSOR: Temperature: 21.9°C, Humidity: 59.9%[0m
+[0;32mI (21182) CSV_WRITER: Sensor data recorded: T=21.90°C, H=59.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (31092) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (31092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (31132) DHT_SENSOR: Temperature: 21.9°C, Humidity: 60.0%[0m
+[0;32mI (31192) CSV_WRITER: Sensor data recorded: T=21.90°C, H=60.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (41092) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (41092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (41152) DHT_SENSOR: Temperature: 21.9°C, Humidity: 60.0%[0m
+[0;32mI (41202) CSV_WRITER: Sensor data recorded: T=21.90°C, H=60.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (51092) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (51092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (51172) DHT_SENSOR: Temperature: 21.9°C, Humidity: 60.0%[0m
+[0;32mI (51312) CSV_WRITER: Sensor data recorded: T=21.90°C, H=60.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (61092) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (61092) SUPERVISOR: Merging CSV files...[0m
+[0;32mI (61092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (61192) DHT_SENSOR: Temperature: 21.9°C, Humidity: 60.1%[0m
+[0;32mI (61422) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_42.csv[0m
+[0;32mI (61432) CSV_WRITER: Sensor data recorded: T=21.90°C, H=60.10%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (61742) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_01.csv[0m
+[0;32mI (61942) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_44.csv[0m
+[0;32mI (61962) CSV_MERGER: Merging file: /spiffs/data_69_12_31-21_00.csv[0m
+[0;32mI (62072) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_25.csv[0m
+[0;32mI (62282) CSV_MERGER: Merging file: /spiffs/data_25_06_17-22_33.csv[0m
+[0;32mI (63942) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_49.csv[0m
+[0;32mI (64172) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_20_56_S.csv[0m
+[0;32mI (64192) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_27.csv[0m
+[0;32mI (64602) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_02.csv[0m
+[0;32mI (65212) CSV_MERGER: Merging file: /spiffs/data_1969_12_31_21_00_S.csv[0m
+[0;32mI (65382) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_01_S.csv[0m
+[0;32mI (65462) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_07.csv[0m
+[0;32mI (65572) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_02_34.csv[0m
+[0;32mI (65572) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_29.csv[0m
+[0;32mI (65792) CSV_MERGER: Merging file: /spiffs/data_25_06_17-22_55.csv[0m
+[0;32mI (66782) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_08.csv[0m
+[0;32mI (67022) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_14.csv[0m
+[0;32mI (68302) CSV_MERGER: Merging file: /spiffs/data_25_06_18-02_09.csv[0m
+[0;32mI (68512) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_21.csv[0m
+[0;32mI (68642) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_37.csv[0m
+[0;32mI (69462) CSV_MERGER: Merging file: /spiffs/data_70_01_01-00_00.csv[0m
+[0;32mI (69592) CSV_MERGER: Merging file: /spiffs/data_25_06_18-02_11.csv[0m
+[0;32mI (69832) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_25_52.csv[0m
+[0;32mI (69842) CSV_MERGER: Merging file: /spiffs/data_25_06_17-22_44.csv[0m
+[0;32mI (69852) CSV_MERGER: Merging file: /spiffs/data_25_06_17-21_12.csv[0m
+[0;32mI (70082) CSV_MERGER: Merging file: /spiffs/data_25_06_17-21_13.csv[0m
+[0;32mI (70192) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_07.csv[0m
+[0;32mI (70222) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_24_10.csv[0m
+[0;32mI (70222) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_33.csv[0m
+[0;32mI (70812) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_24_39.csv[0m
+[0;32mI (70832) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_29.csv[0m
+[0;32mI (71052) CSV_MERGER: Merging file: /spiffs/data_25_06_17-22_55.csv[0m
+[0;32mI (71092) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (71092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (71212) DHT_SENSOR: Temperature: 22.0°C, Humidity: 60.1%[0m
+[0;32mI (71562) CSV_WRITER: Sensor data recorded: T=22.00°C, H=60.10%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (72192) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_22.csv[0m
+[0;32mI (72532) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_42.csv[0m
+[0;32mI (72992) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_01.csv[0m
+[0;32mI (73222) CSV_MERGER: Merged 36 files into /spiffs/merged.csv[0m
+[0;32mI (73222) SUPERVISOR: Restarting device...[0m
+[0;32mI (75222) wifi:state: run -> init (0x0)[0m
+[0;32mI (75232) wifi:pm stop, total sleep time: 69226548 us / 74227042 us[0m
+
+[0;32mI (75232) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (75232) wifi:<ba-del>idx:1, tid:7[0m
+[0;32mI (75232) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (75242) WIFI: Disconnected, retrying...[0m
+[0;32mI (75272) wifi:flush txq[0m
+[0;32mI (75272) wifi:stop sw txq[0m
+[0;32mI (75272) wifi:lmac stop hw txq[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 23:08:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 00100000[0m
+[0;32mI (79) boot:  3 spiffs           Unknown data     01 82 00110000 00070000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ba08h (113160) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=0002ba30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=0002ba54 vaddr=3ffb0000 size=03fb8h ( 16312) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=0002fa14 vaddr=40080000 size=00604h (  1540) load[0m
+[0;32mI (147) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=91acch (596684) map[0m
+[0;32mI (358) esp_image: segment 5: paddr=000c1af4 vaddr=40080604 size=1715ch ( 94556) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (417) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) app_init: Application information:[0m
+[0;32mI (425) app_init: Project name:     seu_projeto[0m
+[0;32mI (429) app_init: App version:      cf4a7ca-dirty[0m
+[0;32mI (434) app_init: Compile time:     Jun 17 2025 21:14:40[0m
+[0;32mI (439) app_init: ELF file SHA256:  ada5837fb...[0m
+[0;32mI (443) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (447) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (451) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (455) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (459) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (466) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFB8808 len 000277F8 (157 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (487) heap_init: At 40097760 len 000088A0 (34 KiB): IRAM[0m
+[0;32mI (493) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: dio[0m
+[0;33mW (498) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (512) main_task: Started on CPU0[0m
+[0;32mI (522) main_task: Calling app_main()[0m
+[0;32mI (552) wifi:wifi driver task: 3ffc0670, prio:23, stack:6656, core=0[0m
+[0;32mI (562) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (562) wifi:wifi certification version: v7.0[0m
+[0;32mI (562) wifi:config NVS flash: enabled[0m
+[0;32mI (562) wifi:config nano formatting: disabled[0m
+[0;32mI (562) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (572) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (572) wifi:Init management short buffer num: 32[0m
+[0;32mI (582) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (582) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (592) wifi:Init static rx buffer num: 10[0m
+[0;32mI (592) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (592) wifi_init: rx ba win: 6[0m
+[0;32mI (602) wifi_init: accept mbox: 6[0m
+[0;32mI (602) wifi_init: tcpip mbox: 32[0m
+[0;32mI (602) wifi_init: udp mbox: 6[0m
+[0;32mI (602) wifi_init: tcp mbox: 6[0m
+[0;32mI (612) wifi_init: tcp tx win: 5760[0m
+[0;32mI (612) wifi_init: tcp rx win: 5760[0m
+[0;32mI (612) wifi_init: tcp mss: 1440[0m
+[0;32mI (622) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (622) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (632) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (632) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (722) wifi:mode : sta (f4:65:0b:46:cc:40)[0m
+[0;32mI (722) wifi:enable tsf[0m
+[0;32mI (732) WIFI: Wi-Fi initialization done.[0m
+[0;32mI (732) TIME_SYNC: Initializing SNTP[0m
+[0;32mI (732) WIFI: Wi-Fi started, connecting...[0m
+[0;32mI (732) TIME_SYNC: Time synchronized: Tue Jun 17 21:27:07 2025[0m
+
+[0;32mI (732) SPIFFS: Initializing SPIFFS[0m
+[0;32mI (742) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (752) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (792) SPIFFS: Partition size: total: 414401 bytes, used: 219625 bytes[0m
+[0;32mI (792) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (802) wifi:state: assoc -> run (0x10)[0m
+[1;31mE (812) SPIFFS: SPIFFS mount check failed[0m
+[0;32mI (812) CSV_LOGGER: CSV file path: /spiffs/data_2025_06_17_21_27_08.csv[0m
+[0;32mI (812) CSV_LOGGER: Initializing CSV file: /spiffs/data_2025_06_17_21_27_08.csv[0m
+[0;32mI (892) CSV_LOGGER: CSV file initialized successfully[0m
+[0;32mI (932) wifi:connected with CATIVEIRO, aid = 8, channel 11, BW20, bssid = e8:45:8b:36:88:10[0m
+[0;32mI (932) wifi:security: WPA2-PSK, phy: bgn, rssi: -50[0m
+[0;32mI (942) wifi:pm start, type: 1[0m
+
+[0;32mI (942) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (952) WIFI: Connected to AP[0m
+[0;32mI (972) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (982) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (982) MQ4_SENSOR: MQ4 ADC channel configured successfully[0m
+[0;32mI (982) MQ7_SENSOR: MQ7 ADC channel configured successfully[0m
+[0;32mI (1052) DHT_SENSOR: Temperature: 21.9°C, Humidity: 60.1%[0m
+[0;32mI (1052) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (1062) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (1062) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (1062) MAIN_LOG: Application started successfully[0m
+[0;32mI (1062) SUPERVISOR: Supervisor started. Waiting 1 minutes before shutdown...[0m
+[0;32mI (1072) main_task: Returned from app_main()[0m
+[0;32mI (1282) wifi:<ba-add>idx:0 (ifx:0, e8:45:8b:36:88:10), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2452) esp_netif_handlers: sta ip: 192.168.15.57, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (2452) WIFI: Got IP:192.168.15.57[0m
+[0;32mI (2822) wifi:<ba-add>idx:1 (ifx:0, e8:45:8b:36:88:10), tid:7, ssn:8, winSize:64[0m
+[0;32mI (11072) DHT_SENSOR: Temperature: 21.9°C, Humidity: 60.1%[0m
+[0;32mI (11072) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (11072) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (11212) CSV_WRITER: Sensor data recorded: T=21.90°C, H=60.10%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (21092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (21092) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (21092) DHT_SENSOR: Temperature: 22.0°C, Humidity: 60.0%[0m
+[0;32mI (21342) CSV_WRITER: Sensor data recorded: T=22.00°C, H=60.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (31092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (31092) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (31122) DHT_SENSOR: Temperature: 21.9°C, Humidity: 60.1%[0m
+[0;32mI (31482) CSV_WRITER: Sensor data recorded: T=21.90°C, H=60.10%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (41092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (41092) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (41142) DHT_SENSOR: Temperature: 21.9°C, Humidity: 60.0%[0m
+[0;32mI (41622) CSV_WRITER: Sensor data recorded: T=21.90°C, H=60.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (51092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (51092) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (51162) DHT_SENSOR: Temperature: 21.9°C, Humidity: 60.0%[0m
+[0;32mI (51772) CSV_WRITER: Sensor data recorded: T=21.90°C, H=60.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (61082) SUPERVISOR: Merging CSV files...[0m
+[1;31mE (61092) MQ4_SENSOR: ADC read failed: ESP_ERR_TIMEOUT[0m
+[0;32mI (61092) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (61182) DHT_SENSOR: Temperature: 22.0°C, Humidity: 60.0%[0m
+[0;32mI (61492) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_44.csv[0m
+[0;32mI (61582) CSV_MERGER: Merging file: /spiffs/data_69_12_31-21_00.csv[0m
+[0;32mI (61682) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_25.csv[0m
+[0;32mI (61902) CSV_WRITER: Sensor data recorded: T=22.00°C, H=60.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (61922) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_49.csv[0m
+[0;32mI (62192) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_20_56_S.csv[0m
+[0;32mI (62202) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_27.csv[0m
+[0;32mI (62652) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_02.csv[0m
+[0;32mI (63252) CSV_MERGER: Merging file: /spiffs/data_1969_12_31_21_00_S.csv[0m
+[0;32mI (63472) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_01_S.csv[0m
+[0;32mI (63482) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_07.csv[0m
+[0;32mI (63582) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_02_34.csv[0m
+[0;32mI (63582) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_29.csv[0m
+[0;32mI (63732) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_08.csv[0m
+[0;32mI (63922) CSV_MERGER: Merging file: /spiffs/data_25_06_18-02_09.csv[0m
+[0;32mI (64052) CSV_MERGER: Merging file: /spiffs/data_25_06_18-02_11.csv[0m
+[0;32mI (64242) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_25_52.csv[0m
+[0;32mI (64262) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_21.csv[0m
+[0;32mI (64372) CSV_MERGER: Merging file: /spiffs/data_25_06_17-21_12.csv[0m
+[0;32mI (64492) CSV_MERGER: Merging file: /spiffs/data_25_06_17-21_13.csv[0m
+[0;32mI (64602) CSV_MERGER: Merging file: /spiffs/data_25_06_17-22_44.csv[0m
+[0;32mI (64602) CSV_MERGER: Merging file: /spiffs/data_25_06_17-22_55.csv[0m
+[0;32mI (65512) CSV_MERGER: Merging file: /spiffs/data_70_01_01-00_00.csv[0m
+[0;32mI (65612) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_27_08.csv[0m
+[0;32mI (65622) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_02_40.csv[0m
+[0;32mI (66482) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_24_10.csv[0m
+[0;32mI (66482) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_33.csv[0m
+[0;32mI (67062) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_24_39.csv[0m
+[0;32mI (67082) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_01.csv[0m
+[0;32mI (67322) CSV_MERGER: Merged 28 files into /spiffs/merged.csv[0m
+[0;32mI (67322) SUPERVISOR: Restarting device...[0m
+[0;32mI (69322) wifi:state: run -> init (0x0)[0m
+[0;32mI (69332) wifi:pm stop, total sleep time: 64287949 us / 68388109 us[0m
+
+[0;32mI (69332) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (69332) wifi:<ba-del>idx:1, tid:7[0m
+[0;32mI (69332) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (69342) WIFI: Disconnected, retrying...[0m
+[0;32mI (69372) wifi:flush txq[0m
+[0;32mI (69372) wifi:stop sw txq[0m
+[0;32mI (69372) wifi:lmac stop hw txq[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 23:08:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 00100000[0m
+[0;32mI (79) boot:  3 spiffs           Unknown data     01 82 00110000 00070000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ba08h (113160) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=0002ba30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=0002ba54 vaddr=3ffb0000 size=03fb8h ( 16312) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=0002fa14 vaddr=40080000 size=00604h (  1540) load[0m
+[0;32mI (147) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=91acch (596684) map[0m
+[0;32mI (358) esp_image: segment 5: paddr=000c1af4 vaddr=40080604 size=1715ch ( 94556) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (417) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) app_init: Application information:[0m
+[0;32mI (425) app_init: Project name:     seu_projeto[0m
+[0;32mI (429) app_init: App version:      cf4a7ca-dirty[0m
+[0;32mI (434) app_init: Compile time:     Jun 17 2025 21:14:40[0m
+[0;32mI (439) app_init: ELF file SHA256:  ada5837fb...[0m
+[0;32mI (443) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (447) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (451) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (455) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (459) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (466) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFB8808 len 000277F8 (157 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (487) heap_init: At 40097760 len 000088A0 (34 KiB): IRAM[0m
+[0;32mI (493) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: dio[0m
+[0;33mW (498) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (512) main_task: Started on CPU0[0m
+[0;32mI (522) main_task: Calling app_main()[0m
+[0;32mI (552) wifi:wifi driver task: 3ffc0670, prio:23, stack:6656, core=0[0m
+[0;32mI (562) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (562) wifi:wifi certification version: v7.0[0m
+[0;32mI (562) wifi:config NVS flash: enabled[0m
+[0;32mI (562) wifi:config nano formatting: disabled[0m
+[0;32mI (562) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (572) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (572) wifi:Init management short buffer num: 32[0m
+[0;32mI (582) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (582) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (592) wifi:Init static rx buffer num: 10[0m
+[0;32mI (592) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (592) wifi_init: rx ba win: 6[0m
+[0;32mI (602) wifi_init: accept mbox: 6[0m
+[0;32mI (602) wifi_init: tcpip mbox: 32[0m
+[0;32mI (602) wifi_init: udp mbox: 6[0m
+[0;32mI (602) wifi_init: tcp mbox: 6[0m
+[0;32mI (612) wifi_init: tcp tx win: 5760[0m
+[0;32mI (612) wifi_init: tcp rx win: 5760[0m
+[0;32mI (612) wifi_init: tcp mss: 1440[0m
+[0;32mI (622) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (622) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (632) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (632) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (722) wifi:mode : sta (f4:65:0b:46:cc:40)[0m
+[0;32mI (722) wifi:enable tsf[0m
+[0;32mI (722) WIFI: Wi-Fi initialization done.[0m
+[0;32mI (732) TIME_SYNC: Initializing SNTP[0m
+[0;32mI (732) WIFI: Wi-Fi started, connecting...[0m
+[0;32mI (732) TIME_SYNC: Time synchronized: Tue Jun 17 21:28:17 2025[0m
+
+[0;32mI (732) SPIFFS: Initializing SPIFFS[0m
+[0;32mI (742) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (752) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (782) SPIFFS: Partition size: total: 414401 bytes, used: 170429 bytes[0m
+[0;32mI (802) wifi:state: auth -> assoc (0x0)[0m
+[1;31mE (812) SPIFFS: SPIFFS mount check failed[0m
+[0;32mI (812) CSV_LOGGER: CSV file path: /spiffs/data_2025_06_17_21_28_17.csv[0m
+[0;32mI (812) CSV_LOGGER: Initializing CSV file: /spiffs/data_2025_06_17_21_28_17.csv[0m
+[0;32mI (822) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (892) CSV_LOGGER: CSV file initialized successfully[0m
+[0;32mI (922) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (922) MQ4_SENSOR: MQ4 ADC channel configured successfully[0m
+[0;32mI (952) wifi:connected with CATIVEIRO, aid = 8, channel 11, BW20, bssid = e8:45:8b:36:88:10[0m
+[0;32mI (952) wifi:security: WPA2-PSK, phy: bgn, rssi: -51[0m
+[0;32mI (972) wifi:pm start, type: 1[0m
+
+[0;32mI (972) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (982) MQ7_SENSOR: MQ7 ADC channel configured successfully[0m
+[0;32mI (1002) DHT_SENSOR: Temperature: 21.9°C, Humidity: 60.1%[0m
+[0;32mI (1032) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1032) WIFI: Connected to AP[0m
+[0;32mI (1032) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (1042) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (1042) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (1042) MAIN_LOG: Application started successfully[0m
+[0;32mI (1042) SUPERVISOR: Supervisor started. Waiting 1 minutes before shutdown...[0m
+[0;32mI (1062) main_task: Returned from app_main()[0m
+[0;32mI (1332) wifi:<ba-add>idx:0 (ifx:0, e8:45:8b:36:88:10), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2482) esp_netif_handlers: sta ip: 192.168.15.57, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (2482) WIFI: Got IP:192.168.15.57[0m
+[0;32mI (2552) wifi:<ba-add>idx:1 (ifx:0, e8:45:8b:36:88:10), tid:7, ssn:9, winSize:64[0m
+[0;32mI (11052) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (11052) DHT_SENSOR: Temperature: 22.0°C, Humidity: 60.0%[0m
+[0;32mI (11052) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (11062) CSV_WRITER: Sensor data recorded: T=21.90°C, H=60.10%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (21052) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (21062) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (21072) DHT_SENSOR: Temperature: 22.0°C, Humidity: 60.1%[0m
+[0;32mI (21082) CSV_WRITER: Sensor data recorded: T=22.00°C, H=60.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (31052) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (31062) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (31092) DHT_SENSOR: Temperature: 22.0°C, Humidity: 60.1%[0m
+[0;32mI (31182) CSV_WRITER: Sensor data recorded: T=22.00°C, H=60.10%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (41052) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (41062) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (41112) DHT_SENSOR: Temperature: 21.9°C, Humidity: 60.1%[0m
+[0;32mI (41192) CSV_WRITER: Sensor data recorded: T=21.90°C, H=60.10%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (51052) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (51062) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (51132) DHT_SENSOR: Temperature: 22.0°C, Humidity: 60.2%[0m
+[0;32mI (51202) CSV_WRITER: Sensor data recorded: T=22.00°C, H=60.20%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (61052) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (61062) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (61072) SUPERVISOR: Merging CSV files...[0m
+[0;32mI (61152) DHT_SENSOR: Temperature: 22.0°C, Humidity: 60.1%[0m
+[0;32mI (61302) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_44.csv[0m
+[0;32mI (61382) CSV_WRITER: Sensor data recorded: T=22.00°C, H=60.10%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (61392) CSV_MERGER: Merging file: /spiffs/data_69_12_31-21_00.csv[0m
+[0;32mI (61502) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_25.csv[0m
+[0;32mI (61742) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_49.csv[0m
+[0;32mI (61972) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_20_56_S.csv[0m
+[0;32mI (61982) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_27.csv[0m
+[0;32mI (62272) CSV_MERGER: Merging file: /spiffs/data_1969_12_31_21_00_S.csv[0m
+[0;32mI (62442) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_01_S.csv[0m
+[0;32mI (62442) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_02_34.csv[0m
+[0;32mI (62442) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_14.csv[0m
+[0;32mI (63662) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_21.csv[0m
+[0;32mI (63772) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_37.csv[0m
+[0;32mI (64592) CSV_MERGER: Merging file: /spiffs/data_70_01_01-00_00.csv[0m
+[0;32mI (64712) CSV_MERGER: Merging file: /spiffs/data_25_06_18-02_11.csv[0m
+[0;32mI (64822) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_25_52.csv[0m
+[0;32mI (64942) CSV_MERGER: Merging file: /spiffs/data_25_06_17-22_44.csv[0m
+[0;32mI (64962) CSV_MERGER: Merging file: /spiffs/data_25_06_17-21_12.csv[0m
+[0;32mI (65082) CSV_MERGER: Merging file: /spiffs/data_25_06_17-21_13.csv[0m
+[0;32mI (65182) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_27_08.csv[0m
+[0;32mI (65202) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_24_10.csv[0m
+[0;32mI (65202) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_33.csv[0m
+[0;32mI (65782) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_24_39.csv[0m
+[0;32mI (65892) CSV_MERGER: Merging file: /spiffs/data_2025_06_17_21_28_17.csv[0m
+[0;32mI (65902) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_22.csv[0m
+[0;32mI (66472) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_42.csv[0m
+[0;32mI (66852) CSV_MERGER: Merging file: /spiffs/data_25_06_17-23_01.csv[0m
+[0;32mI (67072) CSV_MERGER: Merging file: /spiffs/data_25_06_17-20_44.csv[0m
+[0;32mI (67192) CSV_MERGER: Merged 27 files into /spiffs/merged.csv[0m
+[0;32mI (67192) SUPERVISOR: Restarting device...[0m
+[0;32mI (69192) wifi:state: run -> init (0x0)[0m
+[0;32mI (69202) wifi:pm stop, total sleep time: 64726756 us / 68228092 us[0m
+
+[0;32mI (69202) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (69202) wifi:<ba-del>idx:1, tid:7[0m
+[0;32mI (69202) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;33mW (69212) WIFI: Disconnected, retrying...[0m
+[0;32mI (69252) wifi:flush txq[0m
+[0;32mI (69252) wifi:stop sw txq[0m
+[0;32mI (69252) wifi:lmac stop hw txq[0m
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 23:08:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 00100000[0m
+[0;32mI (79) boot:  3 spiffs           Unknown data     01 82 00110000 00070000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1ba08h (113160) map[0m
+[0;32mI (135) esp_image: segment 1: paddr=0002ba30 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (136) esp_image: segment 2: paddr=0002ba54 vaddr=3ffb0000 size=03fb8h ( 16312) load[0m
+[0;32mI (145) esp_image: segment 3: paddr=0002fa14 vaddr=40080000 size=00604h (  1540) load[0m
+[0;32mI (147) esp_image: segment 4: paddr=00030020 vaddr=400d0020 size=91acch (596684) map[0m
+[0;32mI (358) esp_image: segment 5: paddr=000c1af4 vaddr=40080604 size=1715ch ( 94556) load[0m
+[0;32mI (406) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (406) boot: Disabling RNG early entropy source...[0m
+[0;32mI (417) cpu_start: Multicore app[0m
+[0;32mI (425) cpu_start: Pro cpu start user code[0m
+[0;32mI (425) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (425) app_init: Application information:[0m
+[0;32mI (425) app_init: Project name:     seu_projeto[0m
+[0;32mI (429) app_init: App version:      cf4a7ca-dirty[0m
+[0;32mI (434) app_init: Compile time:     Jun 17 2025 21:14:40[0m
+[0;32mI (439) app_init: ELF file SHA256:  ada5837fb...[0m
+[0;32mI (443) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (447) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (451) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (455) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (459) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (466) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (470) heap_init: At 3FFB8808 len 000277F8 (157 KiB): DRAM[0m
+[0;32mI (476) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (481) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (487) heap_init: At 40097760 len 000088A0 (34 KiB): IRAM[0m
+[0;32mI (493) spi_flash: detected chip: generic[0m
+[0;32mI (496) spi_flash: flash io: dio[0m
+[0;33mW (498) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (512) main_task: Started on CPU0[0m
+[0;32mI (522) main_task: Calling app_main()[0m
+[0;32mI (552) wifi:wifi driver task: 3ffc0670, prio:23, stack:6656, core=0[0m
+[0;32mI (562) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (562) wifi:wifi certification version: v7.0[0m
+[0;32mI (562) wifi:config NVS flash: enabled[0m
+[0;32mI (562) wifi:config nano formatting: disabled[0m
+[0;32mI (562) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (572) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (572) wifi:Init management short buffer num: 32[0m
+[0;32mI (582) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (582) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (592) wifi:Init static rx buffer num: 10[0m
+[0;32mI (592) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (592) wifi_init: rx ba win: 6[0m
+[0;32mI (602) wifi_init: accept mbox: 6[0m
+[0;32mI (602) wifi_init: tcpip mbox: 32[0m
+[0;32mI (602) wifi_init: udp mbox: 6[0m
+[0;32mI (602) wifi_init: tcp mbox: 6[0m
+[0;32mI (612) wifi_init: tcp tx win: 5760[0m
+[0;32mI (612) wifi_init: tcp rx win: 5760[0m
+[0;32mI (612) wifi_init: tcp mss: 1440[0m
+[0;32mI (622) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (622) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (632) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (632) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;32mI (722) wifi:mode : sta (f4:65:0b:46:cc:40)[0m
+[0;32mI (722) wifi:enable tsf[0m
+[0;32mI (732) WIFI: Wi-Fi initialization done.[0m
+[0;32mI (732) TIME_SYNC: Initializing SNTP[0m
+[0;32mI (732) WIFI: Wi-Fi started, connecting...[0m
+[0;32mI (732) TIME_SYNC: Time synchronized: Tue Jun 17 21:29:26 2025[0m
+
+[0;32mI (732) SPIFFS: Initializing SPIFFS[0m
+[0;32mI (742) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (752) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (782) SPIFFS: Partition size: total: 414401 bytes, used: 168672 bytes[0m
+[1;31mE (802) SPIFFS: SPIFFS mount check failed[0m
+[0;32mI (812) CSV_LOGGER: CSV file path: /spiffs/data_2025_06_17_21_29_26.csv[0m
+[0;32mI (812) CSV_LOGGER: Initializing CSV file: /spiffs/data_2025_06_17_21_29_26.csv[0m
+[0;32mI (812) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (842) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (882) CSV_LOGGER: CSV file initialized successfully[0m
+[0;32mI (892) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (892) MQ4_SENSOR: MQ4 ADC channel configured successfully[0m
+[0;32mI (892) MQ7_SENSOR: MQ7 ADC channel configured successfully[0m
+[0;32mI (922) DHT_SENSOR: Temperature: 22.0°C, Humidity: 60.1%[0m
+[0;32mI (932) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (932) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (942) SUPERVISOR: Supervisor started. Waiting 1 minutes before shutdown...[0m
+[0;32mI (932) MAIN_LOG: Application started successfully[0m
+[0;32mI (942) main_task: Returned from app_main()[0m
+[0;32mI (1022) wifi:connected with CATIVEIRO, aid = 8, channel 11, BW20, bssid = e8:45:8b:36:88:10[0m
+[0;32mI (1022) wifi:security: WPA2-PSK, phy: bgn, rssi: -53[0m
+[0;32mI (1022) wifi:pm start, type: 1[0m
+
+[0;32mI (1022) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1032) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (1032) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1052) WIFI: Connected to AP[0m
+[0;32mI (1512) wifi:<ba-add>idx:0 (ifx:0, e8:45:8b:36:88:10), tid:0, ssn:0, winSize:64[0m

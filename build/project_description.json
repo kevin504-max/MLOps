@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "seu_projeto",
-    "project_version":    "214240b-dirty",
+    "project_version":    "cf4a7ca-dirty",
     "project_path":       "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps",
     "idf_path":           "/home/kevin_lucas/esp/v5.4/esp-idf",
     "build_dir":          "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build",
@@ -1221,11 +1221,11 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [ "dht", "esp_adc", "lwip" ],
-            "priv_reqs": [ "spiffs", "esp_wifi", "esp_netif", "nvs_flash", "esp_event" ],
+            "priv_reqs": [ "esp_http_server", "spiffs", "esp_wifi", "esp_netif", "nvs_flash", "esp_event" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/time_sync/time_sync.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/sensors/dht/dht_sensor.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/sensors/mq7/mq7_sensor.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/sensors/mq4/mq4_sensor.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/storage/csv_logger/csv_logger.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/storage/csv_writer/csv_writer.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/storage/spiffs_manager/spiffs_manager.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/shared/shared_sensor_data.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c" ],
+            "sources": [ "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/time_sync/time_sync.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/sensors/dht/dht_sensor.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/sensors/mq7/mq7_sensor.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/sensors/mq4/mq4_sensor.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/storage/csv_logger/csv_logger.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/storage/csv_merger/csv_merger.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/storage/csv_writer/csv_writer.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/storage/spiffs_manager/spiffs_manager.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/shared/shared_sensor_data.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/helpers/supervisor/supervisor.c", "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c" ],
             "include_dirs": [ ".", "./core/network", "./core/sensors", "./core/shared", "./core/storage", "./helpers" ]
         },
         "mbedtls": {
@@ -2872,7 +2872,7 @@
             "dir": "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main",
             "lib": "__idf_main",
             "reqs": [ "dht", "esp_adc", "lwip" ],
-            "priv_reqs": [ "spiffs", "esp_wifi", "esp_netif", "nvs_flash", "esp_event" ],
+            "priv_reqs": [ "esp_http_server", "spiffs", "esp_wifi", "esp_netif", "nvs_flash", "esp_event" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ ".", "./core/network", "./core/sensors", "./core/shared", "./core/storage", "./helpers" ]
