@@ -11,6 +11,7 @@
 #include "esp_spiffs.h"
 
 #include "./core/network/time_sync/time_sync.h"
+#include "./core/network/webserver/webserver.h"
 #include "./core/network/wifi_connector/wifi_connector.h"
 
 #include "./core/storage/csv_logger/csv_logger.h"
@@ -22,6 +23,8 @@
 #include "./core/sensors/dht/dht_sensor.h"
 #include "./core/sensors/mq4/mq4_sensor.h"
 #include "./core/sensors/mq7/mq7_sensor.h"
+
+#include "./helpers/supervisor/supervisor.h"
 
 #define TAG "MAIN_LOG"
 
@@ -45,6 +48,8 @@ void app_main() {
     init_csv_file();
     start_csv_writer_task();
 
+    start_webserver();
+
     adc_oneshot_unit_init_cfg_t init_config = {
         .unit_id = ADC_UNIT_1,
         .ulp_mode = ADC_ULP_MODE_DISABLE,
@@ -61,5 +66,7 @@ void app_main() {
     mq4_start_read_task();
     mq7_start_read_task();
 
+
+    xTaskCreate(supervisor_task, "supervisor_task", 4096, NULL, 1, NULL);
     ESP_LOGI(TAG, "Application started successfully");
 }
