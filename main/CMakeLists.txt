@@ -1,6 +1,7 @@
 idf_component_register(
     SRCS 
         "./core/network/time_sync/time_sync.c"
+        "./core/network/webserver/webserver.c"
         "./core/network/wifi_connector/wifi_connector.c"
 
         "./core/sensors/dht/dht_sensor.c"
@@ -8,12 +9,14 @@ idf_component_register(
         "./core/sensors/mq4/mq4_sensor.c"
         
         "./core/storage/csv_logger/csv_logger.c"
+        "./core/storage/csv_merger/csv_merger.c"
         "./core/storage/csv_writer/csv_writer.c"
         "./core/storage/spiffs_manager/spiffs_manager.c"
 
         "./core/shared/shared_sensor_data.c"
 
         # "./helpers/cli_handler.c"
+        "./helpers/supervisor/supervisor.c"
 
         "main.c"
     
@@ -28,9 +31,10 @@ idf_component_register(
     REQUIRES 
         dht 
         esp_adc
-        lwip  # Replaces esp_sntp in IDF v5.4
-    
+        lwip 
+        
     PRIV_REQUIRES
+        esp_http_server
         spiffs
         esp_wifi
         esp_netif
