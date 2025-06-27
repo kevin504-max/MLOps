@@ -16,7 +16,7 @@
 void supervisor_task(void *pvParameters) {
     (void) pvParameters;
 
-    const int runtime_minutes = 1;
+    const int runtime_minutes = 10;
     const int wait_time_ms = runtime_minutes * 60 * 1000;
 
     ESP_LOGI(TAG, "Supervisor started. Waiting %d minutes before shutdown...", runtime_minutes);

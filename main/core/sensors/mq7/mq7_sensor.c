@@ -1,47 +1,31 @@
-/**
- * @file mq7_sensor.c
- * @brief Driver para leitura do sensor de monóxido de carbono MQ-7 usando ADC do ESP32.
- *
- * Este módulo configura o ADC para o canal do sensor MQ-7,
- * cria uma tarefa FreeRTOS para leitura periódica do valor analógico,
- * converte a leitura em tensão e estima o valor em PPM (partes por milhão).
- */
-
 #include "mq7_sensor.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_log.h"
 #include "esp_adc/adc_oneshot.h"
+#include <math.h>
 
 #define MQ7_LOG_TAG "MQ7_SENSOR"
 #define MQ7_ADC_CHANNEL ADC_CHANNEL_7  // GPIO35 no ESP32
 #define MQ7_VREF 3.3f
 #define MQ7_RESOLUTION 4095.0f
+#define MQ7_RL 10000.0f
+#define MQ7_RO_CLEAN_AIR 27.5f
 
 static adc_oneshot_unit_handle_t adc1_handle_internal;
+static float mq7_ro = 10.0f;
 
-// Função externa (main.c) para atualizar os dados do sensor
 extern void update_mq7_data(float voltage, float ppm);
 
-/**
- * @brief Converte a tensão lida em PPM de monóxido de carbono (CO).
- *
- * Ajuste essa fórmula conforme a calibração real do sensor MQ-7.
- *
- * @param voltage Tensão do sensor em volts.
- * @return Valor estimado em PPM de CO.
- */
-static float mq7_voltage_to_ppm(float voltage) {
-    return (voltage * 1000.0f) / 4.0f;
+static float calculate_rs(float vout) {
+    return (MQ7_VREF - vout) * MQ7_RL / vout;
 }
 
-/**
- * @brief Tarefa FreeRTOS que lê periodicamente o sensor MQ-7.
- *
- * Realiza leitura ADC, converte para tensão e PPM, e atualiza o sistema.
- *
- * @param pvParameters Parâmetro da tarefa (não usado).
- */
+static float mq7_rs_to_ppm(float rs) {
+    float ratio = rs / mq7_ro;
+    return 99.042f * powf(ratio, -1.518f);
+}
+
 static void mq7_read_task(void *pvParameters) {
     while (true) {
         int raw_value = 0;
@@ -54,20 +38,16 @@ static void mq7_read_task(void *pvParameters) {
         }
 
         float voltage = raw_value * (MQ7_VREF / MQ7_RESOLUTION);
-        float ppm = mq7_voltage_to_ppm(voltage);
+        float rs = calculate_rs(voltage);
+        float ppm = mq7_rs_to_ppm(rs);
 
-        ESP_LOGI(MQ7_LOG_TAG, "Raw: %d, Voltage: %.2f V, CO PPM: %.2f", raw_value, voltage, ppm);
+        ESP_LOGI(MQ7_LOG_TAG, "Raw: %d, Voltage: %.2f V, Rs: %.2f, CO_PPM: %.2f", raw_value, voltage, rs, ppm);
         update_mq7_data(voltage, ppm);
 
-        vTaskDelay(pdMS_TO_TICKS(10000));  // 10 segundos entre leituras
+        vTaskDelay(pdMS_TO_TICKS(10000));
     }
 }
 
-/**
- * @brief Inicializa o sensor MQ-7 configurando o ADC.
- *
- * @param handle Handle do ADC oneshot.
- */
 void mq7_sensor_init(adc_oneshot_unit_handle_t handle) {
     adc1_handle_internal = handle;
 
@@ -84,9 +64,6 @@ void mq7_sensor_init(adc_oneshot_unit_handle_t handle) {
     }
 }
 
-/**
- * @brief Inicia a tarefa FreeRTOS que realiza a leitura do sensor MQ-7.
- */
 void mq7_start_read_task(void) {
     xTaskCreate(mq7_read_task, "mq7_read_task", 2048, NULL, 5, NULL);
 }

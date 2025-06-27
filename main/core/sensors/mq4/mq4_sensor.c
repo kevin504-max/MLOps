@@ -1,47 +1,31 @@
-/**
- * @file mq4_sensor.c
- * @brief Driver para leitura do sensor de gás MQ-4 usando ADC do ESP32.
- *
- * Este módulo inicializa o ADC, configura o canal para o sensor MQ-4,
- * e cria uma tarefa FreeRTOS para leitura periódica da tensão do sensor,
- * convertendo-a em PPM (partes por milhão) de gás metano (CH4).
- */
-
 #include "mq4_sensor.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_log.h"
 #include "esp_adc/adc_oneshot.h"
+#include <math.h>
 
 #define MQ4_LOG_TAG "MQ4_SENSOR"
 #define MQ4_ADC_CHANNEL ADC_CHANNEL_6  // GPIO34 no ESP32
 #define MQ4_VREF 3.3f
 #define MQ4_RESOLUTION 4095.0f
+#define MQ4_RL 10000.0f
+#define MQ4_RO_CLEAN_AIR 9.83f  // Rs/Ro para ar limpo (datasheet)
 
 static adc_oneshot_unit_handle_t adc1_handle_internal;
+static float mq4_ro = 10.0f; // valor inicial estimado, pode ser calibrado
 
-// Função externa para atualizar os dados no sistema principal
 extern void update_mq4_data(float voltage, float ppm);
 
-/**
- * @brief Converte a tensão lida do sensor MQ-4 em PPM de gás.
- *
- * Ajustar essa fórmula com base na calibração específica do sensor MQ-4.
- *
- * @param voltage Tensão lida do sensor (em volts).
- * @return PPM estimado de gás metano.
- */
-static float mq4_voltage_to_ppm(float voltage) {
-    return (voltage * 1000.0f) / 4.0f;
+static float calculate_rs(float vout) {
+    return (MQ4_VREF - vout) * MQ4_RL / vout;
 }
 
-/**
- * @brief Tarefa FreeRTOS que lê periodicamente o sensor MQ-4.
- *
- * Realiza leitura ADC, converte para tensão e PPM, e atualiza os dados.
- *
- * @param pvParameters Parâmetro da tarefa (não usado).
- */
+static float mq4_rs_to_ppm(float rs) {
+    float ratio = rs / mq4_ro;
+    return 625.0f * powf(ratio, -2.1f);  // valores da curva CH4 x Rs/Ro
+}
+
 static void mq4_read_task(void *pvParameters) {
     while (true) {
         int raw_adc_value = 0;
@@ -54,20 +38,16 @@ static void mq4_read_task(void *pvParameters) {
         }
 
         float voltage = raw_adc_value * (MQ4_VREF / MQ4_RESOLUTION);
-        float ppm = mq4_voltage_to_ppm(voltage);
+        float rs = calculate_rs(voltage);
+        float ppm = mq4_rs_to_ppm(rs);
 
-        ESP_LOGI(MQ4_LOG_TAG, "Raw: %d -> Voltage: %.2f V, CH4 PPM: %.2f", raw_adc_value, voltage, ppm);
+        ESP_LOGI(MQ4_LOG_TAG, "Raw: %d, Voltage: %.2f V, Rs: %.2f, CH4_PPM: %.2f", raw_adc_value, voltage, rs, ppm);
         update_mq4_data(voltage, ppm);
 
-        vTaskDelay(pdMS_TO_TICKS(10000));  // Delay 10 segundos entre leituras
+        vTaskDelay(pdMS_TO_TICKS(10000));
     }
 }
 
-/**
- * @brief Inicializa o sensor MQ-4 configurando o ADC.
- *
- * @param handle Handle do ADC oneshot já criado.
- */
 void mq4_sensor_init(adc_oneshot_unit_handle_t handle) {
     adc1_handle_internal = handle;
 
@@ -84,9 +64,6 @@ void mq4_sensor_init(adc_oneshot_unit_handle_t handle) {
     }
 }
 
-/**
- * @brief Inicia a tarefa FreeRTOS de leitura do sensor MQ-4.
- */
 void mq4_start_read_task(void) {
     xTaskCreate(mq4_read_task, "mq4_read_task", 2048, NULL, 5, NULL);
 }

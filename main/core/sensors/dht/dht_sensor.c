@@ -49,7 +49,7 @@ static void dht_read_task(void *pvParameters) {
             ESP_LOGE(DHT_LOG_TAG, "Failed to read data from DHT sensor");
         }
 
-        vTaskDelay(pdMS_TO_TICKS(10000));  // Delay 10 seconds between reads
+        vTaskDelay(pdMS_TO_TICKS(10000));
     }
 }
 
