@@ -1,0 +1,295 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 23:08:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 00100000[0m
+[0;32mI (79) boot:  3 spiffs           Unknown data     01 82 00110000 00070000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) boot: No factory image, trying OTA 0[0m
+[0;32mI (93) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e130h (123184) map[0m
+[0;32mI (143) esp_image: segment 1: paddr=0002e158 vaddr=3ff80064 size=0001ch (    28) load[0m
+[0;32mI (143) esp_image: segment 2: paddr=0002e17c vaddr=3ffb0000 size=01e9ch (  7836) load[0m
+[0;32mI (150) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=9aae4h (633572) map[0m
+[0;32mI (371) esp_image: segment 4: paddr=000cab0c vaddr=3ffb1e9c size=0211ch (  8476) load[0m
+[0;32mI (374) esp_image: segment 5: paddr=000ccc30 vaddr=40080000 size=1896ch (100716) load[0m
+[0;32mI (413) esp_image: segment 6: paddr=000e55a4 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (426) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (426) boot: Set actual ota_seq=1 in otadata[0][0m
+[0;32mI (426) boot: Disabling RNG early entropy source...[0m
+[0;32mI (440) cpu_start: Multicore app[0m
+[0;32mI (449) cpu_start: Pro cpu start user code[0m
+[0;32mI (449) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (449) app_init: Application information:[0m
+[0;32mI (449) app_init: Project name:     seu_projeto[0m
+[0;32mI (453) app_init: App version:      a58dcb3-dirty[0m
+[0;32mI (458) app_init: Compile time:     Jun 24 2025 18:06:50[0m
+[0;32mI (463) app_init: ELF file SHA256:  72c8d8837...[0m
+[0;32mI (467) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (471) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (475) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (479) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (483) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (489) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB8818 len 000277E8 (157 KiB): DRAM[0m
+[0;32mI (499) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (505) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (510) heap_init: At 4009896C len 00007694 (29 KiB): IRAM[0m
+[0;32mI (517) spi_flash: detected chip: generic[0m
+[0;32mI (519) spi_flash: flash io: dio[0m
+[0;33mW (522) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (536) main_task: Started on CPU0[0m
+[0;32mI (546) main_task: Calling app_main()[0m
+[0;32mI (576) wifi:wifi driver task: 3ffc0538, prio:23, stack:6656, core=0[0m
+[0;32mI (576) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (576) wifi:wifi certification version: v7.0[0m
+[0;32mI (576) wifi:config NVS flash: enabled[0m
+[0;32mI (576) wifi:config nano formatting: disabled[0m
+[0;32mI (586) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (586) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (596) wifi:Init management short buffer num: 32[0m
+[0;32mI (596) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (596) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (606) wifi:Init static rx buffer num: 10[0m
+[0;32mI (606) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (616) wifi_init: rx ba win: 6[0m
+[0;32mI (616) wifi_init: accept mbox: 6[0m
+[0;32mI (616) wifi_init: tcpip mbox: 32[0m
+[0;32mI (616) wifi_init: udp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp mbox: 6[0m
+[0;32mI (626) wifi_init: tcp tx win: 5760[0m
+[0;32mI (626) wifi_init: tcp rx win: 5760[0m
+[0;32mI (636) wifi_init: tcp mss: 1440[0m
+[0;32mI (636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (636) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (646) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (676) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (676) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (756) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (776) wifi:mode : sta (f4:65:0b:46:cc:40)[0m
+[0;32mI (776) wifi:enable tsf[0m
+[0;32mI (776) WIFI: Wi-Fi initialization done.[0m
+[0;32mI (776) TIME_SYNC: Initializing SNTP[0m
+[0;32mI (776) WIFI: Wi-Fi started, connecting...[0m
+[0;32mI (786) TIME_SYNC: Waiting for system time to be set... (1/10)[0m
+[0;32mI (2786) TIME_SYNC: Waiting for system time to be set... (2/10)[0m
+[0;33mW (3196) WIFI: Disconnected, retrying...[0m
+[0;32mI (4786) TIME_SYNC: Waiting for system time to be set... (3/10)[0m
+[0;33mW (5606) WIFI: Disconnected, retrying...[0m
+[0;32mI (6786) TIME_SYNC: Waiting for system time to be set... (4/10)[0m
+[0;33mW (8026) WIFI: Disconnected, retrying...[0m
+[0;32mI (8786) TIME_SYNC: Waiting for system time to be set... (5/10)[0m
+[0;33mW (10436) WIFI: Disconnected, retrying...[0m
+[0;32mI (10786) TIME_SYNC: Waiting for system time to be set... (6/10)[0m
+[0;32mI (12786) TIME_SYNC: Waiting for system time to be set... (7/10)[0m
+[0;33mW (12856) WIFI: Disconnected, retrying...[0m
+[0;32mI (14786) TIME_SYNC: Waiting for system time to be set... (8/10)[0m
+[0;33mW (15266) WIFI: Disconnected, retrying...[0m
+[0;32mI (16786) TIME_SYNC: Waiting for system time to be set... (9/10)[0m
+[0;33mW (17686) WIFI: Disconnected, retrying...[0m
+[1;31mE (18786) TIME_SYNC: Failed to synchronize time[0m
+[0;32mI (18786) SPIFFS: Initializing SPIFFS[0m
+[0;33mW (18786) SPIFFS: mount failed, -10025. formatting...[0m
+[0;32mI (19016) SPIFFS: Partition size: total: 414401 bytes, used: 0 bytes[0m
+[1;31mE (19036) SPIFFS: SPIFFS mount check failed[0m
+[0;32mI (19036) CSV_LOGGER: CSV file path: /spiffs/data_1969_12_31_21_00_18.csv[0m
+[0;32mI (19036) CSV_LOGGER: Initializing CSV file: /spiffs/data_1969_12_31_21_00_18.csv[0m
+[0;32mI (19096) CSV_LOGGER: CSV file initialized successfully[0m
+[0;32mI (19106) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (19106) HTTP_SERVER: Starting HTTP Server[0m
+[0;32mI (19106) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (19116) MQ4_SENSOR: MQ4 ADC channel configured successfully[0m
+[0;32mI (19116) MQ7_SENSOR: MQ7 ADC channel configured successfully[0m
+[1;31mE (19146) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (19146) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;32mI (19146) MQ4_SENSOR: Raw: 1022 -> Voltage: 0.82 V, CH4 PPM: 205.90[0m
+[0;32mI (19146) MQ7_SENSOR: Raw: 1364, Voltage: 1.10 V, CO PPM: 274.80[0m
+[0;32mI (19156) MAIN_LOG: Application started successfully[0m
+[0;32mI (19156) main_task: Returned from app_main()[0m
+[0;32mI (19166) SUPERVISOR: Supervisor started. Waiting 1 minutes before shutdown...[0m
+[0;33mW (20096) WIFI: Disconnected, retrying...[0m
+[0;33mW (22516) WIFI: Disconnected, retrying...[0m
+[0;33mW (24926) WIFI: Disconnected, retrying...[0m
+[0;33mW (27346) WIFI: Disconnected, retrying...[0m
+[0;32mI (29116) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.82V/205.90ppm, MQ7=1.10V/274.80ppm[0m
+[0;32mI (29166) MQ7_SENSOR: Raw: 987, Voltage: 0.80 V, CO PPM: 198.85[0m
+[1;31mE (29166) dht: Initialization error, problem in phase 'B'[0m
+[0;32mI (29166) MQ4_SENSOR: Raw: 1173 -> Voltage: 0.95 V, CH4 PPM: 236.32[0m
+[1;31mE (29166) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (29766) WIFI: Disconnected, retrying...[0m
+[0;33mW (32176) WIFI: Disconnected, retrying...[0m
+[0;33mW (34596) WIFI: Disconnected, retrying...[0m
+[0;33mW (37006) WIFI: Disconnected, retrying...[0m
+[0;32mI (39126) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.95V/236.32ppm, MQ7=0.80V/198.85ppm[0m
+[0;32mI (39166) MQ7_SENSOR: Raw: 3259, Voltage: 2.63 V, CO PPM: 656.58[0m
+[0;32mI (39166) MQ4_SENSOR: Raw: 3438 -> Voltage: 2.77 V, CH4 PPM: 692.64[0m
+[1;31mE (39196) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (39196) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (39426) WIFI: Disconnected, retrying...[0m
+[0;33mW (41836) WIFI: Disconnected, retrying...[0m
+[0;33mW (44256) WIFI: Disconnected, retrying...[0m
+[0;33mW (46666) WIFI: Disconnected, retrying...[0m
+[0;33mW (49086) WIFI: Disconnected, retrying...[0m
+[0;32mI (49136) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=2.77V/692.64ppm, MQ7=2.63V/656.58ppm[0m
+[0;32mI (49166) MQ7_SENSOR: Raw: 3434, Voltage: 2.77 V, CO PPM: 691.83[0m
+[0;32mI (49166) MQ4_SENSOR: Raw: 3440 -> Voltage: 2.77 V, CH4 PPM: 693.04[0m
+[1;31mE (49216) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (49216) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (51506) WIFI: Disconnected, retrying...[0m
+[0;33mW (53916) WIFI: Disconnected, retrying...[0m
+[0;33mW (56336) WIFI: Disconnected, retrying...[0m
+[0;33mW (58746) WIFI: Disconnected, retrying...[0m
+[0;32mI (59146) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=2.77V/693.04ppm, MQ7=2.77V/691.83ppm[0m
+[0;32mI (59166) MQ7_SENSOR: Raw: 3438, Voltage: 2.77 V, CO PPM: 692.64[0m
+[0;32mI (59166) MQ4_SENSOR: Raw: 3440 -> Voltage: 2.77 V, CH4 PPM: 693.04[0m
+[1;31mE (59236) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (59236) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (61166) WIFI: Disconnected, retrying...[0m
+[0;33mW (63586) WIFI: Disconnected, retrying...[0m
+[0;33mW (65996) WIFI: Disconnected, retrying...[0m
+[0;33mW (68416) WIFI: Disconnected, retrying...[0m
+[0;32mI (69156) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=2.77V/693.04ppm, MQ7=2.77V/692.64ppm[0m
+[0;32mI (69166) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (69166) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[1;31mE (69256) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (69256) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (70826) WIFI: Disconnected, retrying...[0m
+[0;33mW (73246) WIFI: Disconnected, retrying...[0m
+[0;33mW (75656) WIFI: Disconnected, retrying...[0m
+[0;33mW (78076) WIFI: Disconnected, retrying...[0m
+[0;32mI (79166) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (79166) MQ4_SENSOR: Raw: 2480 -> Voltage: 2.00 V, CH4 PPM: 499.63[0m
+[0;32mI (79166) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[1;31mE (79276) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (79276) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (80486) WIFI: Disconnected, retrying...[0m
+[0;33mW (82906) WIFI: Disconnected, retrying...[0m
+[0;33mW (85316) WIFI: Disconnected, retrying...[0m
+[0;33mW (87736) WIFI: Disconnected, retrying...[0m
+[0;32mI (89166) MQ7_SENSOR: Raw: 1725, Voltage: 1.39 V, CO PPM: 347.53[0m
+[0;32mI (89166) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (89186) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=1.39V/347.53ppm[0m
+[1;31mE (89296) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (89296) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (90146) WIFI: Disconnected, retrying...[0m
+[0;33mW (92566) WIFI: Disconnected, retrying...[0m
+[0;33mW (94976) WIFI: Disconnected, retrying...[0m
+[0;33mW (97396) WIFI: Disconnected, retrying...[0m
+[0;32mI (99166) MQ7_SENSOR: Raw: 4095, Voltage: 3.30 V, CO PPM: 825.00[0m
+[0;32mI (99166) MQ4_SENSOR: Raw: 4015 -> Voltage: 3.24 V, CH4 PPM: 808.88[0m
+[0;32mI (99196) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=3.24V/808.88ppm, MQ7=3.30V/825.00ppm[0m
+[1;31mE (99316) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (99316) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (99816) WIFI: Disconnected, retrying...[0m
+[0;33mW (102226) WIFI: Disconnected, retrying...[0m
+[0;33mW (104646) WIFI: Disconnected, retrying...[0m
+[0;33mW (107056) WIFI: Disconnected, retrying...[0m
+[0;32mI (109166) MQ7_SENSOR: Raw: 4095, Voltage: 3.30 V, CO PPM: 825.00[0m
+[0;32mI (109166) MQ4_SENSOR: Raw: 4095 -> Voltage: 3.30 V, CH4 PPM: 825.00[0m
+[0;32mI (109206) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=3.30V/825.00ppm, MQ7=3.30V/825.00ppm[0m
+[1;31mE (109336) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (109336) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (109476) WIFI: Disconnected, retrying...[0m
+[0;33mW (111886) WIFI: Disconnected, retrying...[0m
+[0;33mW (114306) WIFI: Disconnected, retrying...[0m
+[0;33mW (116716) WIFI: Disconnected, retrying...[0m
+[0;33mW (119136) WIFI: Disconnected, retrying...[0m
+[0;32mI (119166) MQ7_SENSOR: Raw: 4095, Voltage: 3.30 V, CO PPM: 825.00[0m
+[0;32mI (119166) MQ4_SENSOR: Raw: 4095 -> Voltage: 3.30 V, CH4 PPM: 825.00[0m
+[0;32mI (119216) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=3.30V/825.00ppm, MQ7=3.30V/825.00ppm[0m
+[1;31mE (119356) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (119356) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (121546) WIFI: Disconnected, retrying...[0m
+[0;33mW (123966) WIFI: Disconnected, retrying...[0m
+[0;33mW (126376) WIFI: Disconnected, retrying...[0m
+[0;33mW (128796) WIFI: Disconnected, retrying...[0m
+[0;32mI (129166) MQ7_SENSOR: Raw: 4095, Voltage: 3.30 V, CO PPM: 825.00[0m
+[0;32mI (129166) MQ4_SENSOR: Raw: 4095 -> Voltage: 3.30 V, CH4 PPM: 825.00[0m
+[0;32mI (129226) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=3.30V/825.00ppm, MQ7=3.30V/825.00ppm[0m
+[1;31mE (129376) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (129376) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (131206) WIFI: Disconnected, retrying...[0m
+[0;33mW (133626) WIFI: Disconnected, retrying...[0m
+[0;33mW (136036) WIFI: Disconnected, retrying...[0m
+[0;33mW (138456) WIFI: Disconnected, retrying...[0m
+[0;32mI (139166) MQ7_SENSOR: Raw: 4095, Voltage: 3.30 V, CO PPM: 825.00[0m
+[0;32mI (139166) MQ4_SENSOR: Raw: 4054 -> Voltage: 3.27 V, CH4 PPM: 816.74[0m
+[0;32mI (139236) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=3.27V/816.74ppm, MQ7=3.30V/825.00ppm[0m
+[1;31mE (139396) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (139396) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (140876) WIFI: Disconnected, retrying...[0m
+[0;33mW (143286) WIFI: Disconnected, retrying...[0m
+[0;33mW (145706) WIFI: Disconnected, retrying...[0m
+[0;33mW (148116) WIFI: Disconnected, retrying...[0m
+[0;32mI (149166) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (149166) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (149246) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[1;31mE (149416) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (149416) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (150536) WIFI: Disconnected, retrying...[0m
+[0;33mW (152946) WIFI: Disconnected, retrying...[0m
+[0;33mW (155366) WIFI: Disconnected, retrying...[0m
+[0;33mW (157776) WIFI: Disconnected, retrying...[0m
+[0;32mI (159166) MQ7_SENSOR: Raw: 1139, Voltage: 0.92 V, CO PPM: 229.47[0m
+[0;32mI (159166) MQ4_SENSOR: Raw: 4095 -> Voltage: 3.30 V, CH4 PPM: 825.00[0m
+[0;32mI (159256) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=3.30V/825.00ppm, MQ7=0.92V/229.47ppm[0m
+[1;31mE (159436) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (159436) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (160196) WIFI: Disconnected, retrying...[0m
+[0;33mW (162606) WIFI: Disconnected, retrying...[0m
+[0;33mW (165026) WIFI: Disconnected, retrying...[0m
+[0;33mW (167436) WIFI: Disconnected, retrying...[0m
+[0;32mI (169166) MQ7_SENSOR: Raw: 4095, Voltage: 3.30 V, CO PPM: 825.00[0m
+[0;32mI (169166) MQ4_SENSOR: Raw: 3517 -> Voltage: 2.83 V, CH4 PPM: 708.55[0m
+[0;32mI (169266) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=2.83V/708.55ppm, MQ7=3.30V/825.00ppm[0m
+[1;31mE (169456) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (169456) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (169856) WIFI: Disconnected, retrying...[0m
+[0;33mW (172266) WIFI: Disconnected, retrying...[0m
+[0;33mW (174686) WIFI: Disconnected, retrying...[0m
+[0;33mW (177096) WIFI: Disconnected, retrying...[0m
+[0;32mI (179166) MQ7_SENSOR: Raw: 3450, Voltage: 2.78 V, CO PPM: 695.05[0m
+[0;32mI (179166) MQ4_SENSOR: Raw: 3442 -> Voltage: 2.77 V, CH4 PPM: 693.44[0m
+[0;32mI (179276) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=2.77V/693.44ppm, MQ7=2.78V/695.05ppm[0m
+[1;31mE (179476) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (179476) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (179516) WIFI: Disconnected, retrying...[0m
+[0;33mW (181936) WIFI: Disconnected, retrying...[0m
+[0;33mW (184346) WIFI: Disconnected, retrying...[0m
+[0;33mW (186766) WIFI: Disconnected, retrying...[0m
+[0;32mI (189166) MQ7_SENSOR: Raw: 3439, Voltage: 2.77 V, CO PPM: 692.84[0m
+[0;32mI (189166) MQ4_SENSOR: Raw: 3438 -> Voltage: 2.77 V, CH4 PPM: 692.64[0m
+[0;33mW (189176) WIFI: Disconnected, retrying...[0m
+[0;32mI (189286) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=2.77V/692.64ppm, MQ7=2.77V/692.84ppm[0m
+[1;31mE (189496) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (189496) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (191596) WIFI: Disconnected, retrying...[0m
+[0;33mW (194006) WIFI: Disconnected, retrying...[0m
+[0;33mW (196426) WIFI: Disconnected, retrying...[0m
+[0;33mW (198836) WIFI: Disconnected, retrying...[0m
+[0;32mI (199166) MQ7_SENSOR: Raw: 3434, Voltage: 2.77 V, CO PPM: 691.83[0m
+[0;32mI (199166) MQ4_SENSOR: Raw: 3423 -> Voltage: 2.76 V, CH4 PPM: 689.62[0m
+[0;32mI (199296) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=2.76V/689.62ppm, MQ7=2.77V/691.83ppm[0m
+[1;31mE (199516) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (199516) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;33mW (201256) WIFI: Disconnected, retrying...[0m
+[0;33mW (203666) WIFI: Disconnected, retrying...[0m

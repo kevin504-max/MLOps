@@ -1,0 +1,2006 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyUSB0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+[0m
+[0;33m--- 0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+[0m
+[0;33m--- 0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m--- 0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+[0m
+[0;33m--- 0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+[0m
+[0;33m--- 0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+[0m
+[0;33m--- 0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+[0m
+[0;33m--- 0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+[0m
+[0;33m--- 0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+[0m
+[0;33m--- 0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+[0m
+[0;33m--- 0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+[0m
+[0;33m--- 0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+[0m
+[0;33m--- 0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+[0m
+[0;33m--- 0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x40081bdd: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x400871a9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x4008d415: __assert_func at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/assert.c:80
+0x400e24db: tcpip_send_msg_wait_sem at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/tcpip.c:454 (discriminator 1)
+0x400ede9e: netconn_apimsg at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:134
+0x400edf31: netconn_new_with_proto_and_callback at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/api_lib.c:164
+0x400e2335: lwip_socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/lwip/src/api/sockets.c:1759 (discriminator 4)
+0x400ddc23: socket at /home/kevin_lucas/esp/v5.4/esp-idf/components/lwip/include/lwip/sockets.h:48
+ (inlined by) httpd_server_init at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:357
+0x400de270: httpd_start at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_http_server/src/httpd_main.c:524
+0x400d838a: start_webserver at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/webserver/webserver.c:41
+0x400d8245: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:51
+0x40101d17: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x40087ab5: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m

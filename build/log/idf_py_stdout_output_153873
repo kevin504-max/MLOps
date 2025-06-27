@@ -1,0 +1,534 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 23:08:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.1[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 00100000[0m
+[0;32mI (79) boot:  3 spiffs           Unknown data     01 82 00110000 00070000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e130h (123184) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0002e158 vaddr=3ff80064 size=0001ch (    28) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=0002e17c vaddr=3ffb0000 size=01e9ch (  7836) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=9aae4h (633572) map[0m
+[0;32mI (367) esp_image: segment 4: paddr=000cab0c vaddr=3ffb1e9c size=0211ch (  8476) load[0m
+[0;32mI (370) esp_image: segment 5: paddr=000ccc30 vaddr=40080000 size=1896ch (100716) load[0m
+[0;32mI (410) esp_image: segment 6: paddr=000e55a4 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (422) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (422) boot: Disabling RNG early entropy source...[0m
+[0;32mI (432) cpu_start: Multicore app[0m
+[0;32mI (441) cpu_start: Pro cpu start user code[0m
+[0;32mI (441) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (441) app_init: Application information:[0m
+[0;32mI (441) app_init: Project name:     seu_projeto[0m
+[0;32mI (445) app_init: App version:      a58dcb3-dirty[0m
+[0;32mI (449) app_init: Compile time:     Jun 24 2025 18:06:50[0m
+[0;32mI (454) app_init: ELF file SHA256:  72c8d8837...[0m
+[0;32mI (459) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (463) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (467) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (471) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (475) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (481) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (486) heap_init: At 3FFB8818 len 000277E8 (157 KiB): DRAM[0m
+[0;32mI (491) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (497) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (502) heap_init: At 4009896C len 00007694 (29 KiB): IRAM[0m
+[0;32mI (509) spi_flash: detected chip: generic[0m
+[0;32mI (511) spi_flash: flash io: dio[0m
+[0;33mW (514) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (527) main_task: Started on CPU0[0m
+[0;32mI (537) main_task: Calling app_main()[0m
+[0;32mI (567) wifi:wifi driver task: 3ffc0680, prio:23, stack:6656, core=0[0m
+[0;32mI (577) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (577) wifi:wifi certification version: v7.0[0m
+[0;32mI (577) wifi:config NVS flash: enabled[0m
+[0;32mI (577) wifi:config nano formatting: disabled[0m
+[0;32mI (577) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (587) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (587) wifi:Init management short buffer num: 32[0m
+[0;32mI (597) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (597) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (607) wifi:Init static rx buffer num: 10[0m
+[0;32mI (607) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (607) wifi_init: rx ba win: 6[0m
+[0;32mI (617) wifi_init: accept mbox: 6[0m
+[0;32mI (617) wifi_init: tcpip mbox: 32[0m
+[0;32mI (617) wifi_init: udp mbox: 6[0m
+[0;32mI (617) wifi_init: tcp mbox: 6[0m
+[0;32mI (627) wifi_init: tcp tx win: 5760[0m
+[0;32mI (627) wifi_init: tcp rx win: 5760[0m
+[0;32mI (627) wifi_init: tcp mss: 1440[0m
+[0;32mI (637) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (637) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (647) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (647) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (737) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (757) wifi:mode : sta (f4:65:0b:46:cc:40)[0m
+[0;32mI (757) wifi:enable tsf[0m
+[0;32mI (757) WIFI: Wi-Fi initialization done.[0m
+[0;32mI (767) TIME_SYNC: Initializing SNTP[0m
+[0;32mI (767) WIFI: Wi-Fi started, connecting...[0m
+[0;32mI (767) TIME_SYNC: Waiting for system time to be set... (1/10)[0m
+[0;32mI (2767) TIME_SYNC: Waiting for system time to be set... (2/10)[0m
+[0;33mW (3177) WIFI: Disconnected, retrying...[0m
+[0;32mI (4767) TIME_SYNC: Waiting for system time to be set... (3/10)[0m
+[0;33mW (5597) WIFI: Disconnected, retrying...[0m
+[0;32mI (6767) TIME_SYNC: Waiting for system time to be set... (4/10)[0m
+[0;33mW (8007) WIFI: Disconnected, retrying...[0m
+[0;32mI (8767) TIME_SYNC: Waiting for system time to be set... (5/10)[0m
+[0;33mW (10427) WIFI: Disconnected, retrying...[0m
+[0;32mI (10767) TIME_SYNC: Waiting for system time to be set... (6/10)[0m
+[0;32mI (12767) TIME_SYNC: Waiting for system time to be set... (7/10)[0m
+[0;33mW (12837) WIFI: Disconnected, retrying...[0m
+[0;32mI (14767) TIME_SYNC: Waiting for system time to be set... (8/10)[0m
+[0;33mW (15257) WIFI: Disconnected, retrying...[0m
+[0;32mI (16767) TIME_SYNC: Waiting for system time to be set... (9/10)[0m
+[0;33mW (17667) WIFI: Disconnected, retrying...[0m
+[1;31mE (18767) TIME_SYNC: Failed to synchronize time[0m
+[0;32mI (18767) SPIFFS: Initializing SPIFFS[0m
+[0;32mI (18797) SPIFFS: Partition size: total: 414401 bytes, used: 6024 bytes[0m
+[1;31mE (18807) SPIFFS: SPIFFS mount check failed[0m
+[0;32mI (18807) CSV_LOGGER: CSV file path: /spiffs/data_1969_12_31_21_00_18.csv[0m
+[0;32mI (18807) CSV_LOGGER: Initializing CSV file: /spiffs/data_1969_12_31_21_00_18.csv[0m
+[0;33mW (18817) CSV_LOGGER: CSV file already exists, overwriting[0m
+[0;32mI (18847) CSV_LOGGER: CSV file initialized successfully[0m
+[0;32mI (18847) HTTP_SERVER: Starting HTTP Server[0m
+[0;32mI (18847) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (18857) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (18867) MQ4_SENSOR: MQ4 ADC channel configured successfully[0m
+[0;32mI (18867) MQ7_SENSOR: MQ7 ADC channel configured successfully[0m
+[1;31mE (18897) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (18897) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;32mI (18897) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (18897) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (18907) MAIN_LOG: Application started successfully[0m
+[0;32mI (18907) main_task: Returned from app_main()[0m
+[0;32mI (18917) SUPERVISOR: Supervisor started. Waiting 1 minutes before shutdown...[0m
+[0;33mW (20097) WIFI: Disconnected, retrying...[0m
+[0;33mW (22517) WIFI: Disconnected, retrying...[0m
+[0;33mW (24927) WIFI: Disconnected, retrying...[0m
+[0;33mW (27347) WIFI: Disconnected, retrying...[0m
+[0;32mI (28867) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (28917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (28917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (28917) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.6%[0m
+[0;33mW (29757) WIFI: Disconnected, retrying...[0m
+[0;33mW (32177) WIFI: Disconnected, retrying...[0m
+[0;33mW (34587) WIFI: Disconnected, retrying...[0m
+[0;33mW (37007) WIFI: Disconnected, retrying...[0m
+[0;32mI (38877) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (38917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (38917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (38937) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.6%[0m
+[0;33mW (39417) WIFI: Disconnected, retrying...[0m
+[0;33mW (41837) WIFI: Disconnected, retrying...[0m
+[0;33mW (44247) WIFI: Disconnected, retrying...[0m
+[0;33mW (46667) WIFI: Disconnected, retrying...[0m
+[0;32mI (48887) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (48917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (48917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (48957) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.6%[0m
+[0;33mW (49087) WIFI: Disconnected, retrying...[0m
+[0;33mW (51497) WIFI: Disconnected, retrying...[0m
+[0;33mW (53917) WIFI: Disconnected, retrying...[0m
+[0;33mW (56327) WIFI: Disconnected, retrying...[0m
+[0;33mW (58747) WIFI: Disconnected, retrying...[0m
+[0;32mI (58897) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (58917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (58917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (58977) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.6%[0m
+[0;33mW (61157) WIFI: Disconnected, retrying...[0m
+[0;33mW (63577) WIFI: Disconnected, retrying...[0m
+[0;33mW (65987) WIFI: Disconnected, retrying...[0m
+[0;33mW (68407) WIFI: Disconnected, retrying...[0m
+[0;32mI (68907) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (68917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (68917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (68997) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.6%[0m
+[0;33mW (70817) WIFI: Disconnected, retrying...[0m
+[0;33mW (73237) WIFI: Disconnected, retrying...[0m
+[0;33mW (75647) WIFI: Disconnected, retrying...[0m
+[0;33mW (78067) WIFI: Disconnected, retrying...[0m
+[0;32mI (78917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (78917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (78917) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (79017) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.6%[0m
+[0;33mW (80487) WIFI: Disconnected, retrying...[0m
+[0;33mW (82897) WIFI: Disconnected, retrying...[0m
+[0;33mW (85317) WIFI: Disconnected, retrying...[0m
+[0;33mW (87727) WIFI: Disconnected, retrying...[0m
+[0;32mI (88917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (88917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (88937) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (89037) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.7%[0m
+[0;33mW (90147) WIFI: Disconnected, retrying...[0m
+[0;33mW (92557) WIFI: Disconnected, retrying...[0m
+[0;33mW (94977) WIFI: Disconnected, retrying...[0m
+[0;33mW (97387) WIFI: Disconnected, retrying...[0m
+[0;32mI (98917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (98917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (98947) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (99057) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.8%[0m
+[0;33mW (99807) WIFI: Disconnected, retrying...[0m
+[0;33mW (102217) WIFI: Disconnected, retrying...[0m
+[0;33mW (104637) WIFI: Disconnected, retrying...[0m
+[0;33mW (107047) WIFI: Disconnected, retrying...[0m
+[0;32mI (108917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (108917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (108957) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.80%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (109077) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.8%[0m
+[0;33mW (109467) WIFI: Disconnected, retrying...[0m
+[0;33mW (111877) WIFI: Disconnected, retrying...[0m
+[0;33mW (114297) WIFI: Disconnected, retrying...[0m
+[0;33mW (116707) WIFI: Disconnected, retrying...[0m
+[0;32mI (118917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (118917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (118967) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.80%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (119097) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.7%[0m
+[0;33mW (119127) WIFI: Disconnected, retrying...[0m
+[0;33mW (121547) WIFI: Disconnected, retrying...[0m
+[0;33mW (123957) WIFI: Disconnected, retrying...[0m
+[0;33mW (126377) WIFI: Disconnected, retrying...[0m
+[0;33mW (128787) WIFI: Disconnected, retrying...[0m
+[0;32mI (128917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (128917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (128977) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (129117) DHT_SENSOR: Temperature: 23.7°C, Humidity: 68.7%[0m
+[0;33mW (131207) WIFI: Disconnected, retrying...[0m
+[0;33mW (133617) WIFI: Disconnected, retrying...[0m
+[0;33mW (136037) WIFI: Disconnected, retrying...[0m
+[0;33mW (138447) WIFI: Disconnected, retrying...[0m
+[0;32mI (138917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (138917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (138987) CSV_WRITER: Sensor data recorded: T=23.70°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (139137) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.7%[0m
+[0;33mW (140867) WIFI: Disconnected, retrying...[0m
+[0;33mW (143277) WIFI: Disconnected, retrying...[0m
+[0;33mW (145697) WIFI: Disconnected, retrying...[0m
+[0;33mW (148107) WIFI: Disconnected, retrying...[0m
+[0;32mI (148917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (148917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (148997) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (149157) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.7%[0m
+[0;33mW (150527) WIFI: Disconnected, retrying...[0m
+[0;33mW (152947) WIFI: Disconnected, retrying...[0m
+[0;33mW (155357) WIFI: Disconnected, retrying...[0m
+[0;33mW (157777) WIFI: Disconnected, retrying...[0m
+[0;32mI (158917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (158917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (159007) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (159177) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.8%[0m
+[0;33mW (160187) WIFI: Disconnected, retrying...[0m
+[0;33mW (162607) WIFI: Disconnected, retrying...[0m
+[0;33mW (165017) WIFI: Disconnected, retrying...[0m
+[0;33mW (167437) WIFI: Disconnected, retrying...[0m
+[0;32mI (168917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (168917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (169017) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.80%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (169197) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.7%[0m
+[0;33mW (169847) WIFI: Disconnected, retrying...[0m
+[0;33mW (172267) WIFI: Disconnected, retrying...[0m
+[0;33mW (174677) WIFI: Disconnected, retrying...[0m
+[0;33mW (177097) WIFI: Disconnected, retrying...[0m
+[0;32mI (178917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (178917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (179027) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (179217) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.7%[0m
+[0;33mW (179507) WIFI: Disconnected, retrying...[0m
+[0;33mW (181927) WIFI: Disconnected, retrying...[0m
+[0;33mW (184337) WIFI: Disconnected, retrying...[0m
+[0;33mW (186757) WIFI: Disconnected, retrying...[0m
+[0;32mI (188917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (188917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (189037) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;33mW (189177) WIFI: Disconnected, retrying...[0m
+[0;32mI (189237) DHT_SENSOR: Temperature: 23.7°C, Humidity: 68.7%[0m
+[0;33mW (191587) WIFI: Disconnected, retrying...[0m
+[0;33mW (194007) WIFI: Disconnected, retrying...[0m
+[0;33mW (196417) WIFI: Disconnected, retrying...[0m
+[0;33mW (198837) WIFI: Disconnected, retrying...[0m
+[0;32mI (198917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (198917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (199047) CSV_WRITER: Sensor data recorded: T=23.70°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (199257) DHT_SENSOR: Temperature: 23.7°C, Humidity: 68.7%[0m
+[0;33mW (201247) WIFI: Disconnected, retrying...[0m
+[0;33mW (203667) WIFI: Disconnected, retrying...[0m
+[0;33mW (206077) WIFI: Disconnected, retrying...[0m
+[0;33mW (208497) WIFI: Disconnected, retrying...[0m
+[0;32mI (208917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (208917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (209057) CSV_WRITER: Sensor data recorded: T=23.70°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (209277) DHT_SENSOR: Temperature: 23.7°C, Humidity: 68.7%[0m
+[0;33mW (210917) WIFI: Disconnected, retrying...[0m
+[0;33mW (213327) WIFI: Disconnected, retrying...[0m
+[0;33mW (215747) WIFI: Disconnected, retrying...[0m
+[0;33mW (218157) WIFI: Disconnected, retrying...[0m
+[0;32mI (218917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (218917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (219067) CSV_WRITER: Sensor data recorded: T=23.70°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (219297) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.7%[0m
+[0;33mW (220577) WIFI: Disconnected, retrying...[0m
+[0;33mW (222987) WIFI: Disconnected, retrying...[0m
+[0;33mW (225407) WIFI: Disconnected, retrying...[0m
+[0;33mW (227817) WIFI: Disconnected, retrying...[0m
+[0;32mI (228917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (228917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (229077) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (229317) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.7%[0m
+[0;33mW (230237) WIFI: Disconnected, retrying...[0m
+[0;33mW (232647) WIFI: Disconnected, retrying...[0m
+[0;33mW (235067) WIFI: Disconnected, retrying...[0m
+[0;33mW (237477) WIFI: Disconnected, retrying...[0m
+[0;32mI (238917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (238917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (239087) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (239337) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.8%[0m
+[0;33mW (239897) WIFI: Disconnected, retrying...[0m
+[0;33mW (242307) WIFI: Disconnected, retrying...[0m
+[0;33mW (244727) WIFI: Disconnected, retrying...[0m
+[0;33mW (247137) WIFI: Disconnected, retrying...[0m
+[0;32mI (248917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (248917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (249097) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.80%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (249357) DHT_SENSOR: Temperature: 23.7°C, Humidity: 68.8%[0m
+[0;33mW (249557) WIFI: Disconnected, retrying...[0m
+[0;33mW (251977) WIFI: Disconnected, retrying...[0m
+[0;33mW (254387) WIFI: Disconnected, retrying...[0m
+[0;33mW (256807) WIFI: Disconnected, retrying...[0m
+[0;32mI (258917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (258917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (259107) CSV_WRITER: Sensor data recorded: T=23.70°C, H=68.80%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;33mW (259217) WIFI: Disconnected, retrying...[0m
+[0;32mI (259377) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.8%[0m
+[0;33mW (261637) WIFI: Disconnected, retrying...[0m
+[0;33mW (264047) WIFI: Disconnected, retrying...[0m
+[0;33mW (266467) WIFI: Disconnected, retrying...[0m
+[0;33mW (268877) WIFI: Disconnected, retrying...[0m
+[0;32mI (268917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (268917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (269117) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.80%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (269397) DHT_SENSOR: Temperature: 23.7°C, Humidity: 69.1%[0m
+[0;33mW (271297) WIFI: Disconnected, retrying...[0m
+[0;33mW (273707) WIFI: Disconnected, retrying...[0m
+[0;33mW (276127) WIFI: Disconnected, retrying...[0m
+[0;33mW (278537) WIFI: Disconnected, retrying...[0m
+[0;32mI (278917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (278917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (279127) CSV_WRITER: Sensor data recorded: T=23.70°C, H=69.10%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (279417) DHT_SENSOR: Temperature: 23.7°C, Humidity: 69.1%[0m
+[0;33mW (280957) WIFI: Disconnected, retrying...[0m
+[0;33mW (283377) WIFI: Disconnected, retrying...[0m
+[0;33mW (285787) WIFI: Disconnected, retrying...[0m
+[0;33mW (288207) WIFI: Disconnected, retrying...[0m
+[0;32mI (288917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (288917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (289137) CSV_WRITER: Sensor data recorded: T=23.70°C, H=69.10%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (289437) DHT_SENSOR: Temperature: 23.8°C, Humidity: 69.0%[0m
+[0;33mW (290637) WIFI: Disconnected, retrying...[0m
+[0;33mW (293057) WIFI: Disconnected, retrying...[0m
+[0;33mW (295467) WIFI: Disconnected, retrying...[0m
+[0;33mW (297887) WIFI: Disconnected, retrying...[0m
+[0;32mI (298917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (298917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (299147) CSV_WRITER: Sensor data recorded: T=23.80°C, H=69.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (299457) DHT_SENSOR: Temperature: 23.7°C, Humidity: 68.9%[0m
+[0;33mW (300307) WIFI: Disconnected, retrying...[0m
+[0;33mW (302717) WIFI: Disconnected, retrying...[0m
+[0;33mW (305137) WIFI: Disconnected, retrying...[0m
+[0;33mW (307547) WIFI: Disconnected, retrying...[0m
+[0;32mI (308917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (308917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (309157) CSV_WRITER: Sensor data recorded: T=23.70°C, H=68.90%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (309477) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.8%[0m
+[0;33mW (309967) WIFI: Disconnected, retrying...[0m
+[0;33mW (312377) WIFI: Disconnected, retrying...[0m
+[0;33mW (314797) WIFI: Disconnected, retrying...[0m
+[0;33mW (317207) WIFI: Disconnected, retrying...[0m
+[0;32mI (318917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (318917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (319167) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.80%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (319497) DHT_SENSOR: Temperature: 23.8°C, Humidity: 68.9%[0m
+[0;33mW (319627) WIFI: Disconnected, retrying...[0m
+[0;33mW (322037) WIFI: Disconnected, retrying...[0m
+[0;33mW (324457) WIFI: Disconnected, retrying...[0m
+[0;33mW (326867) WIFI: Disconnected, retrying...[0m
+[0;32mI (328917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (328917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (329177) CSV_WRITER: Sensor data recorded: T=23.80°C, H=68.90%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;33mW (329287) WIFI: Disconnected, retrying...[0m
+[0;32mI (329517) DHT_SENSOR: Temperature: 23.7°C, Humidity: 68.9%[0m
+[0;33mW (331697) WIFI: Disconnected, retrying...[0m
+[0;33mW (334117) WIFI: Disconnected, retrying...[0m
+[0;33mW (336527) WIFI: Disconnected, retrying...[0m
+[0;32mI (338917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (338917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;33mW (338947) WIFI: Disconnected, retrying...[0m
+[0;32mI (339187) CSV_WRITER: Sensor data recorded: T=23.70°C, H=68.90%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (339537) DHT_SENSOR: Temperature: 23.7°C, Humidity: 69.0%[0m
+[0;33mW (341367) WIFI: Disconnected, retrying...[0m
+[0;33mW (343777) WIFI: Disconnected, retrying...[0m
+[0;33mW (346197) WIFI: Disconnected, retrying...[0m
+[0;33mW (348607) WIFI: Disconnected, retrying...[0m
+[0;32mI (348917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (348917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (349197) CSV_WRITER: Sensor data recorded: T=23.70°C, H=69.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (349557) DHT_SENSOR: Temperature: 23.8°C, Humidity: 69.0%[0m
+[0;33mW (351027) WIFI: Disconnected, retrying...[0m
+[0;33mW (353437) WIFI: Disconnected, retrying...[0m
+[0;33mW (355857) WIFI: Disconnected, retrying...[0m
+[0;33mW (358267) WIFI: Disconnected, retrying...[0m
+[0;32mI (358917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (358917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (359207) CSV_WRITER: Sensor data recorded: T=23.80°C, H=69.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (359577) DHT_SENSOR: Temperature: 23.8°C, Humidity: 71.6%[0m
+[0;33mW (360687) WIFI: Disconnected, retrying...[0m
+[0;33mW (363107) WIFI: Disconnected, retrying...[0m
+[0;33mW (365517) WIFI: Disconnected, retrying...[0m
+[0;33mW (367937) WIFI: Disconnected, retrying...[0m
+[0;32mI (368917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (368917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (369217) CSV_WRITER: Sensor data recorded: T=23.80°C, H=71.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (369597) DHT_SENSOR: Temperature: 23.9°C, Humidity: 71.6%[0m
+[0;33mW (370347) WIFI: Disconnected, retrying...[0m
+[0;33mW (372767) WIFI: Disconnected, retrying...[0m
+[0;33mW (375177) WIFI: Disconnected, retrying...[0m
+[0;33mW (377597) WIFI: Disconnected, retrying...[0m
+[0;32mI (378917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (378917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (379227) CSV_WRITER: Sensor data recorded: T=23.90°C, H=71.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (379617) DHT_SENSOR: Temperature: 24.0°C, Humidity: 71.6%[0m
+[0;33mW (380007) WIFI: Disconnected, retrying...[0m
+[0;33mW (382427) WIFI: Disconnected, retrying...[0m
+[0;33mW (384837) WIFI: Disconnected, retrying...[0m
+[0;33mW (387257) WIFI: Disconnected, retrying...[0m
+[0;32mI (388917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (388917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (389237) CSV_WRITER: Sensor data recorded: T=24.00°C, H=71.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (389637) DHT_SENSOR: Temperature: 24.0°C, Humidity: 70.9%[0m
+[0;33mW (389667) WIFI: Disconnected, retrying...[0m
+[0;33mW (392087) WIFI: Disconnected, retrying...[0m
+[0;33mW (394507) WIFI: Disconnected, retrying...[0m
+[0;33mW (396917) WIFI: Disconnected, retrying...[0m
+[0;32mI (398917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (398917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (399247) CSV_WRITER: Sensor data recorded: T=24.00°C, H=70.90%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;33mW (399337) WIFI: Disconnected, retrying...[0m
+[0;32mI (399657) DHT_SENSOR: Temperature: 24.0°C, Humidity: 69.4%[0m
+[0;33mW (401747) WIFI: Disconnected, retrying...[0m
+[0;33mW (404167) WIFI: Disconnected, retrying...[0m
+[0;33mW (406577) WIFI: Disconnected, retrying...[0m
+[0;32mI (408917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (408917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;33mW (408997) WIFI: Disconnected, retrying...[0m
+[0;32mI (409257) CSV_WRITER: Sensor data recorded: T=24.00°C, H=69.40%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (409677) DHT_SENSOR: Temperature: 24.0°C, Humidity: 68.9%[0m
+[0;33mW (411407) WIFI: Disconnected, retrying...[0m
+[0;33mW (413827) WIFI: Disconnected, retrying...[0m
+[0;33mW (416237) WIFI: Disconnected, retrying...[0m
+[0;33mW (418657) WIFI: Disconnected, retrying...[0m
+[0;32mI (418917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (418917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (419267) CSV_WRITER: Sensor data recorded: T=24.00°C, H=68.90%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (419697) DHT_SENSOR: Temperature: 24.0°C, Humidity: 68.7%[0m
+[0;33mW (421077) WIFI: Disconnected, retrying...[0m
+[0;33mW (423487) WIFI: Disconnected, retrying...[0m
+[0;33mW (425907) WIFI: Disconnected, retrying...[0m
+[0;33mW (428317) WIFI: Disconnected, retrying...[0m
+[0;32mI (428917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (428917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (429277) CSV_WRITER: Sensor data recorded: T=24.00°C, H=68.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (429717) DHT_SENSOR: Temperature: 24.0°C, Humidity: 68.6%[0m
+[0;33mW (430737) WIFI: Disconnected, retrying...[0m
+[0;33mW (433147) WIFI: Disconnected, retrying...[0m
+[0;33mW (435567) WIFI: Disconnected, retrying...[0m
+[0;33mW (437977) WIFI: Disconnected, retrying...[0m
+[0;32mI (438917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (438917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (439287) CSV_WRITER: Sensor data recorded: T=24.00°C, H=68.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (439737) DHT_SENSOR: Temperature: 24.0°C, Humidity: 68.5%[0m
+[0;33mW (440397) WIFI: Disconnected, retrying...[0m
+[0;33mW (442817) WIFI: Disconnected, retrying...[0m
+[0;33mW (445227) WIFI: Disconnected, retrying...[0m
+[0;33mW (447647) WIFI: Disconnected, retrying...[0m
+[0;32mI (448917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (448917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (449297) CSV_WRITER: Sensor data recorded: T=24.00°C, H=68.50%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (449757) DHT_SENSOR: Temperature: 24.0°C, Humidity: 68.4%[0m
+[0;33mW (450057) WIFI: Disconnected, retrying...[0m
+[0;33mW (452477) WIFI: Disconnected, retrying...[0m
+[0;33mW (454887) WIFI: Disconnected, retrying...[0m
+[0;33mW (457307) WIFI: Disconnected, retrying...[0m
+[0;32mI (458917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (458917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (459307) CSV_WRITER: Sensor data recorded: T=24.00°C, H=68.40%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;33mW (459717) WIFI: Disconnected, retrying...[0m
+[0;32mI (459777) DHT_SENSOR: Temperature: 24.0°C, Humidity: 68.5%[0m
+[0;33mW (462137) WIFI: Disconnected, retrying...[0m
+[0;33mW (464547) WIFI: Disconnected, retrying...[0m
+[0;33mW (466967) WIFI: Disconnected, retrying...[0m
+[0;32mI (468917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (468917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (469317) CSV_WRITER: Sensor data recorded: T=24.00°C, H=68.50%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;33mW (469387) WIFI: Disconnected, retrying...[0m
+[0;32mI (469797) DHT_SENSOR: Temperature: 23.9°C, Humidity: 68.5%[0m
+[0;33mW (471797) WIFI: Disconnected, retrying...[0m
+[0;33mW (474217) WIFI: Disconnected, retrying...[0m
+[0;33mW (476627) WIFI: Disconnected, retrying...[0m
+[0;32mI (478917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (478917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;33mW (479047) WIFI: Disconnected, retrying...[0m
+[0;32mI (479327) CSV_WRITER: Sensor data recorded: T=23.90°C, H=68.50%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (479817) DHT_SENSOR: Temperature: 23.9°C, Humidity: 68.5%[0m
+[0;33mW (481457) WIFI: Disconnected, retrying...[0m
+[0;33mW (483877) WIFI: Disconnected, retrying...[0m
+[0;33mW (486287) WIFI: Disconnected, retrying...[0m
+[0;33mW (488707) WIFI: Disconnected, retrying...[0m
+[0;32mI (488917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (488917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (489337) CSV_WRITER: Sensor data recorded: T=23.90°C, H=68.50%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (489837) DHT_SENSOR: Temperature: 23.9°C, Humidity: 68.6%[0m
+[0;33mW (491127) WIFI: Disconnected, retrying...[0m
+[0;33mW (493537) WIFI: Disconnected, retrying...[0m
+[0;33mW (495957) WIFI: Disconnected, retrying...[0m
+[0;33mW (498367) WIFI: Disconnected, retrying...[0m
+[0;32mI (498917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (498917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (499347) CSV_WRITER: Sensor data recorded: T=23.90°C, H=68.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (499857) DHT_SENSOR: Temperature: 23.9°C, Humidity: 68.6%[0m
+[0;33mW (500787) WIFI: Disconnected, retrying...[0m
+[0;33mW (503197) WIFI: Disconnected, retrying...[0m
+[0;33mW (505617) WIFI: Disconnected, retrying...[0m
+[0;33mW (508027) WIFI: Disconnected, retrying...[0m
+[0;32mI (508917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (508917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (509357) CSV_WRITER: Sensor data recorded: T=23.90°C, H=68.60%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (509877) DHT_SENSOR: Temperature: 23.9°C, Humidity: 68.6%[0m
+[0;33mW (510447) WIFI: Disconnected, retrying...[0m
+[0;33mW (512867) WIFI: Disconnected, retrying...[0m
+[0;33mW (515277) WIFI: Disconnected, retrying...[0m
+[0;33mW (517697) WIFI: Disconnected, retrying...[0m
+[0;32mI (518917) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, CO PPM: 0.00[0m
+[0;32mI (518917) MQ4_SENSOR: Raw: 0 -> Voltage: 0.00 V, CH4 PPM: 0.00[0m
+[0;32mI (518927) SUPERVISOR: Merging CSV files...[0m
+[0;32mI (518957) CSV_MERGER: Merging file: /spiffs/data_1969_12_31_21_00_18.csv[0m
+[0;32mI (519037) CSV_MERGER: Merged 1 files into /spiffs/merged.csv[0m
+[0;33mW (519037) SUPERVISOR: Supervisor task completed. Shutting down the system execution...[0m

@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "seu_projeto",
-    "project_version":    "cf4a7ca-dirty",
+    "project_version":    "a58dcb3-dirty",
     "project_path":       "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps",
     "idf_path":           "/home/kevin_lucas/esp/v5.4/esp-idf",
     "build_dir":          "/home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/build",
