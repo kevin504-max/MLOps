@@ -15,7 +15,6 @@ idf_component_register(
 
         "./core/shared/shared_sensor_data.c"
 
-        # "./helpers/cli_handler.c"
         "./helpers/supervisor/supervisor.c"
 
         "main.c"
