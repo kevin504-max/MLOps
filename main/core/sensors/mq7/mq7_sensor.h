@@ -1,3 +1,11 @@
+/**
+    * @file mq7_sensor.h
+    * @brief Header file for MQ-7 sensor initialization and reading task.
+    *
+    * This module provides functions to initialize the MQ-7 gas sensor and to create a
+    * FreeRTOS task that periodically reads data from the sensor using ADC.
+*/
+
 #ifndef MQ7_SENSOR_H
 #define MQ7_SENSOR_H
 

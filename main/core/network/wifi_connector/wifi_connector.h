@@ -1,6 +1,3 @@
-#ifndef WIFI_CONNECTOR_H
-#define WIFI_CONNECTOR_H
-
 /**
  * @file wifi_connector.h
  * @brief Provides a function to initialize and connect to Wi-Fi in station mode.
@@ -9,6 +6,9 @@
  * the connection to a predefined access point using STA mode.
  * It also sets up event handling to manage reconnection and IP acquisition.
  */
+
+#ifndef WIFI_CONNECTOR_H
+#define WIFI_CONNECTOR_H
 
 /**
  * @brief Initializes the Wi-Fi in station mode and connects to the configured access point.

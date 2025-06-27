@@ -1,3 +1,11 @@
+/**
+    * @file csv_writer.c
+    * @brief Periodically collects sensor data and saves it to a CSV file.
+    *
+    * This module creates a FreeRTOS task that retrieves sensor data (temperature, humidity,
+    * and gas sensor readings from MQ4 and MQ7) every 10 seconds and appends it to a CSV file.
+*/
+
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
 #include "esp_log.h"

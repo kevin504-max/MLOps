@@ -1,3 +1,12 @@
+/**
+    * @file spiffs_manager.h
+    * @brief SPIFFS filesystem management interface.
+    *
+    * This header file provides the interface for initializing and mounting the SPIFFS filesystem.
+    * It includes function declarations necessary for setting up the SPIFFS partition and logging
+    * its status.
+*/
+
 #ifndef SPIFFS_MANAGER_H
 #define SPIFFS_MANAGER_H
 

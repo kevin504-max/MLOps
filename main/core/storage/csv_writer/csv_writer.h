@@ -1,3 +1,12 @@
+/**
+    * @file csv_writer.h
+    * @brief Header file for the CSV writer task.
+    * 
+    * This module provides a function to start a FreeRTOS task that collects sensor data
+    * and writes it to a CSV file every 10 seconds. The task retrieves temperature, humidity,
+    * and gas sensor readings from MQ4 and MQ7 sensors.
+*/
+
 #ifndef CSV_WRITER_H
 #define CSV_WRITER_H
 

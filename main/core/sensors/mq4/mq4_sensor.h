@@ -1,3 +1,11 @@
+/**
+    * @file mq4_sensor.h
+    * @brief Header file for MQ-4 sensor initialization and reading task.
+    *
+    * This module provides functions to initialize the MQ-4 gas sensor and to create a
+    * FreeRTOS task that periodically reads data from the sensor using ADC.
+*/
+
 #ifndef MQ4_SENSOR_H
 #define MQ4_SENSOR_H
 

@@ -1,3 +1,12 @@
+/**
+    * @file wifi_connector.c
+    * @brief Manages Wi-Fi connection in station mode using ESP-IDF.
+    *
+    * This module initializes the Wi-Fi driver, connects to a specified Access Point,
+    * and handles Wi-Fi and IP events to maintain the connection and log status.
+    */
+*/
+
 #include "wifi_connector.h"
 #include "esp_wifi.h"
 #include "esp_event.h"

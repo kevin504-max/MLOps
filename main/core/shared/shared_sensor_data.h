@@ -1,3 +1,12 @@
+/**
+    * @file shared_sensor_data.h
+    * @brief Provides functions to update and retrieve sensor data in a thread-safe manner.
+    *
+    * This module allows multiple tasks to safely update and access sensor data
+    * such as temperature, humidity, and gas sensor readings (MQ4 and MQ7).
+    * It uses a mutex to ensure that updates and reads do not conflict.
+*/
+
 #ifndef SHARED_SENSOR_DATA_H
 #define SHARED_SENSOR_DATA_H
 

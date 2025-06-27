@@ -1,3 +1,11 @@
+/**
+    * @file supervisor.c
+    * @brief Supervisor task to monitor runtime and gracefully shutdown.
+    *
+    * This module implements a FreeRTOS task that waits for a specified period,
+    * merges CSV files, and then puts the device into deep sleep mode.
+*/
+
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
 #include "esp_log.h"

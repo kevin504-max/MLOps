@@ -1,3 +1,11 @@
+/**
+    * @file csv_merger.c
+    * @brief Merges multiple CSV files in the SPIFFS directory into a single output file.
+    *
+    * This module provides functionality to read all CSV files in the SPIFFS directory,
+    * skip their headers (except for the first file), and write the combined data into a single output file.
+*/
+
 #include "csv_merger.h"
 #include "esp_log.h"
 #include <dirent.h>

@@ -1,3 +1,12 @@
+/**
+    * @file dht_sensor.h
+    * @brief Header file for DHT sensor initialization and reading task.
+    *
+    * This module provides functions to initialize the GPIO pin for the DHT sensor
+    * and to create a task that periodically reads temperature and humidity data.
+    */
+*/
+
 #ifndef DHT_SENSOR_H
 #define DHT_SENSOR_H
 
