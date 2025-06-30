@@ -4,7 +4,6 @@
     *
     * This module initializes the Wi-Fi driver, connects to a specified Access Point,
     * and handles Wi-Fi and IP events to maintain the connection and log status.
-    */
 */
 
 #include "wifi_connector.h"
