@@ -16,10 +16,12 @@
 
 #define MQ4_LOG_TAG "MQ4_SENSOR"
 #define MQ4_ADC_CHANNEL ADC_CHANNEL_6  ///< GPIO34 on ESP32
-#define MQ4_VREF 3.3f                  ///< Reference voltage for ADC conversion
+#define MQ4_VREF 5.0f                  ///< Reference voltage for ADC conversion
 #define MQ4_RESOLUTION 4095.0f        ///< 12-bit ADC resolution
 #define MQ4_RL 10000.0f               ///< Load resistance in ohms
 #define MQ4_RO_CLEAN_AIR 9.83f        ///< Rs/Ro ratio in clean air from datasheet
+#define MQ4_AUTO_CALIBRATE_ON_START 1  ///< auto calibrate Ro on startup
+
 
 static adc_oneshot_unit_handle_t adc1_handle_internal;
 static float mq4_ro = 10.0f;  ///< Initial Ro value, can be calibrated
@@ -50,6 +52,24 @@ static float mq4_rs_to_ppm(float rs) {
 }
 
 /**
+ * @brief Calibrates the MQ-4 sensor by measuring Ro in clean air.
+ *
+ * Reads the ADC value, converts it to voltage, calculates Rs, and sets Ro.
+ * Logs the calibration results.
+ */
+void mq4_calibrate(void) {
+    int raw;
+    if (adc_oneshot_read(adc1_handle_internal, MQ4_ADC_CHANNEL, &raw) != ESP_OK) {
+        ESP_LOGE(MQ4_LOG_TAG, "ADC read failed during calibration");
+        return;
+    }
+    float voltage = raw * (MQ4_VREF / MQ4_RESOLUTION);
+    float rs = calculate_rs(voltage);
+    mq4_ro = rs / MQ4_RO_CLEAN_AIR;
+    ESP_LOGI(MQ4_LOG_TAG, "Calibration complete: Ro = %.2f (Raw: %d, V: %.2f, Rs: %.2f)", mq4_ro, raw, voltage, rs);
+}
+
+/**
  * @brief FreeRTOS task that periodically reads data from the MQ-4 sensor.
  *
  * This task reads the ADC value, converts it to voltage and then to Rs,
@@ -62,11 +82,9 @@ static float mq4_rs_to_ppm(float rs) {
 static void mq4_read_task(void *pvParameters) {
     while (true) {
         int raw_adc_value = 0;
-        esp_err_t result = adc_oneshot_read(adc1_handle_internal, MQ4_ADC_CHANNEL, &raw_adc_value);
-
-        if (result != ESP_OK) {
-            ESP_LOGE(MQ4_LOG_TAG, "ADC read failed: %s", esp_err_to_name(result));
-            vTaskDelay(pdMS_TO_TICKS(10000));
+        if (adc_oneshot_read(adc1_handle_internal, MQ4_ADC_CHANNEL, &raw_adc_value) != ESP_OK) {
+            ESP_LOGE(MQ4_LOG_TAG, "ADC read failed");
+            vTaskDelay(pdMS_TO_TICKS(2000));
             continue;
         }
 
@@ -77,7 +95,7 @@ static void mq4_read_task(void *pvParameters) {
         ESP_LOGI(MQ4_LOG_TAG, "Raw: %d, Voltage: %.2f V, Rs: %.2f, CH4_PPM: %.2f", raw_adc_value, voltage, rs, ppm);
         update_mq4_data(voltage, ppm);
 
-        vTaskDelay(pdMS_TO_TICKS(10000));
+        vTaskDelay(pdMS_TO_TICKS(2000));
     }
 }
 
@@ -97,11 +115,15 @@ void mq4_sensor_init(adc_oneshot_unit_handle_t handle) {
         .atten = ADC_ATTEN_DB_12,
     };
 
-    esp_err_t ret = adc_oneshot_config_channel(adc1_handle_internal, MQ4_ADC_CHANNEL, &channel_cfg);
-    if (ret != ESP_OK) {
-        ESP_LOGE(MQ4_LOG_TAG, "Failed to configure MQ4 ADC channel: %s", esp_err_to_name(ret));
-    } else {
+    if (adc_oneshot_config_channel(adc1_handle_internal, MQ4_ADC_CHANNEL, &channel_cfg) == ESP_OK) {
         ESP_LOGI(MQ4_LOG_TAG, "MQ4 ADC channel configured successfully");
+
+    #if MQ4_AUTO_CALIBRATE_ON_START
+        mq4_calibrate();
+    #endif
+
+    } else {
+        ESP_LOGE(MQ4_LOG_TAG, "Failed to configure MQ4 ADC channel");
     }
 }
 
