@@ -1,0 +1,469 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m
+[0;33m--- 0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+[0m
+[0;33m--- 0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40081d01: panic_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/panic.c:454
+0x4008a7f9: esp_system_abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/port/esp_system_chip.c:92
+0x40092569: abort at /home/kevin_lucas/esp/v5.4/esp-idf/components/newlib/abort.c:38
+0x4008a7ef: _esp_error_check_failed at /home/kevin_lucas/esp/v5.4/esp-idf/components/esp_system/esp_err.c:49
+0x400d99cd: wifi_connect at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/core/network/wifi_connector/wifi_connector.c:82 (discriminator 1)
+0x400d95da: app_main at /home/kevin_lucas/esp/v5.4/esp-idf/tcc/MLOps/main/main.c:37
+0x401696bf: main_task at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/app_startup.c:208
+0x4008b29d: vPortTaskWrapper at /home/kevin_lucas/esp/v5.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40080400: _init at ??:?
+[0m

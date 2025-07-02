@@ -1,0 +1,1316 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 23:08:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 00100000[0m
+[0;32mI (79) boot:  3 spiffs           Unknown data     01 82 00110000 00070000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e248h (123464) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0002e270 vaddr=3ff80064 size=0001ch (    28) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=0002e294 vaddr=3ffb0000 size=01d84h (  7556) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=9b75ch (636764) map[0m
+[0;32mI (368) esp_image: segment 4: paddr=000cb784 vaddr=3ffb1d84 size=02234h (  8756) load[0m
+[0;32mI (371) esp_image: segment 5: paddr=000cd9c0 vaddr=40080000 size=1896ch (100716) load[0m
+[0;32mI (411) esp_image: segment 6: paddr=000e6334 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (423) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (423) boot: Disabling RNG early entropy source...[0m
+[0;32mI (433) cpu_start: Multicore app[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (442) app_init: Project name:     seu_projeto[0m
+[0;32mI (446) app_init: App version:      779438b6-dirty[0m
+[0;32mI (451) app_init: Compile time:     Jun 30 2025 17:34:22[0m
+[0;32mI (456) app_init: ELF file SHA256:  7ff139a41...[0m
+[0;32mI (460) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (464) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (468) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (472) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB8818 len 000277E8 (157 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (498) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 4009896C len 00007694 (29 KiB): IRAM[0m
+[0;32mI (510) spi_flash: detected chip: generic[0m
+[0;32mI (512) spi_flash: flash io: dio[0m
+[0;33mW (515) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (528) main_task: Started on CPU0[0m
+[0;32mI (538) main_task: Calling app_main()[0m
+[0;32mI (558) MAIN_LOG: NVS Flash initialized successfully[0m
+[0;32mI (568) wifi:wifi driver task: 3ffc0680, prio:23, stack:6656, core=0[0m
+[0;32mI (578) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (578) wifi:wifi certification version: v7.0[0m
+[0;32mI (578) wifi:config NVS flash: enabled[0m
+[0;32mI (578) wifi:config nano formatting: disabled[0m
+[0;32mI (578) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (588) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (588) wifi:Init management short buffer num: 32[0m
+[0;32mI (598) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (598) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (608) wifi:Init static rx buffer num: 10[0m
+[0;32mI (608) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (608) wifi_init: rx ba win: 6[0m
+[0;32mI (618) wifi_init: accept mbox: 6[0m
+[0;32mI (618) wifi_init: tcpip mbox: 32[0m
+[0;32mI (618) wifi_init: udp mbox: 6[0m
+[0;32mI (618) wifi_init: tcp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp tx win: 5760[0m
+[0;32mI (628) wifi_init: tcp rx win: 5760[0m
+[0;32mI (628) wifi_init: tcp mss: 1440[0m
+[0;32mI (638) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (638) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (648) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (648) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (728) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (758) wifi:mode : sta (e0:5a:1b:75:02:68)[0m
+[0;32mI (758) wifi:enable tsf[0m
+[0;32mI (758) WIFI: Wi-Fi initialization done.[0m
+[0;32mI (758) TIME_SYNC: Initializing SNTP[0m
+[0;32mI (768) WIFI: Wi-Fi started, connecting...[0m
+[0;32mI (768) TIME_SYNC: Waiting for system time to be set... (1/10)[0m
+[0;32mI (778) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (778) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (818) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (828) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (938) wifi:connected with CATIVEIRO, aid = 9, channel 6, BW20, bssid = e8:45:8b:36:88:10[0m
+[0;32mI (938) wifi:security: WPA2-PSK, phy: bgn, rssi: -30[0m
+[0;32mI (948) wifi:pm start, type: 1[0m
+
+[0;32mI (948) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (958) WIFI: Connected to AP[0m
+[0;32mI (988) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1198) wifi:<ba-add>idx:0 (ifx:0, e8:45:8b:36:88:10), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2248) esp_netif_handlers: sta ip: 192.168.15.68, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (2248) WIFI: Got IP:192.168.15.68[0m
+[0;32mI (2558) wifi:<ba-add>idx:1 (ifx:0, e8:45:8b:36:88:10), tid:7, ssn:6, winSize:64[0m
+[0;32mI (2768) TIME_SYNC: Time synchronized: Mon Jun 30 17:48:54 2025[0m
+
+[0;32mI (2768) SPIFFS: Initializing SPIFFS[0m
+[0;32mI (2798) SPIFFS: Partition size: total: 414401 bytes, used: 7028 bytes[0m
+[1;31mE (2808) SPIFFS: SPIFFS mount check failed[0m
+[0;32mI (2808) CSV_LOGGER: CSV file path: /spiffs/data_2025_06_30_17_48_54.csv[0m
+[0;32mI (2818) CSV_LOGGER: Initializing CSV file: /spiffs/data_2025_06_30_17_48_54.csv[0m
+[0;32mI (2878) CSV_LOGGER: CSV file initialized successfully[0m
+[0;32mI (2878) CSV_WRITER: Sensor data recorded: T=0.00°C, H=0.00%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (2888) HTTP_SERVER: Starting HTTP Server[0m
+[0;32mI (2888) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2898) MQ4_SENSOR: MQ4 ADC channel configured successfully[0m
+[0;32mI (2898) MQ7_SENSOR: MQ7 ADC channel configured successfully[0m
+[1;31mE (2928) dht: Initialization error, problem in phase 'B'[0m
+[1;31mE (2928) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;32mI (2928) MQ4_SENSOR: Raw: 912, Voltage: 1.11 V, Rs: 34901.31, CH4_PPM: 0.00[0m
+[0;32mI (2928) MQ7_SENSOR: Raw: 2307, Voltage: 2.82 V, Rs: 7750.32, CO_PPM: 0.00[0m
+[0;32mI (2938) MAIN_LOG: Application started successfully[0m
+[0;32mI (2938) main_task: Returned from app_main()[0m
+[0;32mI (2948) SUPERVISOR: Supervisor started. Waiting 10 minutes before shutdown...[0m
+[0;32mI (4948) MQ7_SENSOR: Raw: 2297, Voltage: 2.80 V, Rs: 7827.60, CO_PPM: 0.00[0m
+[0;32mI (4948) MQ4_SENSOR: Raw: 915, Voltage: 1.12 V, Rs: 34754.10, CH4_PPM: 0.00[0m
+[0;32mI (4948) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.7%[0m
+[0;32mI (6948) MQ7_SENSOR: Raw: 2314, Voltage: 2.83 V, Rs: 7696.63, CO_PPM: 0.00[0m
+[0;32mI (6948) MQ4_SENSOR: Raw: 922, Voltage: 1.13 V, Rs: 34414.31, CH4_PPM: 0.00[0m
+[0;32mI (6978) DHT_SENSOR: Temperature: 25.0°C, Humidity: 43.5%[0m
+[0;32mI (8948) MQ7_SENSOR: Raw: 2309, Voltage: 2.82 V, Rs: 7734.95, CO_PPM: 0.00[0m
+[0;32mI (8948) MQ4_SENSOR: Raw: 912, Voltage: 1.11 V, Rs: 34901.31, CH4_PPM: 0.00[0m
+[0;32mI (8998) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.5%[0m
+[0;32mI (10948) MQ7_SENSOR: Raw: 2294, Voltage: 2.80 V, Rs: 7850.91, CO_PPM: 0.00[0m
+[0;32mI (10948) MQ4_SENSOR: Raw: 909, Voltage: 1.11 V, Rs: 35049.51, CH4_PPM: 0.00[0m
+[0;32mI (11018) DHT_SENSOR: Temperature: 25.0°C, Humidity: 43.3%[0m
+[0;32mI (12898) CSV_WRITER: Sensor data recorded: T=25.00°C, H=43.30%, MQ4=1.11V/0.00ppm, MQ7=2.80V/0.00ppm[0m
+[0;32mI (12948) MQ7_SENSOR: Raw: 2325, Voltage: 2.84 V, Rs: 7612.90, CO_PPM: 0.00[0m
+[0;32mI (12948) MQ4_SENSOR: Raw: 1009, Voltage: 1.23 V, Rs: 30584.74, CH4_PPM: 0.00[0m
+[0;32mI (13038) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (14948) MQ7_SENSOR: Raw: 2288, Voltage: 2.79 V, Rs: 7897.73, CO_PPM: 0.00[0m
+[0;32mI (14948) MQ4_SENSOR: Raw: 959, Voltage: 1.17 V, Rs: 32700.73, CH4_PPM: 0.00[0m
+[0;32mI (15058) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (16948) MQ7_SENSOR: Raw: 2291, Voltage: 2.80 V, Rs: 7874.29, CO_PPM: 0.00[0m
+[0;32mI (16948) MQ4_SENSOR: Raw: 976, Voltage: 1.19 V, Rs: 31956.96, CH4_PPM: 0.00[0m
+[0;32mI (17078) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.6%[0m
+[0;32mI (18948) MQ7_SENSOR: Raw: 2301, Voltage: 2.81 V, Rs: 7796.61, CO_PPM: 0.00[0m
+[0;32mI (18948) MQ4_SENSOR: Raw: 960, Voltage: 1.17 V, Rs: 32656.25, CH4_PPM: 0.00[0m
+[0;32mI (19098) DHT_SENSOR: Temperature: 25.0°C, Humidity: 43.9%[0m
+[0;32mI (20948) MQ7_SENSOR: Raw: 2285, Voltage: 2.79 V, Rs: 7921.23, CO_PPM: 0.00[0m
+[0;32mI (20948) MQ4_SENSOR: Raw: 974, Voltage: 1.19 V, Rs: 32043.12, CH4_PPM: 0.00[0m
+[0;32mI (21118) DHT_SENSOR: Temperature: 25.1°C, Humidity: 44.0%[0m
+[0;32mI (22908) CSV_WRITER: Sensor data recorded: T=25.10°C, H=44.00%, MQ4=1.19V/0.00ppm, MQ7=2.79V/0.00ppm[0m
+[0;32mI (22948) MQ7_SENSOR: Raw: 2330, Voltage: 2.84 V, Rs: 7575.11, CO_PPM: 0.00[0m
+[0;32mI (22948) MQ4_SENSOR: Raw: 1008, Voltage: 1.23 V, Rs: 30625.00, CH4_PPM: 0.00[0m
+[0;32mI (23138) DHT_SENSOR: Temperature: 25.1°C, Humidity: 44.0%[0m
+[0;32mI (24948) MQ7_SENSOR: Raw: 2353, Voltage: 2.87 V, Rs: 7403.31, CO_PPM: 0.00[0m
+[0;32mI (24948) MQ4_SENSOR: Raw: 1087, Voltage: 1.33 V, Rs: 27672.49, CH4_PPM: 0.00[0m
+[0;32mI (25158) DHT_SENSOR: Temperature: 25.0°C, Humidity: 44.1%[0m
+[0;32mI (26948) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (26948) MQ4_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CH4_PPM: 0.00[0m
+[0;32mI (27178) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.8%[0m
+[0;32mI (28948) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (28948) MQ4_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CH4_PPM: 0.00[0m
+[0;32mI (29198) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.8%[0m
+[0;32mI (30948) MQ7_SENSOR: Raw: 3051, Voltage: 3.73 V, Rs: 3421.83, CO_PPM: 0.01[0m
+[0;32mI (30948) MQ4_SENSOR: Raw: 114, Voltage: 0.14 V, Rs: 349210.50, CH4_PPM: 0.00[0m
+[0;32mI (31218) DHT_SENSOR: Temperature: 25.1°C, Humidity: 44.0%[0m
+[0;32mI (32918) CSV_WRITER: Sensor data recorded: T=25.10°C, H=44.00%, MQ4=0.14V/0.00ppm, MQ7=3.73V/0.01ppm[0m
+[0;32mI (32948) MQ7_SENSOR: Raw: 3221, Voltage: 3.93 V, Rs: 2713.44, CO_PPM: 0.02[0m
+[0;32mI (32948) MQ4_SENSOR: Raw: 130, Voltage: 0.16 V, Rs: 305000.00, CH4_PPM: 0.00[0m
+[0;32mI (33238) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.8%[0m
+[0;32mI (34948) MQ7_SENSOR: Raw: 3315, Voltage: 4.05 V, Rs: 2352.94, CO_PPM: 0.02[0m
+[0;32mI (34948) MQ4_SENSOR: Raw: 149, Voltage: 0.18 V, Rs: 264832.19, CH4_PPM: 0.00[0m
+[0;32mI (35258) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.6%[0m
+[0;32mI (36948) MQ7_SENSOR: Raw: 3301, Voltage: 4.03 V, Rs: 2405.33, CO_PPM: 0.02[0m
+[0;32mI (36948) MQ4_SENSOR: Raw: 133, Voltage: 0.16 V, Rs: 297894.75, CH4_PPM: 0.00[0m
+[0;32mI (37278) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (38948) MQ7_SENSOR: Raw: 3376, Voltage: 4.12 V, Rs: 2129.74, CO_PPM: 0.03[0m
+[0;32mI (38948) MQ4_SENSOR: Raw: 976, Voltage: 1.19 V, Rs: 31956.96, CH4_PPM: 0.00[0m
+[0;32mI (39298) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (40948) MQ7_SENSOR: Raw: 3264, Voltage: 3.99 V, Rs: 2545.96, CO_PPM: 0.02[0m
+[0;32mI (40948) MQ4_SENSOR: Raw: 1168, Voltage: 1.43 V, Rs: 25059.93, CH4_PPM: 0.00[0m
+[0;32mI (41318) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (42928) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.10%, MQ4=1.43V/0.00ppm, MQ7=3.99V/0.02ppm[0m
+[0;32mI (42948) MQ7_SENSOR: Raw: 3375, Voltage: 4.12 V, Rs: 2133.33, CO_PPM: 0.03[0m
+[0;32mI (42948) MQ4_SENSOR: Raw: 1286, Voltage: 1.57 V, Rs: 21842.92, CH4_PPM: 0.00[0m
+[0;32mI (43338) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (44948) MQ7_SENSOR: Raw: 3407, Voltage: 4.16 V, Rs: 2019.37, CO_PPM: 0.03[0m
+[0;32mI (44948) MQ4_SENSOR: Raw: 1328, Voltage: 1.62 V, Rs: 20835.84, CH4_PPM: 0.00[0m
+[0;32mI (45358) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (46948) MQ7_SENSOR: Raw: 3469, Voltage: 4.24 V, Rs: 1804.55, CO_PPM: 0.04[0m
+[0;32mI (46948) MQ4_SENSOR: Raw: 1413, Voltage: 1.73 V, Rs: 18980.89, CH4_PPM: 0.00[0m
+[0;32mI (47378) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (48948) MQ7_SENSOR: Raw: 3573, Voltage: 4.36 V, Rs: 1460.96, CO_PPM: 0.05[0m
+[0;32mI (48948) MQ4_SENSOR: Raw: 1459, Voltage: 1.78 V, Rs: 18067.17, CH4_PPM: 0.00[0m
+[0;32mI (49398) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (50948) MQ7_SENSOR: Raw: 3647, Voltage: 4.45 V, Rs: 1228.41, CO_PPM: 0.07[0m
+[0;32mI (50948) MQ4_SENSOR: Raw: 1511, Voltage: 1.84 V, Rs: 17101.26, CH4_PPM: 0.00[0m
+[0;32mI (51418) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (52938) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.40%, MQ4=1.84V/0.00ppm, MQ7=4.45V/0.07ppm[0m
+[0;32mI (52948) MQ7_SENSOR: Raw: 3609, Voltage: 4.41 V, Rs: 1346.63, CO_PPM: 0.06[0m
+[0;32mI (52948) MQ4_SENSOR: Raw: 1493, Voltage: 1.82 V, Rs: 17428.00, CH4_PPM: 0.00[0m
+[0;32mI (53438) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (54948) MQ7_SENSOR: Raw: 3712, Voltage: 4.53 V, Rs: 1031.79, CO_PPM: 0.09[0m
+[0;32mI (54948) MQ4_SENSOR: Raw: 1446, Voltage: 1.77 V, Rs: 18319.50, CH4_PPM: 0.00[0m
+[0;32mI (55458) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (56948) MQ7_SENSOR: Raw: 3747, Voltage: 4.58 V, Rs: 928.74, CO_PPM: 0.10[0m
+[0;32mI (56948) MQ4_SENSOR: Raw: 1535, Voltage: 1.87 V, Rs: 16677.52, CH4_PPM: 0.00[0m
+[0;32mI (57478) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (58948) MQ7_SENSOR: Raw: 3775, Voltage: 4.61 V, Rs: 847.68, CO_PPM: 0.12[0m
+[0;32mI (58948) MQ4_SENSOR: Raw: 1391, Voltage: 1.70 V, Rs: 19439.25, CH4_PPM: 0.00[0m
+[0;32mI (59498) DHT_SENSOR: Temperature: 25.0°C, Humidity: 42.9%[0m
+[0;32mI (60948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (60948) MQ4_SENSOR: Raw: 1615, Voltage: 1.97 V, Rs: 15356.04, CH4_PPM: 0.00[0m
+[0;32mI (61518) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.8%[0m
+[0;32mI (62948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (62948) MQ4_SENSOR: Raw: 1611, Voltage: 1.97 V, Rs: 15419.00, CH4_PPM: 0.00[0m
+[0;32mI (62948) CSV_WRITER: Sensor data recorded: T=25.10°C, H=42.80%, MQ4=1.97V/0.00ppm, MQ7=5.00V/infppm[0m
+[0;32mI (63538) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.8%[0m
+[0;32mI (64948) MQ7_SENSOR: Raw: 4086, Voltage: 4.99 V, Rs: 22.03, CO_PPM: 29.87[0m
+[0;32mI (64948) MQ4_SENSOR: Raw: 1600, Voltage: 1.95 V, Rs: 15593.75, CH4_PPM: 0.00[0m
+[0;32mI (65558) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (66948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (66948) MQ4_SENSOR: Raw: 1587, Voltage: 1.94 V, Rs: 15803.40, CH4_PPM: 0.00[0m
+[0;32mI (67578) DHT_SENSOR: Temperature: 25.1°C, Humidity: 44.4%[0m
+[0;32mI (68948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (68948) MQ4_SENSOR: Raw: 1599, Voltage: 1.95 V, Rs: 15609.75, CH4_PPM: 0.00[0m
+[0;32mI (69598) DHT_SENSOR: Temperature: 25.1°C, Humidity: 44.3%[0m
+[0;32mI (70948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (70948) MQ4_SENSOR: Raw: 1591, Voltage: 1.94 V, Rs: 15738.53, CH4_PPM: 0.00[0m
+[0;32mI (71618) DHT_SENSOR: Temperature: 25.1°C, Humidity: 44.0%[0m
+[0;32mI (72948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (72948) MQ4_SENSOR: Raw: 1584, Voltage: 1.93 V, Rs: 15852.27, CH4_PPM: 0.00[0m
+[0;32mI (72968) CSV_WRITER: Sensor data recorded: T=25.10°C, H=44.00%, MQ4=1.93V/0.00ppm, MQ7=5.00V/infppm[0m
+[0;32mI (73638) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.8%[0m
+[0;32mI (74948) MQ7_SENSOR: Raw: 4089, Voltage: 4.99 V, Rs: 14.67, CO_PPM: 55.34[0m
+[0;32mI (74948) MQ4_SENSOR: Raw: 1568, Voltage: 1.91 V, Rs: 16116.07, CH4_PPM: 0.00[0m
+[0;32mI (75658) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.5%[0m
+[0;32mI (76948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (76948) MQ4_SENSOR: Raw: 1563, Voltage: 1.91 V, Rs: 16199.62, CH4_PPM: 0.00[0m
+[0;32mI (77678) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (78948) MQ7_SENSOR: Raw: 4082, Voltage: 4.98 V, Rs: 31.85, CO_PPM: 17.07[0m
+[0;32mI (78948) MQ4_SENSOR: Raw: 1533, Voltage: 1.87 V, Rs: 16712.33, CH4_PPM: 0.00[0m
+[0;32mI (79698) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (80948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (80948) MQ4_SENSOR: Raw: 1515, Voltage: 1.85 V, Rs: 17029.70, CH4_PPM: 0.00[0m
+[0;32mI (81718) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (82948) MQ7_SENSOR: Raw: 4077, Voltage: 4.98 V, Rs: 44.15, CO_PPM: 10.39[0m
+[0;32mI (82948) MQ4_SENSOR: Raw: 1519, Voltage: 1.85 V, Rs: 16958.52, CH4_PPM: 0.00[0m
+[0;32mI (82978) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.10%, MQ4=1.85V/0.00ppm, MQ7=4.98V/10.39ppm[0m
+[0;32mI (83738) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (84948) MQ7_SENSOR: Raw: 4067, Voltage: 4.97 V, Rs: 68.85, CO_PPM: 5.30[0m
+[0;32mI (84948) MQ4_SENSOR: Raw: 1520, Voltage: 1.86 V, Rs: 16940.79, CH4_PPM: 0.00[0m
+[0;32mI (85758) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.9%[0m
+[0;32mI (86948) MQ7_SENSOR: Raw: 4068, Voltage: 4.97 V, Rs: 66.37, CO_PPM: 5.60[0m
+[0;32mI (86948) MQ4_SENSOR: Raw: 1504, Voltage: 1.84 V, Rs: 17227.39, CH4_PPM: 0.00[0m
+[0;32mI (87778) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.9%[0m
+[0;32mI (88948) MQ7_SENSOR: Raw: 4075, Voltage: 4.98 V, Rs: 49.08, CO_PPM: 8.85[0m
+[0;32mI (88948) MQ4_SENSOR: Raw: 1493, Voltage: 1.82 V, Rs: 17428.00, CH4_PPM: 0.00[0m
+[0;32mI (89798) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.9%[0m
+[0;32mI (90948) MQ7_SENSOR: Raw: 4049, Voltage: 4.94 V, Rs: 113.61, CO_PPM: 2.48[0m
+[0;32mI (90948) MQ4_SENSOR: Raw: 1478, Voltage: 1.80 V, Rs: 17706.36, CH4_PPM: 0.00[0m
+[0;32mI (91818) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.8%[0m
+[0;32mI (92948) MQ7_SENSOR: Raw: 4035, Voltage: 4.93 V, Rs: 148.70, CO_PPM: 1.65[0m
+[0;32mI (92948) MQ4_SENSOR: Raw: 1488, Voltage: 1.82 V, Rs: 17520.16, CH4_PPM: 0.00[0m
+[0;32mI (92988) CSV_WRITER: Sensor data recorded: T=25.10°C, H=42.80%, MQ4=1.82V/0.00ppm, MQ7=4.93V/1.65ppm[0m
+[0;32mI (93838) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.8%[0m
+[0;32mI (94948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (94948) MQ4_SENSOR: Raw: 1477, Voltage: 1.80 V, Rs: 17725.12, CH4_PPM: 0.00[0m
+[0;32mI (95858) DHT_SENSOR: Temperature: 25.1°C, Humidity: 49.7%[0m
+[0;32mI (96948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (96948) MQ4_SENSOR: Raw: 1478, Voltage: 1.80 V, Rs: 17706.36, CH4_PPM: 0.00[0m
+[0;32mI (97878) DHT_SENSOR: Temperature: 25.1°C, Humidity: 54.3%[0m
+[0;32mI (98948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (98948) MQ4_SENSOR: Raw: 1494, Voltage: 1.82 V, Rs: 17409.64, CH4_PPM: 0.00[0m
+[0;32mI (99898) DHT_SENSOR: Temperature: 25.1°C, Humidity: 51.6%[0m
+[0;32mI (100948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (100948) MQ4_SENSOR: Raw: 1473, Voltage: 1.80 V, Rs: 17800.41, CH4_PPM: 0.00[0m
+[0;32mI (101918) DHT_SENSOR: Temperature: 25.1°C, Humidity: 49.5%[0m
+[0;32mI (102948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (102948) MQ4_SENSOR: Raw: 1451, Voltage: 1.77 V, Rs: 18221.92, CH4_PPM: 0.00[0m
+[0;32mI (102998) CSV_WRITER: Sensor data recorded: T=25.10°C, H=49.50%, MQ4=1.77V/0.00ppm, MQ7=5.00V/infppm[0m
+[0;32mI (103938) DHT_SENSOR: Temperature: 25.1°C, Humidity: 47.5%[0m
+[0;32mI (104948) MQ7_SENSOR: Raw: 4075, Voltage: 4.98 V, Rs: 49.08, CO_PPM: 8.85[0m
+[0;32mI (104948) MQ4_SENSOR: Raw: 1443, Voltage: 1.76 V, Rs: 18378.38, CH4_PPM: 0.00[0m
+[0;32mI (105958) DHT_SENSOR: Temperature: 25.1°C, Humidity: 46.4%[0m
+[0;32mI (106948) MQ7_SENSOR: Raw: 4085, Voltage: 4.99 V, Rs: 24.48, CO_PPM: 25.45[0m
+[0;32mI (106948) MQ4_SENSOR: Raw: 1453, Voltage: 1.77 V, Rs: 18183.07, CH4_PPM: 0.00[0m
+[0;32mI (107978) DHT_SENSOR: Temperature: 25.1°C, Humidity: 45.8%[0m
+[0;32mI (108948) MQ7_SENSOR: Raw: 4067, Voltage: 4.97 V, Rs: 68.85, CO_PPM: 5.30[0m
+[0;32mI (108948) MQ4_SENSOR: Raw: 1441, Voltage: 1.76 V, Rs: 18417.76, CH4_PPM: 0.00[0m
+[0;32mI (109998) DHT_SENSOR: Temperature: 25.1°C, Humidity: 45.0%[0m
+[0;32mI (110948) MQ7_SENSOR: Raw: 4035, Voltage: 4.93 V, Rs: 148.70, CO_PPM: 1.65[0m
+[0;32mI (110948) MQ4_SENSOR: Raw: 1440, Voltage: 1.76 V, Rs: 18437.50, CH4_PPM: 0.00[0m
+[0;32mI (112018) DHT_SENSOR: Temperature: 25.1°C, Humidity: 44.8%[0m
+[0;32mI (112948) MQ7_SENSOR: Raw: 4061, Voltage: 4.96 V, Rs: 83.72, CO_PPM: 3.93[0m
+[0;32mI (112948) MQ4_SENSOR: Raw: 1414, Voltage: 1.73 V, Rs: 18960.40, CH4_PPM: 0.00[0m
+[0;32mI (113008) CSV_WRITER: Sensor data recorded: T=25.10°C, H=44.80%, MQ4=1.73V/0.00ppm, MQ7=4.96V/3.93ppm[0m
+[0;32mI (114038) DHT_SENSOR: Temperature: 25.1°C, Humidity: 44.4%[0m
+[0;32mI (114948) MQ7_SENSOR: Raw: 4031, Voltage: 4.92 V, Rs: 158.77, CO_PPM: 1.49[0m
+[0;32mI (114948) MQ4_SENSOR: Raw: 1411, Voltage: 1.72 V, Rs: 19021.97, CH4_PPM: 0.00[0m
+[0;32mI (116058) DHT_SENSOR: Temperature: 25.1°C, Humidity: 44.2%[0m
+[0;32mI (116948) MQ7_SENSOR: Raw: 4080, Voltage: 4.98 V, Rs: 36.76, CO_PPM: 13.72[0m
+[0;32mI (116948) MQ4_SENSOR: Raw: 1427, Voltage: 1.74 V, Rs: 18696.56, CH4_PPM: 0.00[0m
+[0;32mI (118078) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.9%[0m
+[0;32mI (118948) MQ7_SENSOR: Raw: 4016, Voltage: 4.90 V, Rs: 196.71, CO_PPM: 1.08[0m
+[0;32mI (118948) MQ4_SENSOR: Raw: 1430, Voltage: 1.75 V, Rs: 18636.36, CH4_PPM: 0.00[0m
+[0;32mI (120098) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.7%[0m
+[0;32mI (120948) MQ7_SENSOR: Raw: 4000, Voltage: 4.88 V, Rs: 237.50, CO_PPM: 0.81[0m
+[0;32mI (120948) MQ4_SENSOR: Raw: 1415, Voltage: 1.73 V, Rs: 18939.93, CH4_PPM: 0.00[0m
+[0;32mI (122118) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (122948) MQ7_SENSOR: Raw: 4001, Voltage: 4.89 V, Rs: 234.94, CO_PPM: 0.82[0m
+[0;32mI (122948) MQ4_SENSOR: Raw: 1422, Voltage: 1.74 V, Rs: 18797.47, CH4_PPM: 0.00[0m
+[0;32mI (123018) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.40%, MQ4=1.74V/0.00ppm, MQ7=4.89V/0.82ppm[0m
+[0;32mI (124138) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (124948) MQ7_SENSOR: Raw: 3933, Voltage: 4.80 V, Rs: 411.90, CO_PPM: 0.35[0m
+[0;32mI (124948) MQ4_SENSOR: Raw: 1418, Voltage: 1.73 V, Rs: 18878.70, CH4_PPM: 0.00[0m
+[0;32mI (126158) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (126948) MQ7_SENSOR: Raw: 3951, Voltage: 4.82 V, Rs: 364.46, CO_PPM: 0.42[0m
+[0;32mI (126948) MQ4_SENSOR: Raw: 1405, Voltage: 1.72 V, Rs: 19145.91, CH4_PPM: 0.00[0m
+[0;32mI (128178) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (128948) MQ7_SENSOR: Raw: 3971, Voltage: 4.85 V, Rs: 312.26, CO_PPM: 0.53[0m
+[0;32mI (128948) MQ4_SENSOR: Raw: 1417, Voltage: 1.73 V, Rs: 18899.08, CH4_PPM: 0.00[0m
+[0;32mI (130198) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (130948) MQ7_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CO_PPM: inf[0m
+[0;32mI (130948) MQ4_SENSOR: Raw: 1377, Voltage: 1.68 V, Rs: 19738.56, CH4_PPM: 0.00[0m
+[0;32mI (132218) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (132948) MQ7_SENSOR: Raw: 130, Voltage: 0.16 V, Rs: 305000.00, CO_PPM: 0.00[0m
+[0;32mI (132948) MQ4_SENSOR: Raw: 1194, Voltage: 1.46 V, Rs: 24296.48, CH4_PPM: 0.00[0m
+[0;32mI (133028) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.20%, MQ4=1.46V/0.00ppm, MQ7=0.16V/0.00ppm[0m
+[0;32mI (134238) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (134948) MQ7_SENSOR: Raw: 115, Voltage: 0.14 V, Rs: 346086.94, CO_PPM: 0.00[0m
+[0;32mI (134948) MQ4_SENSOR: Raw: 1232, Voltage: 1.50 V, Rs: 23238.64, CH4_PPM: 0.00[0m
+[0;32mI (136258) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (136948) MQ7_SENSOR: Raw: 123, Voltage: 0.15 V, Rs: 322926.81, CO_PPM: 0.00[0m
+[0;32mI (136948) MQ4_SENSOR: Raw: 1275, Voltage: 1.56 V, Rs: 22117.65, CH4_PPM: 0.00[0m
+[0;32mI (138278) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (138948) MQ7_SENSOR: Raw: 3440, Voltage: 4.20 V, Rs: 1904.07, CO_PPM: 0.03[0m
+[0;32mI (138948) MQ4_SENSOR: Raw: 1443, Voltage: 1.76 V, Rs: 18378.38, CH4_PPM: 0.00[0m
+[0;32mI (140298) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (140948) MQ7_SENSOR: Raw: 3601, Voltage: 4.40 V, Rs: 1371.84, CO_PPM: 0.06[0m
+[0;32mI (140948) MQ4_SENSOR: Raw: 1451, Voltage: 1.77 V, Rs: 18221.92, CH4_PPM: 0.00[0m
+[0;32mI (142318) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (142948) MQ7_SENSOR: Raw: 3689, Voltage: 4.50 V, Rs: 1100.57, CO_PPM: 0.08[0m
+[0;32mI (142948) MQ4_SENSOR: Raw: 1358, Voltage: 1.66 V, Rs: 20154.64, CH4_PPM: 0.00[0m
+[0;32mI (143038) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.10%, MQ4=1.66V/0.00ppm, MQ7=4.50V/0.08ppm[0m
+[0;32mI (144338) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (144948) MQ7_SENSOR: Raw: 3744, Voltage: 4.57 V, Rs: 937.50, CO_PPM: 0.10[0m
+[0;32mI (144948) MQ4_SENSOR: Raw: 1337, Voltage: 1.63 V, Rs: 20628.27, CH4_PPM: 0.00[0m
+[0;32mI (146358) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (146948) MQ7_SENSOR: Raw: 3760, Voltage: 4.59 V, Rs: 890.96, CO_PPM: 0.11[0m
+[0;32mI (146948) MQ4_SENSOR: Raw: 1330, Voltage: 1.62 V, Rs: 20789.47, CH4_PPM: 0.00[0m
+[0;32mI (148378) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (148948) MQ7_SENSOR: Raw: 3771, Voltage: 4.60 V, Rs: 859.19, CO_PPM: 0.11[0m
+[0;32mI (148948) MQ4_SENSOR: Raw: 1330, Voltage: 1.62 V, Rs: 20789.47, CH4_PPM: 0.00[0m
+[0;32mI (150398) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.9%[0m
+[0;32mI (150948) MQ7_SENSOR: Raw: 3805, Voltage: 4.65 V, Rs: 762.15, CO_PPM: 0.14[0m
+[0;32mI (150948) MQ4_SENSOR: Raw: 1312, Voltage: 1.60 V, Rs: 21211.89, CH4_PPM: 0.00[0m
+[0;32mI (152418) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (152948) MQ7_SENSOR: Raw: 3826, Voltage: 4.67 V, Rs: 703.08, CO_PPM: 0.16[0m
+[0;32mI (152948) MQ4_SENSOR: Raw: 1274, Voltage: 1.56 V, Rs: 22142.86, CH4_PPM: 0.00[0m
+[0;32mI (153048) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.00%, MQ4=1.56V/0.00ppm, MQ7=4.67V/0.16ppm[0m
+[0;32mI (154438) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (154948) MQ7_SENSOR: Raw: 3815, Voltage: 4.66 V, Rs: 733.94, CO_PPM: 0.15[0m
+[0;32mI (154948) MQ4_SENSOR: Raw: 1281, Voltage: 1.56 V, Rs: 21967.21, CH4_PPM: 0.00[0m
+[0;32mI (156458) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (156948) MQ7_SENSOR: Raw: 3731, Voltage: 4.56 V, Rs: 975.61, CO_PPM: 0.09[0m
+[0;32mI (156948) MQ4_SENSOR: Raw: 1271, Voltage: 1.55 V, Rs: 22218.72, CH4_PPM: 0.00[0m
+[0;32mI (158478) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (158948) MQ7_SENSOR: Raw: 3882, Voltage: 4.74 V, Rs: 548.69, CO_PPM: 0.23[0m
+[0;32mI (158948) MQ4_SENSOR: Raw: 1296, Voltage: 1.58 V, Rs: 21597.22, CH4_PPM: 0.00[0m
+[0;32mI (160498) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (160948) MQ7_SENSOR: Raw: 3907, Voltage: 4.77 V, Rs: 481.19, CO_PPM: 0.28[0m
+[0;32mI (160948) MQ4_SENSOR: Raw: 1294, Voltage: 1.58 V, Rs: 21646.06, CH4_PPM: 0.00[0m
+[0;32mI (162518) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (162948) MQ7_SENSOR: Raw: 3926, Voltage: 4.79 V, Rs: 430.46, CO_PPM: 0.33[0m
+[0;32mI (162948) MQ4_SENSOR: Raw: 1269, Voltage: 1.55 V, Rs: 22269.50, CH4_PPM: 0.00[0m
+[0;32mI (163058) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.20%, MQ4=1.55V/0.00ppm, MQ7=4.79V/0.33ppm[0m
+[0;32mI (164538) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (164948) MQ7_SENSOR: Raw: 3952, Voltage: 4.83 V, Rs: 361.84, CO_PPM: 0.43[0m
+[0;32mI (164948) MQ4_SENSOR: Raw: 1301, Voltage: 1.59 V, Rs: 21475.79, CH4_PPM: 0.00[0m
+[0;32mI (166558) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (166948) MQ7_SENSOR: Raw: 3942, Voltage: 4.81 V, Rs: 388.13, CO_PPM: 0.38[0m
+[0;32mI (166948) MQ4_SENSOR: Raw: 1278, Voltage: 1.56 V, Rs: 22042.25, CH4_PPM: 0.00[0m
+[0;32mI (168578) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (168948) MQ7_SENSOR: Raw: 3984, Voltage: 4.86 V, Rs: 278.61, CO_PPM: 0.63[0m
+[0;32mI (168948) MQ4_SENSOR: Raw: 1264, Voltage: 1.54 V, Rs: 22397.15, CH4_PPM: 0.00[0m
+[0;32mI (170598) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (170948) MQ7_SENSOR: Raw: 3895, Voltage: 4.76 V, Rs: 513.48, CO_PPM: 0.25[0m
+[0;32mI (170948) MQ4_SENSOR: Raw: 1279, Voltage: 1.56 V, Rs: 22017.20, CH4_PPM: 0.00[0m
+[0;32mI (172618) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (172948) MQ7_SENSOR: Raw: 3841, Voltage: 4.69 V, Rs: 661.29, CO_PPM: 0.17[0m
+[0;32mI (172948) MQ4_SENSOR: Raw: 1288, Voltage: 1.57 V, Rs: 21793.48, CH4_PPM: 0.00[0m
+[0;32mI (173068) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.40%, MQ4=1.57V/0.00ppm, MQ7=4.69V/0.17ppm[0m
+[0;32mI (174638) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (174948) MQ7_SENSOR: Raw: 3872, Voltage: 4.73 V, Rs: 575.93, CO_PPM: 0.21[0m
+[0;32mI (174948) MQ4_SENSOR: Raw: 1297, Voltage: 1.58 V, Rs: 21572.86, CH4_PPM: 0.00[0m
+[0;32mI (176658) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (176948) MQ7_SENSOR: Raw: 3931, Voltage: 4.80 V, Rs: 417.20, CO_PPM: 0.34[0m
+[0;32mI (176948) MQ4_SENSOR: Raw: 1282, Voltage: 1.57 V, Rs: 21942.28, CH4_PPM: 0.00[0m
+[0;32mI (178678) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (178948) MQ7_SENSOR: Raw: 4074, Voltage: 4.97 V, Rs: 51.55, CO_PPM: 8.22[0m
+[0;32mI (178948) MQ4_SENSOR: Raw: 1258, Voltage: 1.54 V, Rs: 22551.67, CH4_PPM: 0.00[0m
+[0;32mI (180698) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (180948) MQ7_SENSOR: Raw: 4009, Voltage: 4.89 V, Rs: 214.52, CO_PPM: 0.94[0m
+[0;32mI (180948) MQ4_SENSOR: Raw: 1287, Voltage: 1.57 V, Rs: 21818.18, CH4_PPM: 0.00[0m
+[0;32mI (182718) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (182948) MQ7_SENSOR: Raw: 4016, Voltage: 4.90 V, Rs: 196.71, CO_PPM: 1.08[0m
+[0;32mI (182948) MQ4_SENSOR: Raw: 1274, Voltage: 1.56 V, Rs: 22142.86, CH4_PPM: 0.00[0m
+[0;32mI (183078) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.10%, MQ4=1.56V/0.00ppm, MQ7=4.90V/1.08ppm[0m
+[0;32mI (184738) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (184948) MQ7_SENSOR: Raw: 3957, Voltage: 4.83 V, Rs: 348.75, CO_PPM: 0.45[0m
+[0;32mI (184948) MQ4_SENSOR: Raw: 1251, Voltage: 1.53 V, Rs: 22733.81, CH4_PPM: 0.00[0m
+[0;32mI (186758) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (186948) MQ7_SENSOR: Raw: 3942, Voltage: 4.81 V, Rs: 388.13, CO_PPM: 0.38[0m
+[0;32mI (186948) MQ4_SENSOR: Raw: 1232, Voltage: 1.50 V, Rs: 23238.64, CH4_PPM: 0.00[0m
+[0;32mI (188778) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (188948) MQ7_SENSOR: Raw: 3961, Voltage: 4.84 V, Rs: 338.30, CO_PPM: 0.47[0m
+[0;32mI (188948) MQ4_SENSOR: Raw: 1240, Voltage: 1.51 V, Rs: 23024.19, CH4_PPM: 0.00[0m
+[0;32mI (190798) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (190948) MQ7_SENSOR: Raw: 3935, Voltage: 4.80 V, Rs: 406.61, CO_PPM: 0.36[0m
+[0;32mI (190948) MQ4_SENSOR: Raw: 1239, Voltage: 1.51 V, Rs: 23050.85, CH4_PPM: 0.00[0m
+[0;32mI (192818) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.9%[0m
+[0;32mI (192948) MQ7_SENSOR: Raw: 3934, Voltage: 4.80 V, Rs: 409.25, CO_PPM: 0.35[0m
+[0;32mI (192948) MQ4_SENSOR: Raw: 1249, Voltage: 1.53 V, Rs: 22786.23, CH4_PPM: 0.00[0m
+[0;32mI (193088) CSV_WRITER: Sensor data recorded: T=25.10°C, H=42.90%, MQ4=1.53V/0.00ppm, MQ7=4.80V/0.35ppm[0m
+[0;32mI (194838) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.9%[0m
+[0;32mI (194948) MQ7_SENSOR: Raw: 3946, Voltage: 4.82 V, Rs: 377.60, CO_PPM: 0.40[0m
+[0;32mI (194948) MQ4_SENSOR: Raw: 1245, Voltage: 1.52 V, Rs: 22891.56, CH4_PPM: 0.00[0m
+[0;32mI (196858) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (196948) MQ7_SENSOR: Raw: 3923, Voltage: 4.79 V, Rs: 438.44, CO_PPM: 0.32[0m
+[0;32mI (196948) MQ4_SENSOR: Raw: 1229, Voltage: 1.50 V, Rs: 23319.77, CH4_PPM: 0.00[0m
+[0;32mI (198878) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (198948) MQ7_SENSOR: Raw: 3906, Voltage: 4.77 V, Rs: 483.87, CO_PPM: 0.27[0m
+[0;32mI (198948) MQ4_SENSOR: Raw: 1248, Voltage: 1.52 V, Rs: 22812.50, CH4_PPM: 0.00[0m
+[0;32mI (200898) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (200948) MQ7_SENSOR: Raw: 3894, Voltage: 4.75 V, Rs: 516.18, CO_PPM: 0.25[0m
+[0;32mI (200948) MQ4_SENSOR: Raw: 1223, Voltage: 1.49 V, Rs: 23483.23, CH4_PPM: 0.00[0m
+[0;32mI (202918) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (202948) MQ7_SENSOR: Raw: 3874, Voltage: 4.73 V, Rs: 570.47, CO_PPM: 0.21[0m
+[0;32mI (202948) MQ4_SENSOR: Raw: 1226, Voltage: 1.50 V, Rs: 23401.30, CH4_PPM: 0.00[0m
+[0;32mI (203098) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.20%, MQ4=1.50V/0.00ppm, MQ7=4.73V/0.21ppm[0m
+[0;32mI (204938) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (204948) MQ7_SENSOR: Raw: 3862, Voltage: 4.72 V, Rs: 603.31, CO_PPM: 0.20[0m
+[0;32mI (204948) MQ4_SENSOR: Raw: 1225, Voltage: 1.50 V, Rs: 23428.57, CH4_PPM: 0.00[0m
+[0;32mI (206958) MQ7_SENSOR: Raw: 3884, Voltage: 4.74 V, Rs: 543.25, CO_PPM: 0.23[0m
+[0;32mI (206958) MQ4_SENSOR: Raw: 1203, Voltage: 1.47 V, Rs: 24039.90, CH4_PPM: 0.00[0m
+[0;32mI (206958) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (208958) MQ7_SENSOR: Raw: 3857, Voltage: 4.71 V, Rs: 617.06, CO_PPM: 0.19[0m
+[0;32mI (208958) MQ4_SENSOR: Raw: 1227, Voltage: 1.50 V, Rs: 23374.08, CH4_PPM: 0.00[0m
+[0;32mI (208988) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (210958) MQ7_SENSOR: Raw: 3809, Voltage: 4.65 V, Rs: 750.85, CO_PPM: 0.14[0m
+[0;32mI (210958) MQ4_SENSOR: Raw: 1203, Voltage: 1.47 V, Rs: 24039.90, CH4_PPM: 0.00[0m
+[0;32mI (211008) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (212958) MQ7_SENSOR: Raw: 3844, Voltage: 4.69 V, Rs: 652.97, CO_PPM: 0.17[0m
+[0;32mI (212958) MQ4_SENSOR: Raw: 1231, Voltage: 1.50 V, Rs: 23265.63, CH4_PPM: 0.00[0m
+[0;32mI (213028) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (213108) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.40%, MQ4=1.50V/0.00ppm, MQ7=4.69V/0.17ppm[0m
+[0;32mI (214958) MQ7_SENSOR: Raw: 3808, Voltage: 4.65 V, Rs: 753.68, CO_PPM: 0.14[0m
+[0;32mI (214958) MQ4_SENSOR: Raw: 1232, Voltage: 1.50 V, Rs: 23238.64, CH4_PPM: 0.00[0m
+[0;32mI (215048) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (216958) MQ7_SENSOR: Raw: 3825, Voltage: 4.67 V, Rs: 705.88, CO_PPM: 0.15[0m
+[0;32mI (216958) MQ4_SENSOR: Raw: 1215, Voltage: 1.48 V, Rs: 23703.70, CH4_PPM: 0.00[0m
+[0;32mI (217068) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (218958) MQ7_SENSOR: Raw: 3792, Voltage: 4.63 V, Rs: 799.05, CO_PPM: 0.13[0m
+[0;32mI (218958) MQ4_SENSOR: Raw: 1191, Voltage: 1.45 V, Rs: 24382.87, CH4_PPM: 0.00[0m
+[0;32mI (219088) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (220958) MQ7_SENSOR: Raw: 3822, Voltage: 4.67 V, Rs: 714.28, CO_PPM: 0.15[0m
+[0;32mI (220958) MQ4_SENSOR: Raw: 1229, Voltage: 1.50 V, Rs: 23319.77, CH4_PPM: 0.00[0m
+[0;32mI (221108) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (222958) MQ7_SENSOR: Raw: 3821, Voltage: 4.67 V, Rs: 717.09, CO_PPM: 0.15[0m
+[0;32mI (222958) MQ4_SENSOR: Raw: 1191, Voltage: 1.45 V, Rs: 24382.87, CH4_PPM: 0.00[0m
+[0;32mI (223128) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (223148) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.40%, MQ4=1.45V/0.00ppm, MQ7=4.67V/0.15ppm[0m
+[0;32mI (224958) MQ7_SENSOR: Raw: 3792, Voltage: 4.63 V, Rs: 799.05, CO_PPM: 0.13[0m
+[0;32mI (224958) MQ4_SENSOR: Raw: 1201, Voltage: 1.47 V, Rs: 24096.58, CH4_PPM: 0.00[0m
+[0;32mI (225148) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (226958) MQ7_SENSOR: Raw: 3777, Voltage: 4.61 V, Rs: 841.94, CO_PPM: 0.12[0m
+[0;32mI (226958) MQ4_SENSOR: Raw: 1201, Voltage: 1.47 V, Rs: 24096.58, CH4_PPM: 0.00[0m
+[0;32mI (227168) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (228958) MQ7_SENSOR: Raw: 3821, Voltage: 4.67 V, Rs: 717.09, CO_PPM: 0.15[0m
+[0;32mI (228958) MQ4_SENSOR: Raw: 1225, Voltage: 1.50 V, Rs: 23428.57, CH4_PPM: 0.00[0m
+[0;32mI (229188) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (230958) MQ7_SENSOR: Raw: 3773, Voltage: 4.61 V, Rs: 853.43, CO_PPM: 0.12[0m
+[0;32mI (230958) MQ4_SENSOR: Raw: 1201, Voltage: 1.47 V, Rs: 24096.58, CH4_PPM: 0.00[0m
+[0;32mI (231208) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (232958) MQ7_SENSOR: Raw: 3809, Voltage: 4.65 V, Rs: 750.85, CO_PPM: 0.14[0m
+[0;32mI (232958) MQ4_SENSOR: Raw: 1216, Voltage: 1.48 V, Rs: 23675.99, CH4_PPM: 0.00[0m
+[0;32mI (233158) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.20%, MQ4=1.48V/0.00ppm, MQ7=4.65V/0.14ppm[0m
+[0;32mI (233228) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (234958) MQ7_SENSOR: Raw: 4047, Voltage: 4.94 V, Rs: 118.61, CO_PPM: 2.32[0m
+[0;32mI (234958) MQ4_SENSOR: Raw: 1239, Voltage: 1.51 V, Rs: 23050.85, CH4_PPM: 0.00[0m
+[0;32mI (235248) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (236958) MQ7_SENSOR: Raw: 3829, Voltage: 4.68 V, Rs: 694.70, CO_PPM: 0.16[0m
+[0;32mI (236958) MQ4_SENSOR: Raw: 1223, Voltage: 1.49 V, Rs: 23483.23, CH4_PPM: 0.00[0m
+[0;32mI (237268) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.5%[0m
+[0;32mI (238958) MQ7_SENSOR: Raw: 3849, Voltage: 4.70 V, Rs: 639.13, CO_PPM: 0.18[0m
+[0;32mI (238958) MQ4_SENSOR: Raw: 1171, Voltage: 1.43 V, Rs: 24970.11, CH4_PPM: 0.00[0m
+[0;32mI (239288) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (240958) MQ7_SENSOR: Raw: 3831, Voltage: 4.68 V, Rs: 689.12, CO_PPM: 0.16[0m
+[0;32mI (240958) MQ4_SENSOR: Raw: 1156, Voltage: 1.41 V, Rs: 25423.87, CH4_PPM: 0.00[0m
+[0;32mI (241308) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (242958) MQ7_SENSOR: Raw: 3713, Voltage: 4.53 V, Rs: 1028.82, CO_PPM: 0.09[0m
+[0;32mI (242958) MQ4_SENSOR: Raw: 1157, Voltage: 1.41 V, Rs: 25393.26, CH4_PPM: 0.00[0m
+[0;32mI (243168) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.30%, MQ4=1.41V/0.00ppm, MQ7=4.53V/0.09ppm[0m
+[0;32mI (243328) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (244958) MQ7_SENSOR: Raw: 3763, Voltage: 4.59 V, Rs: 882.27, CO_PPM: 0.11[0m
+[0;32mI (244958) MQ4_SENSOR: Raw: 1181, Voltage: 1.44 V, Rs: 24674.00, CH4_PPM: 0.00[0m
+[0;32mI (245348) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (246958) MQ4_SENSOR: Raw: 1173, Voltage: 1.43 V, Rs: 24910.48, CH4_PPM: 0.00[0m
+[0;32mI (246958) MQ7_SENSOR: Raw: 3674, Voltage: 4.49 V, Rs: 1145.89, CO_PPM: 0.07[0m
+[0;32mI (247368) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (248958) MQ4_SENSOR: Raw: 1193, Voltage: 1.46 V, Rs: 24325.23, CH4_PPM: 0.00[0m
+[0;32mI (248958) MQ7_SENSOR: Raw: 3540, Voltage: 4.32 V, Rs: 1567.80, CO_PPM: 0.05[0m
+[0;32mI (249388) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (250958) MQ4_SENSOR: Raw: 1191, Voltage: 1.45 V, Rs: 24382.87, CH4_PPM: 0.00[0m
+[0;32mI (250958) MQ7_SENSOR: Raw: 3600, Voltage: 4.40 V, Rs: 1375.00, CO_PPM: 0.06[0m
+[0;32mI (251408) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (252958) MQ4_SENSOR: Raw: 1190, Voltage: 1.45 V, Rs: 24411.76, CH4_PPM: 0.00[0m
+[0;32mI (252958) MQ7_SENSOR: Raw: 3616, Voltage: 4.42 V, Rs: 1324.67, CO_PPM: 0.06[0m
+[0;32mI (253178) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.10%, MQ4=1.45V/0.00ppm, MQ7=4.42V/0.06ppm[0m
+[0;32mI (253428) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (254958) MQ4_SENSOR: Raw: 1175, Voltage: 1.43 V, Rs: 24851.06, CH4_PPM: 0.00[0m
+[0;32mI (254958) MQ7_SENSOR: Raw: 3633, Voltage: 4.44 V, Rs: 1271.68, CO_PPM: 0.06[0m
+[0;32mI (255448) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.9%[0m
+[0;32mI (256958) MQ4_SENSOR: Raw: 1223, Voltage: 1.49 V, Rs: 23483.23, CH4_PPM: 0.00[0m
+[0;32mI (256958) MQ7_SENSOR: Raw: 3665, Voltage: 4.47 V, Rs: 1173.26, CO_PPM: 0.07[0m
+[0;32mI (257468) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.8%[0m
+[0;32mI (258958) MQ4_SENSOR: Raw: 1155, Voltage: 1.41 V, Rs: 25454.54, CH4_PPM: 0.00[0m
+[0;32mI (258958) MQ7_SENSOR: Raw: 3660, Voltage: 4.47 V, Rs: 1188.52, CO_PPM: 0.07[0m
+[0;32mI (259488) DHT_SENSOR: Temperature: 25.1°C, Humidity: 42.8%[0m
+[0;32mI (260958) MQ4_SENSOR: Raw: 1148, Voltage: 1.40 V, Rs: 25670.73, CH4_PPM: 0.00[0m
+[0;32mI (260958) MQ7_SENSOR: Raw: 3682, Voltage: 4.50 V, Rs: 1121.67, CO_PPM: 0.08[0m
+[0;32mI (261508) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (262958) MQ4_SENSOR: Raw: 1141, Voltage: 1.39 V, Rs: 25889.57, CH4_PPM: 0.00[0m
+[0;32mI (262958) MQ7_SENSOR: Raw: 3711, Voltage: 4.53 V, Rs: 1034.76, CO_PPM: 0.09[0m
+[0;32mI (263188) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.20%, MQ4=1.39V/0.00ppm, MQ7=4.53V/0.09ppm[0m
+[0;32mI (263528) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (264958) MQ4_SENSOR: Raw: 1139, Voltage: 1.39 V, Rs: 25952.59, CH4_PPM: 0.00[0m
+[0;32mI (264958) MQ7_SENSOR: Raw: 3697, Voltage: 4.51 V, Rs: 1076.55, CO_PPM: 0.08[0m
+[0;32mI (265548) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (266958) MQ4_SENSOR: Raw: 1137, Voltage: 1.39 V, Rs: 26015.83, CH4_PPM: 0.00[0m
+[0;32mI (266958) MQ7_SENSOR: Raw: 3719, Voltage: 4.54 V, Rs: 1011.02, CO_PPM: 0.09[0m
+[0;32mI (267568) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (268958) MQ4_SENSOR: Raw: 1138, Voltage: 1.39 V, Rs: 25984.18, CH4_PPM: 0.00[0m
+[0;32mI (268958) MQ7_SENSOR: Raw: 3727, Voltage: 4.55 V, Rs: 987.39, CO_PPM: 0.09[0m
+[0;32mI (269588) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (270958) MQ4_SENSOR: Raw: 1119, Voltage: 1.37 V, Rs: 26595.17, CH4_PPM: 0.00[0m
+[0;32mI (270958) MQ7_SENSOR: Raw: 3775, Voltage: 4.61 V, Rs: 847.68, CO_PPM: 0.12[0m
+[0;32mI (271608) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (272958) MQ4_SENSOR: Raw: 1147, Voltage: 1.40 V, Rs: 25701.83, CH4_PPM: 0.00[0m
+[0;32mI (272958) MQ7_SENSOR: Raw: 3759, Voltage: 4.59 V, Rs: 893.85, CO_PPM: 0.11[0m
+[0;32mI (273198) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.10%, MQ4=1.40V/0.00ppm, MQ7=4.59V/0.11ppm[0m
+[0;32mI (273628) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (274958) MQ4_SENSOR: Raw: 1149, Voltage: 1.40 V, Rs: 25639.68, CH4_PPM: 0.00[0m
+[0;32mI (274958) MQ7_SENSOR: Raw: 3773, Voltage: 4.61 V, Rs: 853.43, CO_PPM: 0.12[0m
+[0;32mI (275648) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (276958) MQ4_SENSOR: Raw: 1141, Voltage: 1.39 V, Rs: 25889.57, CH4_PPM: 0.00[0m
+[0;32mI (276958) MQ7_SENSOR: Raw: 3755, Voltage: 4.58 V, Rs: 905.46, CO_PPM: 0.11[0m
+[0;32mI (277668) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (278958) MQ4_SENSOR: Raw: 1134, Voltage: 1.38 V, Rs: 26111.11, CH4_PPM: 0.00[0m
+[0;32mI (278958) MQ7_SENSOR: Raw: 3797, Voltage: 4.64 V, Rs: 784.83, CO_PPM: 0.13[0m
+[0;32mI (279688) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (280958) MQ4_SENSOR: Raw: 949, Voltage: 1.16 V, Rs: 33150.69, CH4_PPM: 0.00[0m
+[0;32mI (280958) MQ7_SENSOR: Raw: 134, Voltage: 0.16 V, Rs: 295597.00, CO_PPM: 0.00[0m
+[0;32mI (281708) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (282958) MQ4_SENSOR: Raw: 1156, Voltage: 1.41 V, Rs: 25423.87, CH4_PPM: 0.00[0m
+[0;32mI (282958) MQ7_SENSOR: Raw: 3715, Voltage: 4.54 V, Rs: 1022.88, CO_PPM: 0.09[0m
+[0;32mI (283208) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.30%, MQ4=1.41V/0.00ppm, MQ7=4.54V/0.09ppm[0m
+[0;32mI (283728) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.7%[0m
+[0;32mI (284958) MQ4_SENSOR: Raw: 1150, Voltage: 1.40 V, Rs: 25608.69, CH4_PPM: 0.00[0m
+[0;32mI (284958) MQ7_SENSOR: Raw: 3689, Voltage: 4.50 V, Rs: 1100.57, CO_PPM: 0.08[0m
+[0;32mI (285748) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.6%[0m
+[0;32mI (286958) MQ4_SENSOR: Raw: 1141, Voltage: 1.39 V, Rs: 25889.57, CH4_PPM: 0.00[0m
+[0;32mI (286958) MQ7_SENSOR: Raw: 3717, Voltage: 4.54 V, Rs: 1016.95, CO_PPM: 0.09[0m
+[0;32mI (287768) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.6%[0m
+[0;32mI (288958) MQ4_SENSOR: Raw: 1135, Voltage: 1.39 V, Rs: 26079.29, CH4_PPM: 0.00[0m
+[0;32mI (288958) MQ7_SENSOR: Raw: 3687, Voltage: 4.50 V, Rs: 1106.59, CO_PPM: 0.08[0m
+[0;32mI (289788) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.5%[0m
+[0;32mI (290958) MQ4_SENSOR: Raw: 1134, Voltage: 1.38 V, Rs: 26111.11, CH4_PPM: 0.00[0m
+[0;32mI (290958) MQ7_SENSOR: Raw: 3669, Voltage: 4.48 V, Rs: 1161.08, CO_PPM: 0.07[0m
+[0;32mI (291808) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (292958) MQ4_SENSOR: Raw: 1135, Voltage: 1.39 V, Rs: 26079.29, CH4_PPM: 0.00[0m
+[0;32mI (292958) MQ7_SENSOR: Raw: 3667, Voltage: 4.48 V, Rs: 1167.17, CO_PPM: 0.07[0m
+[0;32mI (293218) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.40%, MQ4=1.39V/0.00ppm, MQ7=4.48V/0.07ppm[0m
+[0;32mI (293828) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (294958) MQ4_SENSOR: Raw: 1139, Voltage: 1.39 V, Rs: 25952.59, CH4_PPM: 0.00[0m
+[0;32mI (294958) MQ7_SENSOR: Raw: 3668, Voltage: 4.48 V, Rs: 1164.12, CO_PPM: 0.07[0m
+[0;32mI (295848) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (296958) MQ4_SENSOR: Raw: 1142, Voltage: 1.39 V, Rs: 25858.14, CH4_PPM: 0.00[0m
+[0;32mI (296958) MQ7_SENSOR: Raw: 3649, Voltage: 4.46 V, Rs: 1222.25, CO_PPM: 0.07[0m
+[0;32mI (297868) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (298958) MQ4_SENSOR: Raw: 1133, Voltage: 1.38 V, Rs: 26142.98, CH4_PPM: 0.00[0m
+[0;32mI (298958) MQ7_SENSOR: Raw: 3659, Voltage: 4.47 V, Rs: 1191.58, CO_PPM: 0.07[0m
+[0;32mI (299888) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.3%[0m
+[0;32mI (300958) MQ4_SENSOR: Raw: 1139, Voltage: 1.39 V, Rs: 25952.59, CH4_PPM: 0.00[0m
+[0;32mI (300958) MQ7_SENSOR: Raw: 3657, Voltage: 4.47 V, Rs: 1197.70, CO_PPM: 0.07[0m
+[0;32mI (301908) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.2%[0m
+[0;32mI (302958) MQ4_SENSOR: Raw: 1131, Voltage: 1.38 V, Rs: 26206.89, CH4_PPM: 0.00[0m
+[0;32mI (302958) MQ7_SENSOR: Raw: 3773, Voltage: 4.61 V, Rs: 853.43, CO_PPM: 0.12[0m
+[0;32mI (303228) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.20%, MQ4=1.38V/0.00ppm, MQ7=4.61V/0.12ppm[0m
+[0;32mI (303928) DHT_SENSOR: Temperature: 25.1°C, Humidity: 47.2%[0m
+[0;32mI (304958) MQ4_SENSOR: Raw: 1100, Voltage: 1.34 V, Rs: 27227.27, CH4_PPM: 0.00[0m
+[0;32mI (304958) MQ7_SENSOR: Raw: 3683, Voltage: 4.50 V, Rs: 1118.65, CO_PPM: 0.08[0m
+[0;32mI (305948) DHT_SENSOR: Temperature: 25.1°C, Humidity: 49.2%[0m
+[0;32mI (306958) MQ4_SENSOR: Raw: 1093, Voltage: 1.33 V, Rs: 27465.69, CH4_PPM: 0.00[0m
+[0;32mI (306958) MQ7_SENSOR: Raw: 3678, Voltage: 4.49 V, Rs: 1133.77, CO_PPM: 0.08[0m
+[0;32mI (307968) DHT_SENSOR: Temperature: 25.1°C, Humidity: 48.1%[0m
+[0;32mI (308958) MQ4_SENSOR: Raw: 1111, Voltage: 1.36 V, Rs: 26858.68, CH4_PPM: 0.00[0m
+[0;32mI (308958) MQ7_SENSOR: Raw: 3664, Voltage: 4.47 V, Rs: 1176.31, CO_PPM: 0.07[0m
+[0;32mI (309988) DHT_SENSOR: Temperature: 25.2°C, Humidity: 47.4%[0m
+[0;32mI (310958) MQ4_SENSOR: Raw: 1110, Voltage: 1.36 V, Rs: 26891.89, CH4_PPM: 0.00[0m
+[0;32mI (310958) MQ7_SENSOR: Raw: 3645, Voltage: 4.45 V, Rs: 1234.57, CO_PPM: 0.07[0m
+[0;32mI (312008) DHT_SENSOR: Temperature: 25.2°C, Humidity: 46.5%[0m
+[0;32mI (312958) MQ4_SENSOR: Raw: 1103, Voltage: 1.35 V, Rs: 27126.02, CH4_PPM: 0.00[0m
+[0;32mI (312958) MQ7_SENSOR: Raw: 3648, Voltage: 4.45 V, Rs: 1225.33, CO_PPM: 0.07[0m
+[0;32mI (313238) CSV_WRITER: Sensor data recorded: T=25.20°C, H=46.50%, MQ4=1.35V/0.00ppm, MQ7=4.45V/0.07ppm[0m
+[0;32mI (314028) DHT_SENSOR: Temperature: 25.2°C, Humidity: 45.7%[0m
+[0;32mI (314958) MQ4_SENSOR: Raw: 191, Voltage: 0.23 V, Rs: 204397.92, CH4_PPM: 0.00[0m
+[0;32mI (314958) MQ7_SENSOR: Raw: 3814, Voltage: 4.66 V, Rs: 736.76, CO_PPM: 0.14[0m
+[0;32mI (316048) DHT_SENSOR: Temperature: 25.1°C, Humidity: 45.2%[0m
+[0;32mI (316958) MQ4_SENSOR: Raw: 1078, Voltage: 1.32 V, Rs: 27987.01, CH4_PPM: 0.00[0m
+[0;32mI (316958) MQ7_SENSOR: Raw: 3749, Voltage: 4.58 V, Rs: 922.91, CO_PPM: 0.10[0m
+[0;32mI (318068) DHT_SENSOR: Temperature: 25.2°C, Humidity: 45.1%[0m
+[0;32mI (318958) MQ4_SENSOR: Raw: 1123, Voltage: 1.37 V, Rs: 26464.82, CH4_PPM: 0.00[0m
+[0;32mI (318958) MQ7_SENSOR: Raw: 3681, Voltage: 4.49 V, Rs: 1124.69, CO_PPM: 0.08[0m
+[0;32mI (320088) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.6%[0m
+[0;32mI (320958) MQ4_SENSOR: Raw: 1040, Voltage: 1.27 V, Rs: 29375.00, CH4_PPM: 0.00[0m
+[0;32mI (320958) MQ7_SENSOR: Raw: 3682, Voltage: 4.50 V, Rs: 1121.67, CO_PPM: 0.08[0m
+[0;32mI (322108) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.2%[0m
+[0;32mI (322958) MQ4_SENSOR: Raw: 1023, Voltage: 1.25 V, Rs: 30029.32, CH4_PPM: 0.00[0m
+[0;32mI (322958) MQ7_SENSOR: Raw: 3654, Voltage: 4.46 V, Rs: 1206.90, CO_PPM: 0.07[0m
+[0;32mI (323248) CSV_WRITER: Sensor data recorded: T=25.20°C, H=44.20%, MQ4=1.25V/0.00ppm, MQ7=4.46V/0.07ppm[0m
+[0;32mI (324128) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.9%[0m
+[0;32mI (324958) MQ4_SENSOR: Raw: 945, Voltage: 1.15 V, Rs: 33333.34, CH4_PPM: 0.00[0m
+[0;32mI (324958) MQ7_SENSOR: Raw: 3618, Voltage: 4.42 V, Rs: 1318.41, CO_PPM: 0.06[0m
+[0;32mI (326148) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.8%[0m
+[0;32mI (326958) MQ4_SENSOR: Raw: 977, Voltage: 1.19 V, Rs: 31914.02, CH4_PPM: 0.00[0m
+[0;32mI (326958) MQ7_SENSOR: Raw: 3632, Voltage: 4.43 V, Rs: 1274.78, CO_PPM: 0.06[0m
+[0;32mI (328168) DHT_SENSOR: Temperature: 25.2°C, Humidity: 46.3%[0m
+[0;32mI (328958) MQ4_SENSOR: Raw: 4095, Voltage: 5.00 V, Rs: 0.00, CH4_PPM: inf[0m
+[0;32mI (328958) MQ7_SENSOR: Raw: 4048, Voltage: 4.94 V, Rs: 116.11, CO_PPM: 2.40[0m
+[0;32mI (330188) DHT_SENSOR: Temperature: 25.2°C, Humidity: 46.3%[0m
+[0;32mI (330958) MQ4_SENSOR: Raw: 838, Voltage: 1.02 V, Rs: 38866.34, CH4_PPM: 0.00[0m
+[0;32mI (330958) MQ7_SENSOR: Raw: 3491, Voltage: 4.26 V, Rs: 1730.16, CO_PPM: 0.04[0m
+[0;32mI (332208) DHT_SENSOR: Temperature: 25.2°C, Humidity: 46.3%[0m
+[0;32mI (332958) MQ4_SENSOR: Raw: 851, Voltage: 1.04 V, Rs: 38119.86, CH4_PPM: 0.00[0m
+[0;32mI (332958) MQ7_SENSOR: Raw: 3460, Voltage: 4.22 V, Rs: 1835.26, CO_PPM: 0.04[0m
+[0;32mI (333258) CSV_WRITER: Sensor data recorded: T=25.20°C, H=46.30%, MQ4=1.04V/0.00ppm, MQ7=4.22V/0.04ppm[0m
+[0;32mI (334228) DHT_SENSOR: Temperature: 25.2°C, Humidity: 45.8%[0m
+[0;32mI (334958) MQ4_SENSOR: Raw: 894, Voltage: 1.09 V, Rs: 35805.37, CH4_PPM: 0.00[0m
+[0;32mI (334958) MQ7_SENSOR: Raw: 3479, Voltage: 4.25 V, Rs: 1770.62, CO_PPM: 0.04[0m
+[0;32mI (336248) DHT_SENSOR: Temperature: 25.2°C, Humidity: 45.5%[0m
+[0;32mI (336958) MQ4_SENSOR: Raw: 898, Voltage: 1.10 V, Rs: 35601.34, CH4_PPM: 0.00[0m
+[0;32mI (336958) MQ7_SENSOR: Raw: 3463, Voltage: 4.23 V, Rs: 1825.01, CO_PPM: 0.04[0m
+[0;32mI (338268) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.7%[0m
+[0;32mI (338958) MQ4_SENSOR: Raw: 911, Voltage: 1.11 V, Rs: 34950.61, CH4_PPM: 0.00[0m
+[0;32mI (338958) MQ7_SENSOR: Raw: 3455, Voltage: 4.22 V, Rs: 1852.39, CO_PPM: 0.04[0m
+[0;32mI (340288) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.3%[0m
+[0;32mI (340958) MQ4_SENSOR: Raw: 887, Voltage: 1.08 V, Rs: 36166.86, CH4_PPM: 0.00[0m
+[0;32mI (340958) MQ7_SENSOR: Raw: 3390, Voltage: 4.14 V, Rs: 2079.64, CO_PPM: 0.03[0m
+[0;32mI (342308) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.0%[0m
+[0;32mI (342958) MQ4_SENSOR: Raw: 907, Voltage: 1.11 V, Rs: 35148.84, CH4_PPM: 0.00[0m
+[0;32mI (342958) MQ7_SENSOR: Raw: 3517, Voltage: 4.29 V, Rs: 1643.45, CO_PPM: 0.04[0m
+[0;32mI (343268) CSV_WRITER: Sensor data recorded: T=25.20°C, H=44.00%, MQ4=1.11V/0.00ppm, MQ7=4.29V/0.04ppm[0m
+[0;32mI (344328) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.9%[0m
+[0;32mI (344958) MQ4_SENSOR: Raw: 933, Voltage: 1.14 V, Rs: 33890.68, CH4_PPM: 0.00[0m
+[0;32mI (344958) MQ7_SENSOR: Raw: 3695, Voltage: 4.51 V, Rs: 1082.54, CO_PPM: 0.08[0m
+[0;32mI (346348) DHT_SENSOR: Temperature: 25.2°C, Humidity: 45.1%[0m
+[0;32mI (346958) MQ4_SENSOR: Raw: 897, Voltage: 1.10 V, Rs: 35652.17, CH4_PPM: 0.00[0m
+[0;32mI (346958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (348368) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.7%[0m
+[0;32mI (348958) MQ4_SENSOR: Raw: 925, Voltage: 1.13 V, Rs: 34270.27, CH4_PPM: 0.00[0m
+[0;32mI (348958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (350388) DHT_SENSOR: Temperature: 25.2°C, Humidity: 45.4%[0m
+[0;32mI (350958) MQ4_SENSOR: Raw: 947, Voltage: 1.16 V, Rs: 33241.82, CH4_PPM: 0.00[0m
+[0;32mI (350958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (352408) DHT_SENSOR: Temperature: 25.2°C, Humidity: 46.5%[0m
+[0;32mI (352958) MQ4_SENSOR: Raw: 949, Voltage: 1.16 V, Rs: 33150.69, CH4_PPM: 0.00[0m
+[0;32mI (352958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (353278) CSV_WRITER: Sensor data recorded: T=25.20°C, H=46.50%, MQ4=1.16V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (354428) DHT_SENSOR: Temperature: 25.3°C, Humidity: 46.0%[0m
+[0;32mI (354958) MQ4_SENSOR: Raw: 958, Voltage: 1.17 V, Rs: 32745.30, CH4_PPM: 0.00[0m
+[0;32mI (354958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (356448) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.9%[0m
+[0;32mI (356958) MQ4_SENSOR: Raw: 951, Voltage: 1.16 V, Rs: 33059.94, CH4_PPM: 0.00[0m
+[0;32mI (356958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (358468) DHT_SENSOR: Temperature: 25.3°C, Humidity: 44.3%[0m
+[0;32mI (358958) MQ4_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CH4_PPM: 0.00[0m
+[0;32mI (358958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (360488) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.2%[0m
+[0;32mI (360958) MQ4_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CH4_PPM: 0.00[0m
+[0;32mI (360958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (362508) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.0%[0m
+[0;32mI (362958) MQ4_SENSOR: Raw: 679, Voltage: 0.83 V, Rs: 50309.28, CH4_PPM: 0.00[0m
+[0;32mI (362958) MQ7_SENSOR: Raw: 31, Voltage: 0.04 V, Rs: 1310967.75, CO_PPM: 0.00[0m
+[0;32mI (363288) CSV_WRITER: Sensor data recorded: T=25.20°C, H=44.00%, MQ4=0.83V/0.00ppm, MQ7=0.04V/0.00ppm[0m
+[0;32mI (364528) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.8%[0m
+[0;32mI (364958) MQ4_SENSOR: Raw: 768, Voltage: 0.94 V, Rs: 43320.31, CH4_PPM: 0.00[0m
+[0;32mI (364958) MQ7_SENSOR: Raw: 43, Voltage: 0.05 V, Rs: 942325.56, CO_PPM: 0.00[0m
+[0;32mI (366548) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.6%[0m
+[0;32mI (366958) MQ4_SENSOR: Raw: 760, Voltage: 0.93 V, Rs: 43881.58, CH4_PPM: 0.00[0m
+[0;32mI (366958) MQ7_SENSOR: Raw: 25, Voltage: 0.03 V, Rs: 1627999.75, CO_PPM: 0.00[0m
+[0;32mI (368568) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.3%[0m
+[0;32mI (368958) MQ4_SENSOR: Raw: 807, Voltage: 0.99 V, Rs: 40743.49, CH4_PPM: 0.00[0m
+[0;32mI (368958) MQ7_SENSOR: Raw: 32, Voltage: 0.04 V, Rs: 1269687.50, CO_PPM: 0.00[0m
+[0;32mI (370588) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.1%[0m
+[0;32mI (370958) MQ4_SENSOR: Raw: 853, Voltage: 1.04 V, Rs: 38007.04, CH4_PPM: 0.00[0m
+[0;32mI (370958) MQ7_SENSOR: Raw: 48, Voltage: 0.06 V, Rs: 843124.94, CO_PPM: 0.00[0m
+[0;32mI (372608) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.0%[0m
+[0;32mI (372958) MQ4_SENSOR: Raw: 871, Voltage: 1.06 V, Rs: 37014.93, CH4_PPM: 0.00[0m
+[0;32mI (372958) MQ7_SENSOR: Raw: 30, Voltage: 0.04 V, Rs: 1354999.88, CO_PPM: 0.00[0m
+[0;32mI (373298) CSV_WRITER: Sensor data recorded: T=25.20°C, H=43.00%, MQ4=1.06V/0.00ppm, MQ7=0.04V/0.00ppm[0m
+[0;32mI (374628) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.0%[0m
+[0;32mI (374958) MQ4_SENSOR: Raw: 894, Voltage: 1.09 V, Rs: 35805.37, CH4_PPM: 0.00[0m
+[0;32mI (374958) MQ7_SENSOR: Raw: 21, Voltage: 0.03 V, Rs: 1940000.00, CO_PPM: 0.00[0m
+[0;32mI (376648) DHT_SENSOR: Temperature: 25.2°C, Humidity: 42.9%[0m
+[0;32mI (376958) MQ4_SENSOR: Raw: 914, Voltage: 1.12 V, Rs: 34803.06, CH4_PPM: 0.00[0m
+[0;32mI (376958) MQ7_SENSOR: Raw: 21, Voltage: 0.03 V, Rs: 1940000.00, CO_PPM: 0.00[0m
+[0;32mI (378668) DHT_SENSOR: Temperature: 25.2°C, Humidity: 42.9%[0m
+[0;32mI (378958) MQ4_SENSOR: Raw: 901, Voltage: 1.10 V, Rs: 35449.50, CH4_PPM: 0.00[0m
+[0;32mI (378958) MQ7_SENSOR: Raw: 14, Voltage: 0.02 V, Rs: 2914999.75, CO_PPM: 0.00[0m
+[0;32mI (380688) DHT_SENSOR: Temperature: 25.3°C, Humidity: 43.8%[0m
+[0;32mI (380958) MQ4_SENSOR: Raw: 928, Voltage: 1.13 V, Rs: 34127.15, CH4_PPM: 0.00[0m
+[0;32mI (380958) MQ7_SENSOR: Raw: 17, Voltage: 0.02 V, Rs: 2398823.50, CO_PPM: 0.00[0m
+[0;32mI (382708) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.9%[0m
+[0;32mI (382958) MQ4_SENSOR: Raw: 902, Voltage: 1.10 V, Rs: 35399.11, CH4_PPM: 0.00[0m
+[0;32mI (382958) MQ7_SENSOR: Raw: 26, Voltage: 0.03 V, Rs: 1564999.88, CO_PPM: 0.00[0m
+[0;32mI (383308) CSV_WRITER: Sensor data recorded: T=25.20°C, H=43.90%, MQ4=1.10V/0.00ppm, MQ7=0.03V/0.00ppm[0m
+[0;32mI (384728) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.7%[0m
+[0;32mI (384958) MQ4_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CH4_PPM: 0.00[0m
+[0;32mI (384958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (386748) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.6%[0m
+[0;32mI (386958) MQ4_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CH4_PPM: 0.00[0m
+[0;32mI (386958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (388768) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.4%[0m
+[0;32mI (388958) MQ4_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CH4_PPM: 0.00[0m
+[0;32mI (388958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (390788) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.5%[0m
+[0;32mI (390958) MQ4_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CH4_PPM: 0.00[0m
+[0;32mI (390958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (392808) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.7%[0m
+[0;32mI (392958) MQ4_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CH4_PPM: 0.00[0m
+[0;32mI (392958) MQ7_SENSOR: Raw: 0, Voltage: 0.00 V, Rs: inf, CO_PPM: 0.00[0m
+[0;32mI (393318) CSV_WRITER: Sensor data recorded: T=25.20°C, H=43.70%, MQ4=0.00V/0.00ppm, MQ7=0.00V/0.00ppm[0m
+[0;32mI (394828) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.7%[0m
+[0;32mI (394958) MQ4_SENSOR: Raw: 101, Voltage: 0.12 V, Rs: 395445.53, CH4_PPM: 0.00[0m
+[0;32mI (394958) MQ7_SENSOR: Raw: 2535, Voltage: 3.10 V, Rs: 6153.85, CO_PPM: 0.01[0m
+[0;32mI (396848) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.5%[0m
+[0;32mI (396958) MQ4_SENSOR: Raw: 78, Voltage: 0.10 V, Rs: 514999.97, CH4_PPM: 0.00[0m
+[0;32mI (396958) MQ7_SENSOR: Raw: 2914, Voltage: 3.56 V, Rs: 4052.85, CO_PPM: 0.01[0m
+[0;32mI (16999) MQ4_SENSOR: Raw: 673, Voltage: 0.82 V, Rs: 50846.95, CH4_PPM: 0.00[0m
+[0;32mI (17009) MQ7_SENSOR: Raw: 3487, Voltage: 4.26 V, Rs: 1743.62, CO_PPM: 0.04[0m
+[0;32mI (17139) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.8%[0m
+[0;32mI (18999) MQ4_SENSOR: Raw: 693, Voltage: 0.85 V, Rs: 49090.91, CH4_PPM: 0.00[0m
+[0;32mI (19009) MQ7_SENSOR: Raw: 3543, Voltage: 4.33 V, Rs: 1558.00, CO_PPM: 0.05[0m
+[0;32mI (19159) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.7%[0m
+[0;32mI (20959) CSV_WRITER: Sensor data recorded: T=25.20°C, H=43.70%, MQ4=0.85V/0.00ppm, MQ7=4.33V/0.05ppm[0m
+[0;32mI (20999) MQ4_SENSOR: Raw: 690, Voltage: 0.84 V, Rs: 49347.83, CH4_PPM: 0.00[0m
+[0;32mI (21009) MQ7_SENSOR: Raw: 3616, Voltage: 4.42 V, Rs: 1324.67, CO_PPM: 0.06[0m
+[0;32mI (21179) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.5%[0m
+[0;32mI (22999) MQ4_SENSOR: Raw: 703, Voltage: 0.86 V, Rs: 48250.35, CH4_PPM: 0.00[0m
+[0;32mI (23009) MQ7_SENSOR: Raw: 3682, Voltage: 4.50 V, Rs: 1121.67, CO_PPM: 0.08[0m
+[0;32mI (23199) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.4%[0m
+[0;32mI (24999) MQ4_SENSOR: Raw: 713, Voltage: 0.87 V, Rs: 47433.38, CH4_PPM: 0.00[0m
+[0;32mI (25009) MQ7_SENSOR: Raw: 3726, Voltage: 4.55 V, Rs: 990.34, CO_PPM: 0.09[0m
+[0;32mI (25219) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.4%[0m
+[0;32mI (26999) MQ4_SENSOR: Raw: 694, Voltage: 0.85 V, Rs: 49005.76, CH4_PPM: 0.00[0m
+[0;32mI (27009) MQ7_SENSOR: Raw: 3773, Voltage: 4.61 V, Rs: 853.43, CO_PPM: 0.12[0m
+[0;32mI (27239) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.4%[0m
+[0;32mI (28999) MQ4_SENSOR: Raw: 689, Voltage: 0.84 V, Rs: 49433.96, CH4_PPM: 0.00[0m
+[0;32mI (29009) MQ7_SENSOR: Raw: 3824, Voltage: 4.67 V, Rs: 708.68, CO_PPM: 0.15[0m
+[0;32mI (29259) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.2%[0m
+[0;32mI (30969) CSV_WRITER: Sensor data recorded: T=25.20°C, H=43.20%, MQ4=0.84V/0.00ppm, MQ7=4.67V/0.15ppm[0m
+[0;32mI (30999) MQ4_SENSOR: Raw: 688, Voltage: 0.84 V, Rs: 49520.35, CH4_PPM: 0.00[0m
+[0;32mI (31009) MQ7_SENSOR: Raw: 3879, Voltage: 4.74 V, Rs: 556.84, CO_PPM: 0.22[0m
+[0;32mI (31279) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.2%[0m
+[0;32mI (32999) MQ4_SENSOR: Raw: 702, Voltage: 0.86 V, Rs: 48333.33, CH4_PPM: 0.00[0m
+[0;32mI (33009) MQ7_SENSOR: Raw: 3906, Voltage: 4.77 V, Rs: 483.87, CO_PPM: 0.27[0m
+[0;32mI (33299) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.3%[0m
+[0;32mI (34999) MQ4_SENSOR: Raw: 695, Voltage: 0.85 V, Rs: 48920.86, CH4_PPM: 0.00[0m
+[0;32mI (35009) MQ7_SENSOR: Raw: 3925, Voltage: 4.79 V, Rs: 433.12, CO_PPM: 0.32[0m
+[0;32mI (35319) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.2%[0m
+[0;32mI (36999) MQ4_SENSOR: Raw: 675, Voltage: 0.82 V, Rs: 50666.67, CH4_PPM: 0.00[0m
+[0;32mI (37009) MQ7_SENSOR: Raw: 3920, Voltage: 4.79 V, Rs: 446.43, CO_PPM: 0.31[0m
+[0;32mI (37339) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.2%[0m
+[0;32mI (38999) MQ4_SENSOR: Raw: 681, Voltage: 0.83 V, Rs: 50132.16, CH4_PPM: 0.00[0m
+[0;32mI (39009) MQ7_SENSOR: Raw: 3936, Voltage: 4.81 V, Rs: 403.96, CO_PPM: 0.36[0m
+[0;32mI (39359) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.3%[0m
+[0;32mI (40979) CSV_WRITER: Sensor data recorded: T=25.20°C, H=43.30%, MQ4=0.83V/0.00ppm, MQ7=4.81V/0.36ppm[0m
+[0;32mI (40999) MQ4_SENSOR: Raw: 675, Voltage: 0.82 V, Rs: 50666.67, CH4_PPM: 0.00[0m
+[0;32mI (41009) MQ7_SENSOR: Raw: 3943, Voltage: 4.81 V, Rs: 385.49, CO_PPM: 0.39[0m
+[0;32mI (41379) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.3%[0m
+[0;32mI (42999) MQ4_SENSOR: Raw: 662, Voltage: 0.81 V, Rs: 51858.01, CH4_PPM: 0.00[0m
+[0;32mI (43009) MQ7_SENSOR: Raw: 3914, Voltage: 4.78 V, Rs: 462.44, CO_PPM: 0.29[0m
+[0;32mI (43399) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.2%[0m
+[0;32mI (44999) MQ4_SENSOR: Raw: 662, Voltage: 0.81 V, Rs: 51858.01, CH4_PPM: 0.00[0m
+[0;32mI (45009) MQ7_SENSOR: Raw: 3987, Voltage: 4.87 V, Rs: 270.88, CO_PPM: 0.66[0m
+[0;32mI (45419) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.7%[0m
+[0;32mI (46999) MQ4_SENSOR: Raw: 649, Voltage: 0.79 V, Rs: 53097.07, CH4_PPM: 0.00[0m
+[0;32mI (47009) MQ7_SENSOR: Raw: 3933, Voltage: 4.80 V, Rs: 411.90, CO_PPM: 0.35[0m
+[0;32mI (47439) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.3%[0m
+[0;32mI (48999) MQ4_SENSOR: Raw: 656, Voltage: 0.80 V, Rs: 52423.78, CH4_PPM: 0.00[0m
+[0;32mI (49009) MQ7_SENSOR: Raw: 3927, Voltage: 4.79 V, Rs: 427.81, CO_PPM: 0.33[0m
+[0;32mI (49459) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.3%[0m
+[0;32mI (50989) CSV_WRITER: Sensor data recorded: T=25.20°C, H=44.30%, MQ4=0.80V/0.00ppm, MQ7=4.79V/0.33ppm[0m
+[0;32mI (50999) MQ4_SENSOR: Raw: 647, Voltage: 0.79 V, Rs: 53292.12, CH4_PPM: 0.00[0m
+[0;32mI (51009) MQ7_SENSOR: Raw: 3907, Voltage: 4.77 V, Rs: 481.19, CO_PPM: 0.28[0m
+[0;32mI (51479) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.1%[0m
+[0;32mI (52999) MQ4_SENSOR: Raw: 651, Voltage: 0.79 V, Rs: 52903.22, CH4_PPM: 0.00[0m
+[0;32mI (53009) MQ7_SENSOR: Raw: 3873, Voltage: 4.73 V, Rs: 573.20, CO_PPM: 0.21[0m
+[0;32mI (53499) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.8%[0m
+[0;32mI (54999) MQ4_SENSOR: Raw: 635, Voltage: 0.78 V, Rs: 54488.19, CH4_PPM: 0.00[0m
+[0;32mI (55009) MQ7_SENSOR: Raw: 3879, Voltage: 4.74 V, Rs: 556.84, CO_PPM: 0.22[0m
+[0;32mI (55519) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.6%[0m
+[0;32mI (56999) MQ4_SENSOR: Raw: 641, Voltage: 0.78 V, Rs: 53884.55, CH4_PPM: 0.00[0m
+[0;32mI (57009) MQ7_SENSOR: Raw: 3877, Voltage: 4.73 V, Rs: 562.29, CO_PPM: 0.22[0m
+[0;32mI (57539) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.4%[0m
+[0;32mI (58999) MQ4_SENSOR: Raw: 627, Voltage: 0.77 V, Rs: 55311.00, CH4_PPM: 0.00[0m
+[0;32mI (59009) MQ7_SENSOR: Raw: 3835, Voltage: 4.68 V, Rs: 677.97, CO_PPM: 0.16[0m
+[0;32mI (59559) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.9%[0m
+[0;32mI (60999) MQ4_SENSOR: Raw: 630, Voltage: 0.77 V, Rs: 55000.00, CH4_PPM: 0.00[0m
+[0;32mI (60999) CSV_WRITER: Sensor data recorded: T=25.20°C, H=43.90%, MQ4=0.77V/0.00ppm, MQ7=4.68V/0.16ppm[0m
+[0;32mI (61009) MQ7_SENSOR: Raw: 3811, Voltage: 4.65 V, Rs: 745.21, CO_PPM: 0.14[0m
+[0;32mI (61579) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.0%[0m
+[0;32mI (62999) MQ4_SENSOR: Raw: 624, Voltage: 0.76 V, Rs: 55625.00, CH4_PPM: 0.00[0m
+[0;32mI (63009) MQ7_SENSOR: Raw: 3801, Voltage: 4.64 V, Rs: 773.48, CO_PPM: 0.13[0m
+[0;32mI (63599) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.1%[0m
+[0;32mI (64999) MQ4_SENSOR: Raw: 627, Voltage: 0.77 V, Rs: 55311.00, CH4_PPM: 0.00[0m
+[0;32mI (65009) MQ7_SENSOR: Raw: 3767, Voltage: 4.60 V, Rs: 870.72, CO_PPM: 0.11[0m
+[0;32mI (65619) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.9%[0m
+[0;32mI (66999) MQ4_SENSOR: Raw: 619, Voltage: 0.76 V, Rs: 56155.09, CH4_PPM: 0.00[0m
+[0;32mI (67009) MQ7_SENSOR: Raw: 3758, Voltage: 4.59 V, Rs: 896.75, CO_PPM: 0.11[0m
+[0;32mI (67639) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.7%[0m
+[0;32mI (68999) MQ4_SENSOR: Raw: 614, Voltage: 0.75 V, Rs: 56693.81, CH4_PPM: 0.00[0m
+[0;32mI (69009) MQ7_SENSOR: Raw: 3680, Voltage: 4.49 V, Rs: 1127.72, CO_PPM: 0.08[0m
+[0;32mI (69659) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.6%[0m
+[0;32mI (70999) MQ4_SENSOR: Raw: 609, Voltage: 0.74 V, Rs: 57241.38, CH4_PPM: 0.00[0m
+[0;32mI (71009) MQ7_SENSOR: Raw: 3690, Voltage: 4.51 V, Rs: 1097.56, CO_PPM: 0.08[0m
+[0;32mI (71009) CSV_WRITER: Sensor data recorded: T=25.20°C, H=43.60%, MQ4=0.75V/0.00ppm, MQ7=4.49V/0.08ppm[0m
+[0;32mI (71679) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.8%[0m
+[0;32mI (72999) MQ4_SENSOR: Raw: 614, Voltage: 0.75 V, Rs: 56693.81, CH4_PPM: 0.00[0m
+[0;32mI (73009) MQ7_SENSOR: Raw: 3638, Voltage: 4.44 V, Rs: 1256.18, CO_PPM: 0.06[0m
+[0;32mI (73699) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.6%[0m
+[0;32mI (74999) MQ4_SENSOR: Raw: 583, Voltage: 0.71 V, Rs: 60240.14, CH4_PPM: 0.00[0m
+[0;32mI (75009) MQ7_SENSOR: Raw: 3602, Voltage: 4.40 V, Rs: 1368.68, CO_PPM: 0.06[0m
+[0;32mI (75719) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.4%[0m
+[0;32mI (76999) MQ4_SENSOR: Raw: 752, Voltage: 0.92 V, Rs: 44454.79, CH4_PPM: 0.00[0m
+[0;32mI (77009) MQ7_SENSOR: Raw: 3665, Voltage: 4.47 V, Rs: 1173.26, CO_PPM: 0.07[0m
+[0;32mI (77739) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.4%[0m
+[0;32mI (78999) MQ4_SENSOR: Raw: 811, Voltage: 0.99 V, Rs: 40493.21, CH4_PPM: 0.00[0m
+[0;32mI (79009) MQ7_SENSOR: Raw: 3623, Voltage: 4.42 V, Rs: 1302.79, CO_PPM: 0.06[0m
+[0;32mI (79759) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.5%[0m
+[0;32mI (80999) MQ4_SENSOR: Raw: 924, Voltage: 1.13 V, Rs: 34318.18, CH4_PPM: 0.00[0m
+[0;32mI (81009) MQ7_SENSOR: Raw: 3701, Voltage: 4.52 V, Rs: 1064.58, CO_PPM: 0.08[0m
+[0;32mI (81019) CSV_WRITER: Sensor data recorded: T=25.20°C, H=44.50%, MQ4=1.13V/0.00ppm, MQ7=4.42V/0.06ppm[0m
+[0;32mI (81779) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.9%[0m
+[0;32mI (82999) MQ4_SENSOR: Raw: 785, Voltage: 0.96 V, Rs: 42165.60, CH4_PPM: 0.00[0m
+[0;32mI (83009) MQ7_SENSOR: Raw: 3536, Voltage: 4.32 V, Rs: 1580.88, CO_PPM: 0.05[0m
+[0;32mI (83799) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.6%[0m
+[0;32mI (84999) MQ4_SENSOR: Raw: 789, Voltage: 0.96 V, Rs: 41901.14, CH4_PPM: 0.00[0m
+[0;32mI (85009) MQ7_SENSOR: Raw: 3455, Voltage: 4.22 V, Rs: 1852.39, CO_PPM: 0.04[0m
+[0;32mI (85819) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.1%[0m
+[0;32mI (86999) MQ4_SENSOR: Raw: 784, Voltage: 0.96 V, Rs: 42232.14, CH4_PPM: 0.00[0m
+[0;32mI (87009) MQ7_SENSOR: Raw: 3409, Voltage: 4.16 V, Rs: 2012.32, CO_PPM: 0.03[0m
+[0;32mI (87839) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.1%[0m
+[0;32mI (88999) MQ4_SENSOR: Raw: 778, Voltage: 0.95 V, Rs: 42634.96, CH4_PPM: 0.00[0m
+[0;32mI (89009) MQ7_SENSOR: Raw: 3371, Voltage: 4.12 V, Rs: 2147.73, CO_PPM: 0.03[0m
+[0;32mI (89859) DHT_SENSOR: Temperature: 25.2°C, Humidity: 44.1%[0m
+[0;32mI (90999) MQ4_SENSOR: Raw: 766, Voltage: 0.94 V, Rs: 43459.53, CH4_PPM: 0.00[0m
+[0;32mI (91009) MQ7_SENSOR: Raw: 3311, Voltage: 4.04 V, Rs: 2367.86, CO_PPM: 0.02[0m
+[0;32mI (91029) CSV_WRITER: Sensor data recorded: T=25.20°C, H=44.10%, MQ4=0.94V/0.00ppm, MQ7=4.04V/0.02ppm[0m
+[0;32mI (91879) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.9%[0m
+[0;32mI (92999) MQ4_SENSOR: Raw: 773, Voltage: 0.94 V, Rs: 42975.42, CH4_PPM: 0.00[0m
+[0;32mI (93009) MQ7_SENSOR: Raw: 3257, Voltage: 3.98 V, Rs: 2572.92, CO_PPM: 0.02[0m
+[0;32mI (93899) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.6%[0m
+[0;32mI (94999) MQ4_SENSOR: Raw: 780, Voltage: 0.95 V, Rs: 42499.99, CH4_PPM: 0.00[0m
+[0;32mI (95009) MQ7_SENSOR: Raw: 3218, Voltage: 3.93 V, Rs: 2725.29, CO_PPM: 0.02[0m
+[0;32mI (95919) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.5%[0m
+[0;32mI (96999) MQ4_SENSOR: Raw: 779, Voltage: 0.95 V, Rs: 42567.39, CH4_PPM: 0.00[0m
+[0;32mI (97009) MQ7_SENSOR: Raw: 3184, Voltage: 3.89 V, Rs: 2861.18, CO_PPM: 0.02[0m
+[0;32mI (97939) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.6%[0m
+[0;32mI (98999) MQ4_SENSOR: Raw: 767, Voltage: 0.94 V, Rs: 43389.83, CH4_PPM: 0.00[0m
+[0;32mI (99009) MQ7_SENSOR: Raw: 3163, Voltage: 3.86 V, Rs: 2946.57, CO_PPM: 0.02[0m
+[0;32mI (99959) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.9%[0m
+[0;32mI (100999) MQ4_SENSOR: Raw: 754, Voltage: 0.92 V, Rs: 44310.35, CH4_PPM: 0.00[0m
+[0;32mI (101009) MQ7_SENSOR: Raw: 3139, Voltage: 3.83 V, Rs: 3045.56, CO_PPM: 0.02[0m
+[0;32mI (101039) CSV_WRITER: Sensor data recorded: T=25.20°C, H=43.90%, MQ4=0.92V/0.00ppm, MQ7=3.83V/0.02ppm[0m
+[0;32mI (101979) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.9%[0m
+[0;32mI (102999) MQ4_SENSOR: Raw: 767, Voltage: 0.94 V, Rs: 43389.83, CH4_PPM: 0.00[0m
+[0;32mI (103009) MQ7_SENSOR: Raw: 3045, Voltage: 3.72 V, Rs: 3448.28, CO_PPM: 0.01[0m
+[0;32mI (103999) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.8%[0m
+[0;32mI (104999) MQ4_SENSOR: Raw: 768, Voltage: 0.94 V, Rs: 43320.31, CH4_PPM: 0.00[0m
+[0;32mI (105009) MQ7_SENSOR: Raw: 3093, Voltage: 3.78 V, Rs: 3239.57, CO_PPM: 0.02[0m
+[0;32mI (106019) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.7%[0m
+[0;32mI (106999) MQ4_SENSOR: Raw: 743, Voltage: 0.91 V, Rs: 45114.41, CH4_PPM: 0.00[0m
+[0;32mI (107009) MQ7_SENSOR: Raw: 3063, Voltage: 3.74 V, Rs: 3369.25, CO_PPM: 0.01[0m
+[0;32mI (108039) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.5%[0m
+[0;32mI (108999) MQ4_SENSOR: Raw: 755, Voltage: 0.92 V, Rs: 44238.41, CH4_PPM: 0.00[0m
+[0;32mI (109009) MQ7_SENSOR: Raw: 3059, Voltage: 3.74 V, Rs: 3386.73, CO_PPM: 0.01[0m
+[0;32mI (110059) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.9%[0m
+[0;32mI (110999) MQ4_SENSOR: Raw: 734, Voltage: 0.90 V, Rs: 45790.19, CH4_PPM: 0.00[0m
+[0;32mI (111009) MQ7_SENSOR: Raw: 3043, Voltage: 3.72 V, Rs: 3457.11, CO_PPM: 0.01[0m
+[0;32mI (111049) CSV_WRITER: Sensor data recorded: T=25.20°C, H=43.90%, MQ4=0.90V/0.00ppm, MQ7=3.72V/0.01ppm[0m
+[0;32mI (112079) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.9%[0m
+[0;32mI (112999) MQ4_SENSOR: Raw: 752, Voltage: 0.92 V, Rs: 44454.79, CH4_PPM: 0.00[0m
+[0;32mI (113009) MQ7_SENSOR: Raw: 3019, Voltage: 3.69 V, Rs: 3564.09, CO_PPM: 0.01[0m
+[0;32mI (114099) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.7%[0m
+[0;32mI (114999) MQ4_SENSOR: Raw: 747, Voltage: 0.91 V, Rs: 44819.28, CH4_PPM: 0.00[0m
+[0;32mI (115009) MQ7_SENSOR: Raw: 3010, Voltage: 3.68 V, Rs: 3604.65, CO_PPM: 0.01[0m
+[0;32mI (116119) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.5%[0m
+[0;32mI (116999) MQ4_SENSOR: Raw: 753, Voltage: 0.92 V, Rs: 44382.47, CH4_PPM: 0.00[0m
+[0;32mI (117009) MQ7_SENSOR: Raw: 2991, Voltage: 3.65 V, Rs: 3691.07, CO_PPM: 0.01[0m
+[0;32mI (118139) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.4%[0m
+[0;32mI (118999) MQ4_SENSOR: Raw: 769, Voltage: 0.94 V, Rs: 43250.97, CH4_PPM: 0.00[0m
+[0;32mI (119009) MQ7_SENSOR: Raw: 2987, Voltage: 3.65 V, Rs: 3709.41, CO_PPM: 0.01[0m
+[0;32mI (120159) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (120999) MQ4_SENSOR: Raw: 755, Voltage: 0.92 V, Rs: 44238.41, CH4_PPM: 0.00[0m
+[0;32mI (121009) MQ7_SENSOR: Raw: 2964, Voltage: 3.62 V, Rs: 3815.79, CO_PPM: 0.01[0m
+[0;32mI (121059) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.40%, MQ4=0.92V/0.00ppm, MQ7=3.62V/0.01ppm[0m
+[0;32mI (122179) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.3%[0m
+[0;32mI (122999) MQ4_SENSOR: Raw: 758, Voltage: 0.93 V, Rs: 44023.75, CH4_PPM: 0.00[0m
+[0;32mI (123009) MQ7_SENSOR: Raw: 2947, Voltage: 3.60 V, Rs: 3895.49, CO_PPM: 0.01[0m
+[0;32mI (124199) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.3%[0m
+[0;32mI (124999) MQ4_SENSOR: Raw: 751, Voltage: 0.92 V, Rs: 44527.29, CH4_PPM: 0.00[0m
+[0;32mI (125009) MQ7_SENSOR: Raw: 2930, Voltage: 3.58 V, Rs: 3976.11, CO_PPM: 0.01[0m
+[0;32mI (126219) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.2%[0m
+[0;32mI (126999) MQ4_SENSOR: Raw: 766, Voltage: 0.94 V, Rs: 43459.53, CH4_PPM: 0.00[0m
+[0;32mI (127009) MQ7_SENSOR: Raw: 2928, Voltage: 3.58 V, Rs: 3985.66, CO_PPM: 0.01[0m
+[0;32mI (128239) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.2%[0m
+[0;32mI (128999) MQ4_SENSOR: Raw: 752, Voltage: 0.92 V, Rs: 44454.79, CH4_PPM: 0.00[0m
+[0;32mI (129009) MQ7_SENSOR: Raw: 2913, Voltage: 3.56 V, Rs: 4057.67, CO_PPM: 0.01[0m
+[0;32mI (130259) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (130999) MQ4_SENSOR: Raw: 762, Voltage: 0.93 V, Rs: 43740.16, CH4_PPM: 0.00[0m
+[0;32mI (131009) MQ7_SENSOR: Raw: 2886, Voltage: 3.52 V, Rs: 4189.19, CO_PPM: 0.01[0m
+[0;32mI (131069) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.10%, MQ4=0.93V/0.00ppm, MQ7=3.52V/0.01ppm[0m
+[0;32mI (132279) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (132999) MQ4_SENSOR: Raw: 755, Voltage: 0.92 V, Rs: 44238.41, CH4_PPM: 0.00[0m
+[0;32mI (133009) MQ7_SENSOR: Raw: 2879, Voltage: 3.52 V, Rs: 4223.69, CO_PPM: 0.01[0m
+[0;32mI (134299) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (134999) MQ4_SENSOR: Raw: 753, Voltage: 0.92 V, Rs: 44382.47, CH4_PPM: 0.00[0m
+[0;32mI (135009) MQ7_SENSOR: Raw: 2861, Voltage: 3.49 V, Rs: 4313.18, CO_PPM: 0.01[0m
+[0;32mI (136319) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (136999) MQ4_SENSOR: Raw: 754, Voltage: 0.92 V, Rs: 44310.35, CH4_PPM: 0.00[0m
+[0;32mI (137009) MQ7_SENSOR: Raw: 2853, Voltage: 3.48 V, Rs: 4353.31, CO_PPM: 0.01[0m
+[0;32mI (138339) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.0%[0m
+[0;32mI (138999) MQ4_SENSOR: Raw: 742, Voltage: 0.91 V, Rs: 45188.68, CH4_PPM: 0.00[0m
+[0;32mI (139009) MQ7_SENSOR: Raw: 2846, Voltage: 3.47 V, Rs: 4388.61, CO_PPM: 0.01[0m
+[0;32mI (140359) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.1%[0m
+[0;32mI (140999) MQ4_SENSOR: Raw: 757, Voltage: 0.92 V, Rs: 44095.11, CH4_PPM: 0.00[0m
+[0;32mI (141009) MQ7_SENSOR: Raw: 2835, Voltage: 3.46 V, Rs: 4444.44, CO_PPM: 0.01[0m
+[0;32mI (141079) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.10%, MQ4=0.92V/0.00ppm, MQ7=3.46V/0.01ppm[0m
+[0;32mI (142379) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.6%[0m
+[0;32mI (142999) MQ4_SENSOR: Raw: 747, Voltage: 0.91 V, Rs: 44819.28, CH4_PPM: 0.00[0m
+[0;32mI (143009) MQ7_SENSOR: Raw: 2817, Voltage: 3.44 V, Rs: 4536.74, CO_PPM: 0.01[0m
+[0;32mI (144399) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.7%[0m
+[0;32mI (144999) MQ4_SENSOR: Raw: 753, Voltage: 0.92 V, Rs: 44382.47, CH4_PPM: 0.00[0m
+[0;32mI (145009) MQ7_SENSOR: Raw: 2822, Voltage: 3.45 V, Rs: 4510.98, CO_PPM: 0.01[0m
+[0;32mI (146419) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.7%[0m
+[0;32mI (146999) MQ4_SENSOR: Raw: 763, Voltage: 0.93 V, Rs: 43669.73, CH4_PPM: 0.00[0m
+[0;32mI (147009) MQ7_SENSOR: Raw: 2805, Voltage: 3.42 V, Rs: 4598.93, CO_PPM: 0.01[0m
+[0;32mI (148439) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.7%[0m
+[0;32mI (148999) MQ4_SENSOR: Raw: 751, Voltage: 0.92 V, Rs: 44527.29, CH4_PPM: 0.00[0m
+[0;32mI (149009) MQ7_SENSOR: Raw: 2789, Voltage: 3.41 V, Rs: 4682.68, CO_PPM: 0.01[0m
+[0;32mI (150459) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.7%[0m
+[0;32mI (150999) MQ4_SENSOR: Raw: 752, Voltage: 0.92 V, Rs: 44454.79, CH4_PPM: 0.00[0m
+[0;32mI (151009) MQ7_SENSOR: Raw: 2801, Voltage: 3.42 V, Rs: 4619.78, CO_PPM: 0.01[0m
+[0;32mI (151089) CSV_WRITER: Sensor data recorded: T=25.20°C, H=43.70%, MQ4=0.92V/0.00ppm, MQ7=3.42V/0.01ppm[0m
+[0;32mI (152479) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.9%[0m
+[0;32mI (152999) MQ4_SENSOR: Raw: 753, Voltage: 0.92 V, Rs: 44382.47, CH4_PPM: 0.00[0m
+[0;32mI (153009) MQ7_SENSOR: Raw: 2772, Voltage: 3.38 V, Rs: 4772.73, CO_PPM: 0.01[0m
+[0;32mI (154499) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.8%[0m
+[0;32mI (154999) MQ4_SENSOR: Raw: 760, Voltage: 0.93 V, Rs: 43881.58, CH4_PPM: 0.00[0m
+[0;32mI (155009) MQ7_SENSOR: Raw: 2751, Voltage: 3.36 V, Rs: 4885.50, CO_PPM: 0.01[0m
+[0;32mI (156519) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.7%[0m
+[0;32mI (156999) MQ4_SENSOR: Raw: 752, Voltage: 0.92 V, Rs: 44454.79, CH4_PPM: 0.00[0m
+[0;32mI (157009) MQ7_SENSOR: Raw: 2752, Voltage: 3.36 V, Rs: 4880.09, CO_PPM: 0.01[0m
+[0;32mI (158539) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.6%[0m
+[0;32mI (158999) MQ4_SENSOR: Raw: 765, Voltage: 0.93 V, Rs: 43529.41, CH4_PPM: 0.00[0m
+[0;32mI (159009) MQ7_SENSOR: Raw: 2734, Voltage: 3.34 V, Rs: 4978.05, CO_PPM: 0.01[0m
+[0;32mI (160559) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.5%[0m
+[0;32mI (160999) MQ4_SENSOR: Raw: 752, Voltage: 0.92 V, Rs: 44454.79, CH4_PPM: 0.00[0m
+[0;32mI (161009) MQ7_SENSOR: Raw: 2717, Voltage: 3.32 V, Rs: 5071.77, CO_PPM: 0.01[0m
+[0;32mI (161099) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.50%, MQ4=0.92V/0.00ppm, MQ7=3.32V/0.01ppm[0m
+[0;32mI (162579) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.4%[0m
+[0;32mI (162999) MQ4_SENSOR: Raw: 752, Voltage: 0.92 V, Rs: 44454.79, CH4_PPM: 0.00[0m
+[0;32mI (163009) MQ7_SENSOR: Raw: 2705, Voltage: 3.30 V, Rs: 5138.63, CO_PPM: 0.01[0m
+[0;32mI (164599) DHT_SENSOR: Temperature: 25.2°C, Humidity: 43.5%[0m
+[0;32mI (164999) MQ4_SENSOR: Raw: 754, Voltage: 0.92 V, Rs: 44310.35, CH4_PPM: 0.00[0m
+[0;32mI (165009) MQ7_SENSOR: Raw: 2704, Voltage: 3.30 V, Rs: 5144.23, CO_PPM: 0.01[0m
+[0;32mI (166619) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.7%[0m
+[0;32mI (166999) MQ4_SENSOR: Raw: 735, Voltage: 0.90 V, Rs: 45714.28, CH4_PPM: 0.00[0m
+[0;32mI (167009) MQ7_SENSOR: Raw: 2624, Voltage: 3.20 V, Rs: 5605.94, CO_PPM: 0.01[0m
+[0;32mI (168639) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.6%[0m
+[0;32mI (168999) MQ4_SENSOR: Raw: 752, Voltage: 0.92 V, Rs: 44454.79, CH4_PPM: 0.00[0m
+[0;32mI (169009) MQ7_SENSOR: Raw: 2672, Voltage: 3.26 V, Rs: 5325.60, CO_PPM: 0.01[0m
+[0;32mI (170659) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.5%[0m
+[0;32mI (170999) MQ4_SENSOR: Raw: 754, Voltage: 0.92 V, Rs: 44310.35, CH4_PPM: 0.00[0m
+[0;32mI (171009) MQ7_SENSOR: Raw: 2649, Voltage: 3.23 V, Rs: 5458.66, CO_PPM: 0.01[0m
+[0;32mI (171109) CSV_WRITER: Sensor data recorded: T=25.10°C, H=43.50%, MQ4=0.92V/0.00ppm, MQ7=3.23V/0.01ppm[0m
+[0;32mI (172679) DHT_SENSOR: Temperature: 25.1°C, Humidity: 43.8%[0m
+[0;32mI (172999) MQ4_SENSOR: Raw: 611, Voltage: 0.75 V, Rs: 57021.28, CH4_PPM: 0.00[0m
+[0;32mI (173009) MQ7_SENSOR: Raw: 2559, Voltage: 3.12 V, Rs: 6002.34, CO_PPM: 0.01[0m
+[0;32mI (174699) DHT_SENSOR: Temperature: 25.1°C, Humidity: 44.0%[0m
+[0;32mI (174999) MQ4_SENSOR: Raw: 723, Voltage: 0.88 V, Rs: 46639.00, CH4_PPM: 0.00[0m
+[0;32mI (175009) MQ7_SENSOR: Raw: 2559, Voltage: 3.12 V, Rs: 6002.34, CO_PPM: 0.01[0m
+[0;32mI (176719) DHT_SENSOR: Temperature: 25.1°C, Humidity: 44.3%[0m
+[0;32mI (176999) MQ4_SENSOR: Raw: 631, Voltage: 0.77 V, Rs: 54896.99, CH4_PPM: 0.00[0m
+[0;32mI (177009) MQ7_SENSOR: Raw: 2546, Voltage: 3.11 V, Rs: 6084.05, CO_PPM: 0.01[0m
+[1;31mE (178739) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (178739) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;32mI (178999) MQ4_SENSOR: Raw: 827, Voltage: 1.01 V, Rs: 39516.32, CH4_PPM: 0.00[0m
+[0;32mI (179009) MQ7_SENSOR: Raw: 2701, Voltage: 3.30 V, Rs: 5161.05, CO_PPM: 0.01[0m
+[1;31mE (180759) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (180759) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;32mI (180999) MQ4_SENSOR: Raw: 694, Voltage: 0.85 V, Rs: 49005.76, CH4_PPM: 0.00[0m
+[0;32mI (181009) MQ7_SENSOR: Raw: 2614, Voltage: 3.19 V, Rs: 5665.65, CO_PPM: 0.01[0m
+[0;32mI (181119) CSV_WRITER: Sensor data recorded: T=25.10°C, H=44.30%, MQ4=0.85V/0.00ppm, MQ7=3.19V/0.01ppm[0m
+[1;31mE (182779) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (182779) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;32mI (182999) MQ4_SENSOR: Raw: 789, Voltage: 0.96 V, Rs: 41901.14, CH4_PPM: 0.00[0m
+[0;32mI (183009) MQ7_SENSOR: Raw: 2559, Voltage: 3.12 V, Rs: 6002.34, CO_PPM: 0.01[0m
+[1;31mE (184799) dht: Initialization error, problem in phase 'C'[0m
+[1;31mE (184799) DHT_SENSOR: Failed to read data from DHT sensor[0m
+[0;32mI (184999) MQ4_SENSOR: Raw: 839, Voltage: 1.02 V, Rs: 38808.11, CH4_PPM: 0.00[0m
+[0;32mI (185009) MQ7_SENSOR: Raw: 2651, Voltage: 3.24 V, Rs: 5447.00, CO_PPM: 0.01[0m
+[0;32mI (186819) DHT_SENSOR: Temperature: 89.7°C, Humidity: 0.0%[0m
+[0;32mI (186999) MQ4_SENSOR: Raw: 767, Voltage: 0.94 V, Rs: 43389.83, CH4_PPM: 0.00[0m
+[0;32mI (187009) MQ7_SENSOR: Raw: 2498, Voltage: 3.05 V, Rs: 6393.11, CO_PPM: 0.01[0m
+[0;32mI (188839) DHT_SENSOR: Temperature: 93.7°C, Humidity: 0.0%[0m
+[0;32mI (188999) MQ4_SENSOR: Raw: 614, Voltage: 0.75 V, Rs: 56693.81, CH4_PPM: 0.00[0m
+[0;32mI (189009) MQ7_SENSOR: Raw: 2448, Voltage: 2.99 V, Rs: 6727.94, CO_PPM: 0.01[0m
+[0;32mI (190859) DHT_SENSOR: Temperature: 89.6°C, Humidity: 0.0%[0m
+[0;32mI (190999) MQ4_SENSOR: Raw: 607, Voltage: 0.74 V, Rs: 57462.93, CH4_PPM: 0.00[0m
+[0;32mI (191009) MQ7_SENSOR: Raw: 2464, Voltage: 3.01 V, Rs: 6619.32, CO_PPM: 0.01[0m
+[0;32mI (191129) CSV_WRITER: Sensor data recorded: T=89.60°C, H=0.00%, MQ4=0.74V/0.00ppm, MQ7=3.01V/0.01ppm[0m
+[0;32mI (192879) DHT_SENSOR: Temperature: 94.5°C, Humidity: 0.0%[0m
+[0;32mI (192999) MQ4_SENSOR: Raw: 634, Voltage: 0.77 V, Rs: 54589.91, CH4_PPM: 0.00[0m
+[0;32mI (193009) MQ7_SENSOR: Raw: 2473, Voltage: 3.02 V, Rs: 6558.84, CO_PPM: 0.01[0m
+[0;32mI (194899) DHT_SENSOR: Temperature: 92.0°C, Humidity: 0.0%[0m
+[0;32mI (194999) MQ4_SENSOR: Raw: 642, Voltage: 0.78 V, Rs: 53785.05, CH4_PPM: 0.00[0m
+[0;32mI (195009) MQ7_SENSOR: Raw: 2478, Voltage: 3.03 V, Rs: 6525.42, CO_PPM: 0.01[0m
+[0;32mI (196919) DHT_SENSOR: Temperature: 100.0°C, Humidity: 0.0%[0m
+[0;32mI (196999) MQ4_SENSOR: Raw: 638, Voltage: 0.78 V, Rs: 54184.95, CH4_PPM: 0.00[0m
+[0;32mI (197009) MQ7_SENSOR: Raw: 2413, Voltage: 2.95 V, Rs: 6970.58, CO_PPM: 0.00[0m
+[0;32mI (198939) DHT_SENSOR: Temperature: 91.6°C, Humidity: 0.0%[0m
+[0;32mI (198999) MQ4_SENSOR: Raw: 630, Voltage: 0.77 V, Rs: 55000.00, CH4_PPM: 0.00[0m
+[0;32mI (199009) MQ7_SENSOR: Raw: 2467, Voltage: 3.01 V, Rs: 6599.11, CO_PPM: 0.01[0m
+[0;32mI (200959) DHT_SENSOR: Temperature: 97.4°C, Humidity: 0.0%[0m
+[0;32mI (200999) MQ4_SENSOR: Raw: 640, Voltage: 0.78 V, Rs: 53984.38, CH4_PPM: 0.00[0m
+[0;32mI (201009) MQ7_SENSOR: Raw: 2466, Voltage: 3.01 V, Rs: 6605.84, CO_PPM: 0.01[0m
+[0;32mI (201139) CSV_WRITER: Sensor data recorded: T=97.40°C, H=0.00%, MQ4=0.78V/0.00ppm, MQ7=3.01V/0.01ppm[0m
+[0;32mI (202979) DHT_SENSOR: Temperature: 92.5°C, Humidity: 0.0%[0m
+[0;32mI (202999) MQ4_SENSOR: Raw: 629, Voltage: 0.77 V, Rs: 55103.34, CH4_PPM: 0.00[0m
+[0;32mI (203009) MQ7_SENSOR: Raw: 2461, Voltage: 3.00 V, Rs: 6639.58, CO_PPM: 0.01[0m
+[0;32mI (204999) MQ4_SENSOR: Raw: 648, Voltage: 0.79 V, Rs: 53194.45, CH4_PPM: 0.00[0m
+[0;32mI (204999) DHT_SENSOR: Temperature: 89.7°C, Humidity: 0.0%[0m
+[0;32mI (205009) MQ7_SENSOR: Raw: 2390, Voltage: 2.92 V, Rs: 7133.89, CO_PPM: 0.00[0m
+[0;32mI (206999) MQ4_SENSOR: Raw: 667, Voltage: 0.81 V, Rs: 51394.30, CH4_PPM: 0.00[0m
+[0;32mI (207009) MQ7_SENSOR: Raw: 2437, Voltage: 2.98 V, Rs: 6803.45, CO_PPM: 0.00[0m
+[0;32mI (207019) DHT_SENSOR: Temperature: 97.4°C, Humidity: 0.0%[0m
+[0;32mI (208999) MQ4_SENSOR: Raw: 642, Voltage: 0.78 V, Rs: 53785.05, CH4_PPM: 0.00[0m
+[0;32mI (209009) MQ7_SENSOR: Raw: 2446, Voltage: 2.99 V, Rs: 6741.62, CO_PPM: 0.01[0m
+[0;32mI (209039) DHT_SENSOR: Temperature: 96.0°C, Humidity: 0.0%[0m
+[0;32mI (210999) MQ4_SENSOR: Raw: 672, Voltage: 0.82 V, Rs: 50937.50, CH4_PPM: 0.00[0m
+[0;32mI (211009) MQ7_SENSOR: Raw: 2435, Voltage: 2.97 V, Rs: 6817.25, CO_PPM: 0.00[0m
+[0;32mI (211059) DHT_SENSOR: Temperature: 104.5°C, Humidity: 0.0%[0m
+[0;32mI (211149) CSV_WRITER: Sensor data recorded: T=104.50°C, H=0.00%, MQ4=0.82V/0.00ppm, MQ7=2.97V/0.00ppm[0m
+[0;32mI (212999) MQ4_SENSOR: Raw: 659, Voltage: 0.80 V, Rs: 52139.61, CH4_PPM: 0.00[0m
+[0;32mI (213009) MQ7_SENSOR: Raw: 2416, Voltage: 2.95 V, Rs: 6949.50, CO_PPM: 0.00[0m
+[0;32mI (213079) DHT_SENSOR: Temperature: 95.9°C, Humidity: 0.0%[0m
+[0;32mI (214999) MQ4_SENSOR: Raw: 666, Voltage: 0.81 V, Rs: 51486.49, CH4_PPM: 0.00[0m
+[0;32mI (215009) MQ7_SENSOR: Raw: 2406, Voltage: 2.94 V, Rs: 7019.95, CO_PPM: 0.00[0m
+[0;32mI (215099) DHT_SENSOR: Temperature: 87.9°C, Humidity: 0.0%[0m
+[0;32mI (216999) MQ4_SENSOR: Raw: 656, Voltage: 0.80 V, Rs: 52423.78, CH4_PPM: 0.00[0m
+[0;32mI (217009) MQ7_SENSOR: Raw: 2401, Voltage: 2.93 V, Rs: 7055.39, CO_PPM: 0.00[0m
+[0;32mI (217119) DHT_SENSOR: Temperature: 95.5°C, Humidity: 0.0%[0m
+[0;32mI (218999) MQ4_SENSOR: Raw: 662, Voltage: 0.81 V, Rs: 51858.01, CH4_PPM: 0.00[0m
+[0;32mI (219009) MQ7_SENSOR: Raw: 2366, Voltage: 2.89 V, Rs: 7307.69, CO_PPM: 0.00[0m
+[0;32mI (219139) DHT_SENSOR: Temperature: 92.9°C, Humidity: 0.0%[0m
+[0;32mI (220999) MQ4_SENSOR: Raw: 653, Voltage: 0.80 V, Rs: 52710.57, CH4_PPM: 0.00[0m
+[0;32mI (221009) MQ7_SENSOR: Raw: 2351, Voltage: 2.87 V, Rs: 7418.12, CO_PPM: 0.00[0m
+[0;32mI (221159) DHT_SENSOR: Temperature: 93.4°C, Humidity: 0.0%[0m
+[0;32mI (221169) CSV_WRITER: Sensor data recorded: T=92.90°C, H=0.00%, MQ4=0.80V/0.00ppm, MQ7=2.87V/0.00ppm[0m
+[0;32mI (222999) MQ4_SENSOR: Raw: 657, Voltage: 0.80 V, Rs: 52328.76, CH4_PPM: 0.00[0m
+[0;32mI (223009) MQ7_SENSOR: Raw: 2342, Voltage: 2.86 V, Rs: 7485.05, CO_PPM: 0.00[0m
+[0;32mI (223179) DHT_SENSOR: Temperature: 92.4°C, Humidity: 0.0%[0m
+[0;32mI (224999) MQ4_SENSOR: Raw: 643, Voltage: 0.79 V, Rs: 53685.84, CH4_PPM: 0.00[0m
+[0;32mI (225009) MQ7_SENSOR: Raw: 2323, Voltage: 2.84 V, Rs: 7628.07, CO_PPM: 0.00[0m
+[0;32mI (225199) DHT_SENSOR: Temperature: 89.5°C, Humidity: 0.0%[0m
+[0;32mI (226999) MQ4_SENSOR: Raw: 674, Voltage: 0.82 V, Rs: 50756.68, CH4_PPM: 0.00[0m
+[0;32mI (227009) MQ7_SENSOR: Raw: 2319, Voltage: 2.83 V, Rs: 7658.47, CO_PPM: 0.00[0m
+[0;32mI (227219) DHT_SENSOR: Temperature: 93.1°C, Humidity: 0.0%[0m
+[0;32mI (228999) MQ4_SENSOR: Raw: 670, Voltage: 0.82 V, Rs: 51119.40, CH4_PPM: 0.00[0m
+[0;32mI (229009) MQ7_SENSOR: Raw: 2295, Voltage: 2.80 V, Rs: 7843.14, CO_PPM: 0.00[0m
+[0;32mI (229239) DHT_SENSOR: Temperature: 89.3°C, Humidity: 0.0%[0m
+[0;32mI (230999) MQ4_SENSOR: Raw: 654, Voltage: 0.80 V, Rs: 52614.68, CH4_PPM: 0.00[0m
+[0;32mI (231009) MQ7_SENSOR: Raw: 2279, Voltage: 2.78 V, Rs: 7968.41, CO_PPM: 0.00[0m
+[0;32mI (231179) CSV_WRITER: Sensor data recorded: T=89.30°C, H=0.00%, MQ4=0.80V/0.00ppm, MQ7=2.78V/0.00ppm[0m
+[0;32mI (231259) DHT_SENSOR: Temperature: 94.8°C, Humidity: 0.0%[0m
+[0;32mI (232999) MQ4_SENSOR: Raw: 656, Voltage: 0.80 V, Rs: 52423.78, CH4_PPM: 0.00[0m
+[0;32mI (233009) MQ7_SENSOR: Raw: 2258, Voltage: 2.76 V, Rs: 8135.52, CO_PPM: 0.00[0m
+[0;32mI (233279) DHT_SENSOR: Temperature: 94.0°C, Humidity: 0.0%[0m
+[0;32mI (234999) MQ4_SENSOR: Raw: 657, Voltage: 0.80 V, Rs: 52328.76, CH4_PPM: 0.00[0m
+[0;32mI (235009) MQ7_SENSOR: Raw: 2233, Voltage: 2.73 V, Rs: 8338.56, CO_PPM: 0.00[0m
+[0;32mI (235299) DHT_SENSOR: Temperature: 95.5°C, Humidity: 0.0%[0m
+[0;32mI (236999) MQ4_SENSOR: Raw: 654, Voltage: 0.80 V, Rs: 52614.68, CH4_PPM: 0.00[0m
+[0;32mI (237009) MQ7_SENSOR: Raw: 2225, Voltage: 2.72 V, Rs: 8404.49, CO_PPM: 0.00[0m
+[0;32mI (237319) DHT_SENSOR: Temperature: 88.4°C, Humidity: 0.0%[0m
+[0;32mI (238999) MQ4_SENSOR: Raw: 654, Voltage: 0.80 V, Rs: 52614.68, CH4_PPM: 0.00[0m
+[0;32mI (239009) MQ7_SENSOR: Raw: 2203, Voltage: 2.69 V, Rs: 8588.29, CO_PPM: 0.00[0m
+[0;32mI (239339) DHT_SENSOR: Temperature: 102.0°C, Humidity: 0.0%[0m
+[0;32mI (240999) MQ4_SENSOR: Raw: 635, Voltage: 0.78 V, Rs: 54488.19, CH4_PPM: 0.00[0m
+[0;32mI (241009) MQ7_SENSOR: Raw: 2199, Voltage: 2.68 V, Rs: 8622.10, CO_PPM: 0.00[0m
+[0;32mI (241189) CSV_WRITER: Sensor data recorded: T=102.00°C, H=0.00%, MQ4=0.78V/0.00ppm, MQ7=2.68V/0.00ppm[0m
+[0;32mI (241359) DHT_SENSOR: Temperature: 95.4°C, Humidity: 0.0%[0m
+[0;32mI (242999) MQ4_SENSOR: Raw: 656, Voltage: 0.80 V, Rs: 52423.78, CH4_PPM: 0.00[0m
+[0;32mI (243009) MQ7_SENSOR: Raw: 2167, Voltage: 2.65 V, Rs: 8897.09, CO_PPM: 0.00[0m
+[0;32mI (243379) DHT_SENSOR: Temperature: 89.9°C, Humidity: 0.0%[0m
+[0;32mI (244999) MQ4_SENSOR: Raw: 673, Voltage: 0.82 V, Rs: 50846.95, CH4_PPM: 0.00[0m
+[0;32mI (245009) MQ7_SENSOR: Raw: 2158, Voltage: 2.63 V, Rs: 8975.90, CO_PPM: 0.00[0m
+[0;32mI (245399) DHT_SENSOR: Temperature: 94.8°C, Humidity: 0.0%[0m
+[0;32mI (246999) MQ4_SENSOR: Raw: 670, Voltage: 0.82 V, Rs: 51119.40, CH4_PPM: 0.00[0m
+[0;32mI (247009) MQ7_SENSOR: Raw: 2138, Voltage: 2.61 V, Rs: 9153.41, CO_PPM: 0.00[0m
+[0;32mI (247419) DHT_SENSOR: Temperature: 100.9°C, Humidity: 0.0%[0m
+[0;32mI (248999) MQ4_SENSOR: Raw: 653, Voltage: 0.80 V, Rs: 52710.57, CH4_PPM: 0.00[0m
+[0;32mI (249009) MQ7_SENSOR: Raw: 2110, Voltage: 2.58 V, Rs: 9407.58, CO_PPM: 0.00[0m
+[0;32mI (249439) DHT_SENSOR: Temperature: 99.3°C, Humidity: 0.0%[0m
+[0;32mI (250999) MQ4_SENSOR: Raw: 657, Voltage: 0.80 V, Rs: 52328.76, CH4_PPM: 0.00[0m
+[0;32mI (251009) MQ7_SENSOR: Raw: 2114, Voltage: 2.58 V, Rs: 9370.86, CO_PPM: 0.00[0m
+[0;32mI (251199) CSV_WRITER: Sensor data recorded: T=99.30°C, H=0.00%, MQ4=0.80V/0.00ppm, MQ7=2.58V/0.00ppm[0m
+[0;32mI (251459) DHT_SENSOR: Temperature: 98.3°C, Humidity: 0.0%[0m
+[0;32mI (252999) MQ4_SENSOR: Raw: 658, Voltage: 0.80 V, Rs: 52234.04, CH4_PPM: 0.00[0m
+[0;32mI (253009) MQ7_SENSOR: Raw: 2098, Voltage: 2.56 V, Rs: 9518.59, CO_PPM: 0.00[0m
+[0;32mI (253479) DHT_SENSOR: Temperature: 98.9°C, Humidity: 0.0%[0m
+[0;32mI (254999) MQ4_SENSOR: Raw: 656, Voltage: 0.80 V, Rs: 52423.78, CH4_PPM: 0.00[0m
+[0;32mI (255009) MQ7_SENSOR: Raw: 2064, Voltage: 2.52 V, Rs: 9840.12, CO_PPM: 0.00[0m
+[0;32mI (255499) DHT_SENSOR: Temperature: 95.9°C, Humidity: 0.0%[0m
+[0;32mI (256999) MQ4_SENSOR: Raw: 651, Voltage: 0.79 V, Rs: 52903.22, CH4_PPM: 0.00[0m
+[0;32mI (257009) MQ7_SENSOR: Raw: 2071, Voltage: 2.53 V, Rs: 9773.05, CO_PPM: 0.00[0m
+[0;32mI (257519) DHT_SENSOR: Temperature: 90.5°C, Humidity: 0.0%[0m
+[0;32mI (258999) MQ4_SENSOR: Raw: 654, Voltage: 0.80 V, Rs: 52614.68, CH4_PPM: 0.00[0m
+[0;32mI (259009) MQ7_SENSOR: Raw: 2047, Voltage: 2.50 V, Rs: 10004.88, CO_PPM: 0.00[0m
+[0;32mI (259539) DHT_SENSOR: Temperature: 93.2°C, Humidity: 0.0%[0m
+[0;32mI (260999) MQ4_SENSOR: Raw: 653, Voltage: 0.80 V, Rs: 52710.57, CH4_PPM: 0.00[0m
+[0;32mI (261009) MQ7_SENSOR: Raw: 2034, Voltage: 2.48 V, Rs: 10132.74, CO_PPM: 0.00[0m
+[0;32mI (261209) CSV_WRITER: Sensor data recorded: T=93.20°C, H=0.00%, MQ4=0.80V/0.00ppm, MQ7=2.48V/0.00ppm[0m
+[0;32mI (261559) DHT_SENSOR: Temperature: 95.9°C, Humidity: 0.0%[0m
+[0;32mI (262999) MQ4_SENSOR: Raw: 656, Voltage: 0.80 V, Rs: 52423.78, CH4_PPM: 0.00[0m
+[0;32mI (263009) MQ7_SENSOR: Raw: 2000, Voltage: 2.44 V, Rs: 10475.00, CO_PPM: 0.00[0m
+[0;32mI (263579) DHT_SENSOR: Temperature: 96.5°C, Humidity: 0.0%[0m
+[0;32mI (264999) MQ4_SENSOR: Raw: 655, Voltage: 0.80 V, Rs: 52519.08, CH4_PPM: 0.00[0m
+[0;32mI (265009) MQ7_SENSOR: Raw: 2005, Voltage: 2.45 V, Rs: 10423.94, CO_PPM: 0.00[0m
+[0;32mI (265599) DHT_SENSOR: Temperature: 96.0°C, Humidity: 0.0%[0m
+[0;32mI (266999) MQ4_SENSOR: Raw: 655, Voltage: 0.80 V, Rs: 52519.08, CH4_PPM: 0.00[0m
+[0;32mI (267009) MQ7_SENSOR: Raw: 1981, Voltage: 2.42 V, Rs: 10671.38, CO_PPM: 0.00[0m
+[0;32mI (267619) DHT_SENSOR: Temperature: 93.9°C, Humidity: 0.0%[0m
+[0;32mI (268999) MQ4_SENSOR: Raw: 637, Voltage: 0.78 V, Rs: 54285.71, CH4_PPM: 0.00[0m
+[0;32mI (269009) MQ7_SENSOR: Raw: 1981, Voltage: 2.42 V, Rs: 10671.38, CO_PPM: 0.00[0m
+[0;32mI (269639) DHT_SENSOR: Temperature: 96.0°C, Humidity: 0.0%[0m
+[0;32mI (270999) MQ4_SENSOR: Raw: 657, Voltage: 0.80 V, Rs: 52328.76, CH4_PPM: 0.00[0m
+[0;32mI (271009) MQ7_SENSOR: Raw: 1950, Voltage: 2.38 V, Rs: 11000.00, CO_PPM: 0.00[0m
+[0;32mI (271219) CSV_WRITER: Sensor data recorded: T=96.00°C, H=0.00%, MQ4=0.80V/0.00ppm, MQ7=2.38V/0.00ppm[0m
+[0;32mI (271659) DHT_SENSOR: Temperature: 99.2°C, Humidity: 0.0%[0m
+[0;32mI (272999) MQ4_SENSOR: Raw: 661, Voltage: 0.81 V, Rs: 51951.59, CH4_PPM: 0.00[0m
+[0;32mI (273009) MQ7_SENSOR: Raw: 1947, Voltage: 2.38 V, Rs: 11032.36, CO_PPM: 0.00[0m
+[0;32mI (273679) DHT_SENSOR: Temperature: 99.8°C, Humidity: 0.0%[0m
+[0;32mI (274999) MQ4_SENSOR: Raw: 647, Voltage: 0.79 V, Rs: 53292.12, CH4_PPM: 0.00[0m
+[0;32mI (275009) MQ7_SENSOR: Raw: 1922, Voltage: 2.35 V, Rs: 11305.93, CO_PPM: 0.00[0m
+[0;32mI (275699) DHT_SENSOR: Temperature: 94.9°C, Humidity: 0.0%[0m
+[0;32mI (276999) MQ4_SENSOR: Raw: 663, Voltage: 0.81 V, Rs: 51764.71, CH4_PPM: 0.00[0m
+[0;32mI (277009) MQ7_SENSOR: Raw: 1911, Voltage: 2.33 V, Rs: 11428.57, CO_PPM: 0.00[0m
+[0;32mI (277719) DHT_SENSOR: Temperature: 97.7°C, Humidity: 0.0%[0m
+[0;32mI (278999) MQ4_SENSOR: Raw: 656, Voltage: 0.80 V, Rs: 52423.78, CH4_PPM: 0.00[0m
+[0;32mI (279009) MQ7_SENSOR: Raw: 1887, Voltage: 2.30 V, Rs: 11701.11, CO_PPM: 0.00[0m
+[0;32mI (279739) DHT_SENSOR: Temperature: 91.9°C, Humidity: 0.0%[0m
+[0;32mI (280999) MQ4_SENSOR: Raw: 645, Voltage: 0.79 V, Rs: 53488.37, CH4_PPM: 0.00[0m
+[0;32mI (281009) MQ7_SENSOR: Raw: 1878, Voltage: 2.29 V, Rs: 11805.11, CO_PPM: 0.00[0m
+[0;32mI (281229) CSV_WRITER: Sensor data recorded: T=91.90°C, H=0.00%, MQ4=0.79V/0.00ppm, MQ7=2.29V/0.00ppm[0m
+[0;32mI (281759) DHT_SENSOR: Temperature: 98.7°C, Humidity: 0.0%[0m
+[0;32mI (282999) MQ4_SENSOR: Raw: 658, Voltage: 0.80 V, Rs: 52234.04, CH4_PPM: 0.00[0m
+[0;32mI (283009) MQ7_SENSOR: Raw: 1863, Voltage: 2.27 V, Rs: 11980.67, CO_PPM: 0.00[0m
+[0;32mI (283779) DHT_SENSOR: Temperature: 95.6°C, Humidity: 0.0%[0m
+[0;32mI (284999) MQ4_SENSOR: Raw: 649, Voltage: 0.79 V, Rs: 53097.07, CH4_PPM: 0.00[0m
+[0;32mI (285009) MQ7_SENSOR: Raw: 1850, Voltage: 2.26 V, Rs: 12135.14, CO_PPM: 0.00[0m
+[0;32mI (285799) DHT_SENSOR: Temperature: 93.9°C, Humidity: 0.0%[0m
+[0;32mI (286999) MQ4_SENSOR: Raw: 657, Voltage: 0.80 V, Rs: 52328.76, CH4_PPM: 0.00[0m
+[0;32mI (287009) MQ7_SENSOR: Raw: 1845, Voltage: 2.25 V, Rs: 12195.12, CO_PPM: 0.00[0m
+[0;32mI (287819) DHT_SENSOR: Temperature: 89.1°C, Humidity: 0.0%[0m
+[0;32mI (288999) MQ4_SENSOR: Raw: 655, Voltage: 0.80 V, Rs: 52519.08, CH4_PPM: 0.00[0m
+[0;32mI (289009) MQ7_SENSOR: Raw: 1808, Voltage: 2.21 V, Rs: 12649.33, CO_PPM: 0.00[0m
+[0;32mI (289839) DHT_SENSOR: Temperature: 100.2°C, Humidity: 0.0%[0m
+[0;32mI (290999) MQ4_SENSOR: Raw: 721, Voltage: 0.88 V, Rs: 46796.11, CH4_PPM: 0.00[0m
+[0;32mI (291009) MQ7_SENSOR: Raw: 1857, Voltage: 2.27 V, Rs: 12051.70, CO_PPM: 0.00[0m
+[0;32mI (291239) CSV_WRITER: Sensor data recorded: T=100.20°C, H=0.00%, MQ4=0.88V/0.00ppm, MQ7=2.27V/0.00ppm[0m
+[0;32mI (291859) DHT_SENSOR: Temperature: 91.5°C, Humidity: 0.0%[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 23:08:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 00100000[0m
+[0;32mI (79) boot:  3 spiffs           Unknown data     01 82 00110000 00070000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1e248h (123464) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0002e270 vaddr=3ff80064 size=0001ch (    28) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=0002e294 vaddr=3ffb0000 size=01d84h (  7556) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00030020 vaddr=400d0020 size=9b75ch (636764) map[0m
+[0;32mI (368) esp_image: segment 4: paddr=000cb784 vaddr=3ffb1d84 size=02234h (  8756) load[0m
+[0;32mI (371) esp_image: segment 5: paddr=000cd9c0 vaddr=40080000 size=1896ch (100716) load[0m
+[0;32mI (411) esp_image: segment 6: paddr=000e6334 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (423) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (423) boot: Disabling RNG early entropy source...[0m
+[0;32mI (433) cpu_start: Multicore app[0m
+[0;32mI (442) cpu_start: Pro cpu start user code[0m
+[0;32mI (442) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (442) app_init: Project name:     seu_projeto[0m
+[0;32mI (446) app_init: App version:      779438b6-dirty[0m
+[0;32mI (451) app_init: Compile time:     Jun 30 2025 17:34:22[0m
+[0;32mI (456) app_init: ELF file SHA256:  7ff139a41...[0m
+[0;32mI (460) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (464) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (468) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (472) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (476) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (482) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (487) heap_init: At 3FFB8818 len 000277E8 (157 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (498) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 4009896C len 00007694 (29 KiB): IRAM[0m
+[0;32mI (510) spi_flash: detected chip: generic[0m
+[0;32mI (512) spi_flash: flash io: dio[0m
+[0;33mW (515) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (528) main_task: Started on CPU0[0m
+[0;32mI (538) main_task: Calling app_main()[0m
+[0;32mI (558) MAIN_LOG: NVS Flash initialized successfully[0m
+[0;32mI (568) wifi:wifi driver task: 3ffc0704, prio:23, stack:6656, core=0[0m
+[0;32mI (578) wifi:wifi firmware version: 48ea317a7[0m
+[0;32mI (578) wifi:wifi certification version: v7.0[0m
+[0;32mI (578) wifi:config NVS flash: enabled[0m
+[0;32mI (578) wifi:config nano formatting: disabled[0m
+[0;32mI (578) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (588) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (588) wifi:Init management short buffer num: 32[0m
+[0;32mI (598) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (598) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (608) wifi:Init static rx buffer num: 10[0m
+[0;32mI (608) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (608) wifi_init: rx ba win: 6[0m
+[0;32mI (618) wifi_init: accept mbox: 6[0m
+[0;32mI (618) wifi_init: tcpip mbox: 32[0m
+[0;32mI (618) wifi_init: udp mbox: 6[0m
+[0;32mI (618) wifi_init: tcp mbox: 6[0m
+[0;32mI (628) wifi_init: tcp tx win: 5760[0m
+[0;32mI (628) wifi_init: tcp rx win: 5760[0m
+[0;32mI (628) wifi_init: tcp mss: 1440[0m
+[0;32mI (638) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (638) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;33mW (648) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (648) phy_init: phy_version 4840,02e0d70,Sep  2 2024,19:39:07[0m
+[0;33mW (738) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;32mI (818) wifi:mode : sta (e0:5a:1b:75:02:68)[0m
+[0;32mI (818) wifi:enable tsf[0m
+[0;32mI (818) WIFI: Wi-Fi initialization done.[0m
+[0;32mI (818) TIME_SYNC: Initializing SNTP[0m
+[0;32mI (828) WIFI: Wi-Fi started, connecting...[0m
+[0;32mI (828) TIME_SYNC: Waiting for system time to be set... (1/10)[0m
+[0;32mI (838) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (838) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (878) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (888) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1008) wifi:connected with CATIVEIRO, aid = 8, channel 6, BW20, bssid = e8:45:8b:36:88:10[0m
+[0;32mI (1008) wifi:security: WPA2-PSK, phy: bgn, rssi: -33[0m
+[0;32mI (1018) wifi:pm start, type: 1[0m
+
+[0;32mI (1018) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1028) WIFI: Connected to AP[0m
+[0;32mI (1108) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1318) wifi:<ba-add>idx:0 (ifx:0, e8:45:8b:36:88:10), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2368) esp_netif_handlers: sta ip: 192.168.15.68, mask: 255.255.255.0, gw: 192.168.15.1[0m
+[0;32mI (2368) WIFI: Got IP:192.168.15.68[0m
+[0;32mI (2548) wifi:<ba-add>idx:1 (ifx:0, e8:45:8b:36:88:10), tid:7, ssn:5, winSize:64[0m
+[0;32mI (2828) TIME_SYNC: Waiting for system time to be set... (2/10)[0m
+[0;32mI (4828) TIME_SYNC: Waiting for system time to be set... (3/10)[0m
+[0;32mI (6828) TIME_SYNC: Waiting for system time to be set... (4/10)[0m
+[0;32mI (8828) TIME_SYNC: Waiting for system time to be set... (5/10)[0m
+[0;32mI (10828) TIME_SYNC: Waiting for system time to be set... (6/10)[0m
+[0;32mI (12828) TIME_SYNC: Waiting for system time to be set... (7/10)[0m
+[0;32mI (14828) TIME_SYNC: Waiting for system time to be set... (8/10)[0m
+[0;32mI (16828) TIME_SYNC: Waiting for system time to be set... (9/10)[0m
+[1;31mE (18828) TIME_SYNC: Failed to synchronize time[0m
+[1;31mE (18828) MAIN_LOG: System time not synchronized, aborting startup.[0m
+[0;32mI (18828) main_task: Returned from app_main()[0m
