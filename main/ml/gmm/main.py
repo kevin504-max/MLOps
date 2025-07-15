@@ -30,7 +30,7 @@ def main():
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
 
-        n_components = 4  # Ajuste conforme o seu elbow/aic/bic
+        n_components = 4
         logging.info(f"Applying Gaussian Mixture Model clustering with n_components={n_components}...")
         gmm = GaussianMixture(n_components=n_components, random_state=42)
         clusters = gmm.fit_predict(X_scaled)
@@ -42,7 +42,7 @@ def main():
         df.to_csv(data_output_path, index=False)
         logging.info(f"Clustered data saved to '{data_output_path}'.")
 
-        # Mapear clusters para labels descritivos (exemplo simples)
+        # Mapear clusters para labels descritivos
         cluster_labels_map = {}
         for i, center in enumerate(centroids_unscaled): 
             mq4 = center[2]

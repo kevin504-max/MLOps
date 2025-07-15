@@ -16,7 +16,7 @@ logging.basicConfig(
 
 def main():
     try:
-        # Caminhos
+        # Paths relative to the script location
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
         data_path = os.path.join(BASE_DIR, '../data/processed/clustered_data_kmeans.csv')
         output_dir = os.path.join(BASE_DIR, 'graphs')

@@ -15,7 +15,7 @@ logging.basicConfig(
 
 def main():
     try:
-        # Diretórios relativos ao local do script
+        # Paths relative to the script location
         BASE_DIR = os.path.dirname(os.path.abspath(__file__))
         data_input_path = os.path.join(BASE_DIR, '../data/processed/sensor_data_cleaned.csv')
         data_output_path = os.path.join(BASE_DIR, '../data/processed/clustered_data_kmeans.csv')

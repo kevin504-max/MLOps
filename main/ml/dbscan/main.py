@@ -45,7 +45,7 @@ def main():
         df.to_csv(data_output_path, index=False)
         logging.info(f"Clustered data saved to '{data_output_path}'.")
 
-        # --- Plot 1
+        # --- Plot 1: Temperature vs MQ7_CO_PPM
         plt.figure(figsize=(8, 6))
         scatter = plt.scatter(df['Temperature(C)'], df['MQ7_CO_PPM'], c=df['Cluster'], cmap='viridis', alpha=0.7)
         plt.xlabel('Temperature (C)')
@@ -56,7 +56,7 @@ def main():
         plt.savefig(os.path.join(graphs_output_dir, 'dbscan_temp_vs_mq7.png'))
         plt.close()
 
-        # --- Plot 2
+        # --- Plot 2: Humidity vs MQ4_PPM
         plt.figure(figsize=(8, 6))
         scatter = plt.scatter(df['Humidity(%)'], df['MQ4_PPM'], c=df['Cluster'], cmap='plasma', alpha=0.7)
         plt.xlabel('Humidity (%)')
