@@ -308,6 +308,21 @@ ENABLE_PROGRAMS:BOOL=
 ENABLE_TESTING:BOOL=
 
 //No help, variable specified on the command line.
+ESPTOOLPY_FLASHFREQ:UNINITIALIZED=40m
+
+//No help, variable specified on the command line.
+ESPTOOLPY_FLASHMODE:UNINITIALIZED=dio
+
+//No help, variable specified on the command line.
+ESPTOOLPY_FLASHSIZE:UNINITIALIZED=4MB
+
+//No help, variable specified on the command line.
+ESPTOOLPY_FLASH_SIZE:UNINITIALIZED=4MB
+
+//No help, variable specified on the command line.
+ESPTOOLPY_NO_STUB:UNINITIALIZED=1
+
+//No help, variable specified on the command line.
 ESP_PLATFORM:UNINITIALIZED=1
 
 //Generate the auto-generated files as needed
