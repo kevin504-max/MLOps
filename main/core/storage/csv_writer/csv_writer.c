@@ -38,8 +38,9 @@ static void csv_writer_task(void *pvParameters) {
         ESP_LOGI(TAG, "Sensor data recorded: T=%.2f°C, H=%.2f%%, MQ4=%.2fV/%.2fppm, MQ7=%.2fV/%.2fppm",
                  temp, hum, mq4_v, mq4_p, mq7_v, mq7_p);
 
-        // Delay for 10 seconds before next reading
-        vTaskDelay(pdMS_TO_TICKS(10000));
+        // Delay in ms before next reading
+        int delay_minutes_ms = 30 * 60 * 1000; // 30 minutes
+        vTaskDelay(pdMS_TO_TICKS(delay_minutes_ms));
     }
 }
 
