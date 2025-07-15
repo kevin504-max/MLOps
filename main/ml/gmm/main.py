@@ -30,7 +30,7 @@ def main():
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
 
-        n_components = 4
+        n_components = 3
         logging.info(f"Applying Gaussian Mixture Model clustering with n_components={n_components}...")
         gmm = GaussianMixture(n_components=n_components, random_state=42)
         clusters = gmm.fit_predict(X_scaled)
