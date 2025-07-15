@@ -37,20 +37,31 @@ static void dht_read_task(void *pvParameters) {
     float temperature = 0.0f;
     float humidity = 0.0f;
 
+    const float MIN_TEMP = -40.0f;
+    const float MAX_TEMP = 80.0f;
+    const float MIN_HUMIDITY = 0.0f;
+    const float MAX_HUMIDITY = 100.0f;
+
     gpio_set_pull_mode(DHT_GPIO_PIN, GPIO_PULLUP_ONLY);
 
     while (true) {
         esp_err_t result = dht_read_float_data(DHT_SENSOR_TYPE, DHT_GPIO_PIN, &humidity, &temperature);
 
         if (result == ESP_OK) {
-            ESP_LOGI(DHT_LOG_TAG, "Temperature: %.1f°C, Humidity: %.1f%%", temperature, humidity);
-            update_dht_data(temperature, humidity);
+            if (
+                temperature >= MIN_TEMP && temperature <= MAX_TEMP && 
+                humidity >= MIN_HUMIDITY && humidity <= MAX_HUMIDITY
+            ) {
+                ESP_LOGI(DHT_LOG_TAG, "Temperature: %.1f°C, Humidity: %.1f%%", temperature, humidity);
+                update_dht_data(temperature, humidity);
+            } else {
+                ESP_LOGE(DHT_LOG_TAG, "Invalid Data: Temperature=%.1f°C, Humidity=%.1f%%", temperature, humidity);
+            }
         } else {
             ESP_LOGE(DHT_LOG_TAG, "Failed to read data from DHT sensor");
         }
 
-        // vTaskDelay(pdMS_TO_TICKS(10000));
-        vTaskDelay(pdMS_TO_TICKS(2000));
+        vTaskDelay(pdMS_TO_TICKS(10000));
     }
 }
 

@@ -16,7 +16,7 @@
 
 #define MQ4_LOG_TAG "MQ4_SENSOR"
 #define MQ4_ADC_CHANNEL ADC_CHANNEL_6  ///< GPIO34 on ESP32
-#define MQ4_VREF 5.0f                  ///< Reference voltage for ADC conversion
+#define MQ4_VREF 3.28f                  ///< Reference voltage for ADC conversion
 #define MQ4_RESOLUTION 4095.0f        ///< 12-bit ADC resolution
 #define MQ4_RL 10000.0f               ///< Load resistance in ohms
 #define MQ4_RO_CLEAN_AIR 9.83f        ///< Rs/Ro ratio in clean air from datasheet
@@ -80,11 +80,23 @@ void mq4_calibrate(void) {
  * @param pvParameters Unused parameter.
  */
 static void mq4_read_task(void *pvParameters) {
+    float last_valid_voltage = 0.0f;
+    float last_valid_ppm = 0.0f;
+    bool first_valid_reading = true;
+
+    const float MIN_VOLTAGE = 0.1f;
+    const float MAX_VOLTAGE = MQ4_VREF;
+    const float MIN_PPM = 0.0f;
+    const float MAX_PPM = 10000.0f;
+    const float MAX_VOLTAGE_CHANGE = 0.5f;
+
+    const float MAX_PPM_CHANGE = 500.0f;
+
     while (true) {
         int raw_adc_value = 0;
         if (adc_oneshot_read(adc1_handle_internal, MQ4_ADC_CHANNEL, &raw_adc_value) != ESP_OK) {
             ESP_LOGE(MQ4_LOG_TAG, "ADC read failed");
-            vTaskDelay(pdMS_TO_TICKS(2000));
+            vTaskDelay(pdMS_TO_TICKS(10000));
             continue;
         }
 
@@ -92,10 +104,47 @@ static void mq4_read_task(void *pvParameters) {
         float rs = calculate_rs(voltage);
         float ppm = mq4_rs_to_ppm(rs);
 
-        ESP_LOGI(MQ4_LOG_TAG, "Raw: %d, Voltage: %.2f V, Rs: %.2f, CH4_PPM: %.2f", raw_adc_value, voltage, rs, ppm);
-        update_mq4_data(voltage, ppm);
+        bool data_valid = true;
 
-        vTaskDelay(pdMS_TO_TICKS(2000));
+        if (voltage < MIN_VOLTAGE || voltage > MAX_VOLTAGE) {
+            ESP_LOGE(MQ4_LOG_TAG, "Invalid Tension: %.2f V (Raw: %d)", voltage, raw_adc_value);
+            data_valid = false;
+        }
+
+        if (ppm < MIN_PPM || ppm > MAX_PPM) {
+            ESP_LOGE(MQ4_LOG_TAG, "Invalid Concentration: %.2f ppm", ppm);
+            data_valid = false;
+        }
+
+        if (data_valid && !first_valid_reading) {
+            float voltage_change = fabs(voltage - last_valid_voltage);
+            float ppm_change = fabs(ppm - last_valid_ppm);
+
+            if (voltage_change > MAX_VOLTAGE_CHANGE) {
+                ESP_LOGE(MQ4_LOG_TAG, "Tension variation too high: Δ%.2f V", voltage_change);
+                data_valid = false;
+            }
+
+            if (ppm_change > MAX_PPM_CHANGE) {
+                ESP_LOGE(MQ4_LOG_TAG, "Concentration variation too high: Δ%.2f ppm", ppm_change);
+                data_valid = false;
+            }
+        }
+
+        if (data_valid) {
+            ESP_LOGI(MQ4_LOG_TAG, "Raw: %d, Voltage: %.2f V, Rs: %.2f, CH4_PPM: %.2f", 
+                    raw_adc_value, voltage, rs, ppm);
+            update_mq4_data(voltage, ppm);
+
+            last_valid_voltage = voltage;
+            last_valid_ppm = ppm;
+            first_valid_reading = false;
+        } else {
+            ESP_LOGW(MQ4_LOG_TAG, "Discarted Data - Values: Raw=%d, V=%.2f, PPM=%.2f", 
+                    raw_adc_value, voltage, ppm);
+        }
+
+        vTaskDelay(pdMS_TO_TICKS(10000));
     }
 }
 

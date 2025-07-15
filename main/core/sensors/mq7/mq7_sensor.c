@@ -16,7 +16,7 @@
 
 #define MQ7_LOG_TAG "MQ7_SENSOR"
 #define MQ7_ADC_CHANNEL ADC_CHANNEL_7     ///< GPIO35 on ESP32
-#define MQ7_VREF 5.0f                      ///< Reference voltage for ADC
+#define MQ7_VREF 3.28f                      ///< Reference voltage for ADC
 #define MQ7_RESOLUTION 4095.0f            ///< ADC 12-bit resolution
 #define MQ7_RL 10000.0f                   ///< Load resistance (Ohms)
 #define MQ7_RO_CLEAN_AIR 27.5f            ///< Rs/Ro ratio in clean air (from datasheet)
@@ -80,6 +80,22 @@ void mq7_calibrate(void) {
  * @param pvParameters Unused task parameter.
  */
 static void mq7_read_task(void *pvParameters) {
+    float last_valid_voltage = 0.0f;
+    float last_valid_ppm = 0.0f;
+    bool first_valid_reading = true;
+
+    const float MIN_VOLTAGE = 0.1f;
+    const float MAX_VOLTAGE = MQ7_VREF;
+    const float MIN_PPM = 0.0f;
+    const float MAX_PPM = 5000.0f;
+    const float MAX_VOLTAGE_CHANGE = 0.3f;
+    const float MAX_PPM_CHANGE = 200.0f;
+    
+    #define MQ7_READINGS_WINDOW 5
+    static float voltage_readings[MQ7_READINGS_WINDOW] = {0};
+    static float ppm_readings[MQ7_READINGS_WINDOW] = {0};
+    static int reading_index = 0;
+
     while (true) {
         int raw_value = 0;
         if (adc_oneshot_read(adc1_handle_internal, MQ7_ADC_CHANNEL, &raw_value) != ESP_OK) {
@@ -92,10 +108,71 @@ static void mq7_read_task(void *pvParameters) {
         float rs = calculate_rs(voltage);
         float ppm = mq7_rs_to_ppm(rs);
 
-        ESP_LOGI(MQ7_LOG_TAG, "Raw: %d, Voltage: %.2f V, Rs: %.2f, CO_PPM: %.2f", raw_value, voltage, rs, ppm);
-        update_mq7_data(voltage, ppm);
+        bool data_valid = true;
 
-        vTaskDelay(pdMS_TO_TICKS(2000));
+        if (voltage < MIN_VOLTAGE || voltage > MAX_VOLTAGE) {
+            ESP_LOGE(MQ7_LOG_TAG, "Out of range voltage: %.2fV (Raw: %d)", voltage, raw_value);
+            data_valid = false;
+        }
+
+        if (ppm < MIN_PPM || ppm > MAX_PPM) {
+            ESP_LOGE(MQ7_LOG_TAG, "Invalid concentration: %.2f ppm", ppm);
+            data_valid = false;
+        }
+
+        if (data_valid && !first_valid_reading) {
+            float voltage_change = fabs(voltage - last_valid_voltage);
+            float ppm_change = fabs(ppm - last_valid_ppm);
+
+            if (voltage_change > MAX_VOLTAGE_CHANGE) {
+                ESP_LOGE(MQ7_LOG_TAG, "Suspicious voltage change: Δ%.2f V", voltage_change);
+                data_valid = false;
+            }
+
+            if (ppm_change > MAX_PPM_CHANGE) {
+                ESP_LOGE(MQ7_LOG_TAG, "Suspicious concentration change: Δ%.2f ppm", ppm_change);
+                data_valid = false;
+            }
+        }
+
+        if (data_valid) {
+            voltage_readings[reading_index] = voltage;
+            ppm_readings[reading_index] = ppm;
+            reading_index = (reading_index + 1) % MQ7_READINGS_WINDOW;
+
+            float avg_voltage = 0, avg_ppm = 0;
+            int valid_readings = 0;
+            
+            for (int i = 0; i < MQ7_READINGS_WINDOW; i++) {
+                if (voltage_readings[i] > 0) {
+                    avg_voltage += voltage_readings[i];
+                    avg_ppm += ppm_readings[i];
+                    valid_readings++;
+                }
+            }
+
+            if (valid_readings > 0) {
+                avg_voltage /= valid_readings;
+                avg_ppm /= valid_readings;
+            }
+
+            if (avg_ppm > 50.0f && fabs(avg_ppm - last_valid_ppm) > 100.0f) {
+                ESP_LOGW(MQ7_LOG_TAG, "Alert: CO high concentration detected - %.2f ppm", avg_ppm);
+            }
+
+            ESP_LOGI(MQ7_LOG_TAG, "Raw: %d, V: %.2f, Rs: %.2f, CO: %.2f ppm (Avg: %.2f ppm)", 
+                    raw_value, voltage, rs, ppm, avg_ppm);
+            
+            update_mq7_data(avg_voltage, avg_ppm);
+            last_valid_voltage = avg_voltage;
+            last_valid_ppm = avg_ppm;
+            first_valid_reading = false;
+        } else {
+            ESP_LOGW(MQ7_LOG_TAG, "Discarted Data - Raw: %d, V: %.2f, CO: %.2f ppm", 
+                    raw_value, voltage, ppm);
+        }
+
+        vTaskDelay(pdMS_TO_TICKS(10000));
     }
 }
 
