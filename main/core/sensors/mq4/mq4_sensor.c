@@ -132,7 +132,7 @@ static void mq4_read_task(void *pvParameters) {
         }
 
         if (data_valid) {
-            ESP_LOGI(MQ4_LOG_TAG, "Raw: %d, Voltage: %.2f V, Rs: %.2f, CH4_PPM: %.2f", 
+            ESP_LOGI(MQ4_LOG_TAG, "Raw: %d, V: %.2f V, Rs: %.2f, CH4: %.2f ppm", 
                     raw_adc_value, voltage, rs, ppm);
             update_mq4_data(voltage, ppm);
 

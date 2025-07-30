@@ -160,8 +160,8 @@ static void mq7_read_task(void *pvParameters) {
                 ESP_LOGW(MQ7_LOG_TAG, "Alert: CO high concentration detected - %.2f ppm", avg_ppm);
             }
 
-            ESP_LOGI(MQ7_LOG_TAG, "Raw: %d, V: %.2f, Rs: %.2f, CO: %.2f ppm (Avg: %.2f ppm)", 
-                    raw_value, voltage, rs, ppm, avg_ppm);
+            ESP_LOGI(MQ7_LOG_TAG, "Raw: %d, V: %.2f, Rs: %.2f, CO: %.2f ppm", 
+                    raw_value, voltage, rs, ppm);
             
             update_mq7_data(avg_voltage, avg_ppm);
             last_valid_voltage = avg_voltage;
