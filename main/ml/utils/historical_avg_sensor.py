@@ -30,8 +30,6 @@ def corrigir_historico(row):
 df["CO_ppm_corrigido"] = df.apply(corrigir_historico, axis=1)
 
 # Na prática, isso vai padronizar a leitura para a média horária mantendo a variação relativa
-# Outra opção é simplesmente substituir pela média horária:
-# df["CO_ppm_corrigido"] = df["hour"].map(media_historica_horaria)
 
 # ---- Salvar CSV corrigido ----
 df.to_csv(output_file, index=False)

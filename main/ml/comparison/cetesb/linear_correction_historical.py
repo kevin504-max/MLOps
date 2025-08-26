@@ -88,10 +88,6 @@ def main():
     
     # Salva dados calibrados
     save_calibrated_data(df)
-    
-    # Opcional: Salvar o modelo de calibração se for útil para aplicações futuras
-    # from joblib import dump
-    # dump(model, os.path.join('data', 'processed', 'calibration_model.joblib'))
 
 if __name__ == "__main__":
     main()

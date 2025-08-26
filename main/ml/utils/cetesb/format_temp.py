@@ -9,7 +9,6 @@ saida = Path(__file__).resolve().parents[2] / "data" / "processed" / "cetesb_sao
 with open(entrada, "r", encoding="latin1") as f:
     linhas = f.readlines()
 
-# Pular metadados até encontrar "Data;Hora"
 dados_iniciados = False
 linhas_dados = []
 for linha in linhas:

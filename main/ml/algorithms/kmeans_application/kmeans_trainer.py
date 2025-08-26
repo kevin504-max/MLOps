@@ -45,7 +45,7 @@ def compare_centroids(old_centroids, new_centroids, dist_threshold=0.2):
     Retorna True se alguma distância for maior que dist_threshold.
     """
     from scipy.spatial.distance import cdist
-    # Supõe que número de clusters e ordem são os mesmos
+
     distances = np.linalg.norm(old_centroids - new_centroids, axis=1)
     max_dist = distances.max()
     if max_dist > dist_threshold:
