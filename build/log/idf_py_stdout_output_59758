@@ -1,0 +1,117 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr  1 2025 23:08:30[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00004000[0m
+[0;32mI (66) boot:  1 otadata          OTA data         01 00 0000d000 00002000[0m
+[0;32mI (73) boot:  2 app0             OTA app          00 10 00010000 00100000[0m
+[0;32mI (79) boot:  3 spiffs           Unknown data     01 82 00110000 00070000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b51ch ( 46364) map[0m
+[0;32mI (113) esp_image: segment 1: paddr=0001b544 vaddr=3ff80064 size=0001ch (    28) load[0m
+[0;32mI (113) esp_image: segment 2: paddr=0001b568 vaddr=3ffb0000 size=02474h (  9332) load[0m
+[0;32mI (120) esp_image: segment 3: paddr=0001d9e4 vaddr=40080000 size=02634h (  9780) load[0m
+[0;32mI (128) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1d33ch (119612) map[0m
+[0;32mI (172) esp_image: segment 5: paddr=0003d364 vaddr=40082634 size=0be58h ( 48728) load[0m
+[0;32mI (192) esp_image: segment 6: paddr=000491c4 vaddr=400c0000 size=00064h (   100) load[0m
+[0;32mI (199) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (199) boot: Disabling RNG early entropy source...[0m
+[0;32mI (210) cpu_start: Multicore app[0m
+[0;32mI (218) cpu_start: Pro cpu start user code[0m
+[0;32mI (218) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (218) app_init: Application information:[0m
+[0;32mI (218) app_init: Project name:     seu_projeto[0m
+[0;32mI (222) app_init: App version:      0903e24e-dirty[0m
+[0;32mI (227) app_init: Compile time:     Jul 30 2025 14:20:52[0m
+[0;32mI (232) app_init: ELF file SHA256:  de773bc3e...[0m
+[0;32mI (236) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (240) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (244) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (248) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (252) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (259) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFB2DF8 len 0002D208 (180 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (274) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (280) heap_init: At 4008E48C len 00011B74 (70 KiB): IRAM[0m
+[0;32mI (286) spi_flash: detected chip: generic[0m
+[0;32mI (289) spi_flash: flash io: dio[0m
+[0;33mW (291) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (304) main_task: Started on CPU0[0m
+[0;32mI (314) main_task: Calling app_main()[0m
+[0;32mI (334) MAIN_LOG: NVS Flash initialized successfully[0m
+[0;32mI (334) gpio: GPIO[4]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (334) MQ4_SENSOR: MQ4 ADC channel configured successfully[0m
+[0;32mI (344) MQ4_SENSOR: Calibration complete: Ro = 2669.27 (Raw: 1130, V: 0.91, Rs: 26238.94)[0m
+[0;32mI (344) MQ7_SENSOR: MQ7 ADC channel configured successfully[0m
+[0;32mI (354) MQ7_SENSOR: Calibration complete: Ro = 1162.07 (Raw: 976, V: 0.78, Rs: 31956.97)[0m
+[0;32mI (384) DHT_SENSOR: Temperature: 23.3°C, Humidity: 43.0%[0m
+[0;32mI (384) MQ4_SENSOR: Raw: 1136, V: 0.91 V, Rs: 26047.53, CH4: 5.23 ppm[0m
+[0;32mI (384) MQ7_SENSOR: Raw: 976, V: 0.78, Rs: 31956.97, CO: 0.65 ppm[0m
+[0;32mI (394) MAIN_LOG: Application started successfully[0m
+[0;32mI (394) main_task: Returned from app_main()[0m
+[0;32mI (404) SUPERVISOR: Supervisor started. Waiting 480 minutes before shutdown...[0m
+[0;32mI (10404) MQ7_SENSOR: Raw: 978, V: 0.78, Rs: 31871.16, CO: 0.65 ppm[0m
+[0;32mI (10404) MQ4_SENSOR: Raw: 1138, V: 0.91 V, Rs: 25984.18, CH4: 5.25 ppm[0m
+[0;32mI (10404) DHT_SENSOR: Temperature: 23.3°C, Humidity: 42.9%[0m
+[0;32mI (20404) MQ7_SENSOR: Raw: 962, V: 0.77, Rs: 32567.56, CO: 0.63 ppm[0m
+[0;32mI (20404) MQ4_SENSOR: Raw: 1134, V: 0.91 V, Rs: 26111.11, CH4: 5.20 ppm[0m
+[0;32mI (20434) DHT_SENSOR: Temperature: 23.3°C, Humidity: 42.9%[0m
+[0;32mI (30404) MQ7_SENSOR: Raw: 944, V: 0.76, Rs: 33379.24, CO: 0.61 ppm[0m
+[0;32mI (30404) MQ4_SENSOR: Raw: 1185, V: 0.95 V, Rs: 24556.96, CH4: 5.91 ppm[0m
+[0;32mI (30454) DHT_SENSOR: Temperature: 23.3°C, Humidity: 42.8%[0m
+[0;32mI (40404) MQ7_SENSOR: Raw: 971, V: 0.78, Rs: 32173.02, CO: 0.64 ppm[0m
+[0;32mI (40404) MQ4_SENSOR: Raw: 1216, V: 0.97 V, Rs: 23675.98, CH4: 6.39 ppm[0m
+[0;32mI (40474) DHT_SENSOR: Temperature: 23.3°C, Humidity: 42.9%[0m
+[0;32mI (50404) MQ7_SENSOR: Raw: 1036, V: 0.83, Rs: 29527.03, CO: 0.73 ppm[0m
+[0;32mI (50404) MQ4_SENSOR: Raw: 1153, V: 0.92 V, Rs: 25516.04, CH4: 5.46 ppm[0m
+[0;32mI (50494) DHT_SENSOR: Temperature: 23.4°C, Humidity: 42.9%[0m
+[0;32mI (60404) MQ7_SENSOR: Raw: 1001, V: 0.80, Rs: 30909.09, CO: 0.68 ppm[0m
+[0;32mI (60404) MQ4_SENSOR: Raw: 1139, V: 0.91 V, Rs: 25952.59, CH4: 5.27 ppm[0m
+[0;32mI (60514) DHT_SENSOR: Temperature: 23.4°C, Humidity: 42.8%[0m
+[0;32mI (70404) MQ7_SENSOR: Raw: 1005, V: 0.80, Rs: 30746.27, CO: 0.69 ppm[0m
+[0;32mI (70404) MQ4_SENSOR: Raw: 1159, V: 0.93 V, Rs: 25332.18, CH4: 5.54 ppm[0m
+[0;32mI (70534) DHT_SENSOR: Temperature: 23.4°C, Humidity: 42.9%[0m
+[0;32mI (80404) MQ7_SENSOR: Raw: 983, V: 0.79, Rs: 31658.19, CO: 0.66 ppm[0m
+[0;32mI (80404) MQ4_SENSOR: Raw: 1222, V: 0.98 V, Rs: 23510.64, CH4: 6.48 ppm[0m
+[0;32mI (80554) DHT_SENSOR: Temperature: 23.4°C, Humidity: 42.8%[0m
+[1;31mE (90404) MQ7_SENSOR: Suspicious voltage change: Δ0.31 V[0m
+[0;33mW (90404) MQ7_SENSOR: Discarted Data - Raw: 1389, V: 1.11, CO: 1.37 ppm[0m
+[0;32mI (90404) MQ4_SENSOR: Raw: 1229, V: 0.98 V, Rs: 23319.77, CH4: 6.59 ppm[0m
+[0;32mI (90574) DHT_SENSOR: Temperature: 23.4°C, Humidity: 42.9%[0m
+[0;32mI (100404) MQ7_SENSOR: Raw: 1314, V: 1.05, Rs: 21164.38, CO: 1.21 ppm[0m
+[0;32mI (100404) MQ4_SENSOR: Raw: 1173, V: 0.94 V, Rs: 24910.48, CH4: 5.74 ppm[0m
+[0;32mI (100594) DHT_SENSOR: Temperature: 23.4°C, Humidity: 42.9%[0m
+[0;32mI (110404) MQ7_SENSOR: Raw: 1318, V: 1.06, Rs: 21069.80, CO: 1.22 ppm[0m
+[0;32mI (110404) MQ4_SENSOR: Raw: 1136, V: 0.91 V, Rs: 26047.53, CH4: 5.23 ppm[0m
+[0;32mI (110614) DHT_SENSOR: Temperature: 23.4°C, Humidity: 43.1%[0m
+[0;32mI (120404) MQ7_SENSOR: Raw: 1296, V: 1.04, Rs: 21597.22, CO: 1.17 ppm[0m
+[0;32mI (120404) MQ4_SENSOR: Raw: 1131, V: 0.91 V, Rs: 26206.89, CH4: 5.16 ppm[0m
+[0;32mI (120634) DHT_SENSOR: Temperature: 23.4°C, Humidity: 42.9%[0m
+[0;32mI (130404) MQ7_SENSOR: Raw: 1299, V: 1.04, Rs: 21524.25, CO: 1.18 ppm[0m
+[0;32mI (130404) MQ4_SENSOR: Raw: 1125, V: 0.90 V, Rs: 26400.00, CH4: 5.08 ppm[0m
+[0;32mI (130654) DHT_SENSOR: Temperature: 23.4°C, Humidity: 42.9%[0m
+[0;32mI (140404) MQ7_SENSOR: Raw: 1290, V: 1.03, Rs: 21744.18, CO: 1.16 ppm[0m
+[0;32mI (140404) MQ4_SENSOR: Raw: 1141, V: 0.91 V, Rs: 25889.57, CH4: 5.29 ppm[0m
+[0;32mI (140674) DHT_SENSOR: Temperature: 23.4°C, Humidity: 42.9%[0m
+[0;32mI (150404) MQ7_SENSOR: Raw: 1293, V: 1.04, Rs: 21670.54, CO: 1.17 ppm[0m
+[0;32mI (150404) MQ4_SENSOR: Raw: 1119, V: 0.90 V, Rs: 26595.18, CH4: 5.00 ppm[0m
+[0;32mI (150694) DHT_SENSOR: Temperature: 23.4°C, Humidity: 42.9%[0m

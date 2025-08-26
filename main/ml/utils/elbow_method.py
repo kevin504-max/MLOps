@@ -1,46 +1,50 @@
-import pandas as pd  # For handling tabular data
-import matplotlib.pyplot as plt  # For plotting graphs
-from sklearn.cluster import KMeans  # K-Means clustering algorithm
-from sklearn.preprocessing import StandardScaler  # For data normalization
-import logging  # For logging process steps
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+import logging
+import os
 
 # Configure logging
 logging.basicConfig(
-    level=logging.INFO,  # Log level can be adjusted to DEBUG for more details
+    level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
 def main():
     try:
-        logging.info("Starting to load the CSV file 'sensor_data_cleaned.csv'...")
-        # 1. Load the dataset
-        df = pd.read_csv('../data/processed/sensor_data_cleaned.csv')
+        # Define paths
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        data_input_path = os.path.join(BASE_DIR, '../data/processed/sensor_data_cleaned.csv')
+        elbow_output_path = os.path.join(BASE_DIR, 'graphs/elbow_plot_simulated.png')
+        os.makedirs(os.path.dirname(elbow_output_path), exist_ok=True)
+
+        logging.info(f"Loading CSV file from '{data_input_path}'...")
+        df = pd.read_csv(data_input_path)
         logging.info(f"CSV loaded successfully. Total records: {len(df)}")
 
-        # 2. Select relevant numerical features
+        # Select relevant features
         features = ['Temperature(C)', 'Humidity(%)', 'MQ4_PPM', 'MQ7_CO_PPM']
-        logging.info(f"Selecting features for clustering: {features}")
+        logging.info(f"Using features: {features}")
         X = df[features]
 
-        # 3. Normalize the features
-        logging.info("Applying data normalization using StandardScaler...")
+        # Normalize the data
+        logging.info("Normalizing features using StandardScaler...")
         scaler = StandardScaler()
         X_scaled = scaler.fit_transform(X)
-        logging.info("Normalization completed.")
 
-        # 4. Elbow Method to determine the optimal number of clusters
-        logging.info("Starting Elbow Method loop from K=1 to K=10...")
-        wss = []  # List to store Within-Cluster Sum of Squares
+        # Elbow Method
+        logging.info("Running Elbow Method (K=1 to K=10)...")
+        wss = []
         k_range = range(1, 11)
         for k in k_range:
             kmeans = KMeans(n_clusters=k, random_state=42, n_init='auto')
             kmeans.fit(X_scaled)
-            inertia = kmeans.inertia_
-            wss.append(inertia)
-            logging.info(f"K={k}: WSS (inertia) = {inertia:.2f}")
+            wss.append(kmeans.inertia_)
+            logging.info(f"K={k}: WSS = {kmeans.inertia_:.2f}")
 
-        # 5. Plot and save the Elbow Curve
-        logging.info("Saving the Elbow Curve as 'elbow_plot.png'...")
+        # Plot
+        logging.info(f"Saving Elbow plot to '{elbow_output_path}'...")
         plt.figure(figsize=(8, 5))
         plt.plot(k_range, wss, 'bo-', label='WSS (inertia)')
         plt.xlabel('Number of Clusters (K)')
@@ -48,12 +52,14 @@ def main():
         plt.title('Elbow Method for K-Means Clustering')
         plt.grid(True)
         plt.legend()
-        plt.savefig("./data/processed/elbow_plot.png")
+        plt.tight_layout()
+        plt.savefig(elbow_output_path)
         plt.close()
-        logging.info("Elbow plot saved successfully. Process completed.")
+
+        logging.info("Elbow plot saved successfully.")
 
     except FileNotFoundError:
-        logging.error("The file 'sensor_data_cleaned.csv' was not found. Please check the file path.")
+        logging.error(f"The file '{data_input_path}' was not found.")
     except Exception as e:
         logging.error(f"An unexpected error occurred: {e}")
 
