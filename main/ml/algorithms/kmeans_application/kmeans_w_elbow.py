@@ -97,7 +97,6 @@ def main():
         metrics_df.to_csv(metrics_output_path, index=False)
         logging.info(f"Cluster metrics saved to '{metrics_output_path}'")
 
-        # [Restante do seu código de visualização permanece igual...]
         df.to_csv(data_output_path, index=False)
         logging.info(f"Clustered data saved to '{data_output_path}'.")
 
